@@ -1,0 +1,62 @@
+[
+  {
+    "id": "natural-relevance-1",
+    "pattern": "cursor-pagination",
+    "query": "Publish new entries while people scroll and prevent the same feed item from showing twice"
+  },
+  {
+    "id": "natural-relevance-2",
+    "pattern": "reservation-concurrency",
+    "query": "Aynı gece iki misafir bir odayı kapmasın"
+  },
+  {
+    "id": "natural-relevance-3",
+    "pattern": "payment-idempotency",
+    "query": "We submitted checkout again after the internet died and only want one charge"
+  },
+  {
+    "id": "natural-relevance-4",
+    "pattern": "music-shuffle",
+    "query": "Karışık sırada hep aynı müzisyeni arka arkaya duymayalım"
+  },
+  {
+    "id": "natural-relevance-5",
+    "pattern": "persistent-playback-queue",
+    "query": "Resume the same playlist order after the app is killed"
+  },
+  {
+    "id": "natural-relevance-6",
+    "pattern": "transactional-outbox",
+    "query": "Order is saved but sometimes the delivery notification never gets emitted"
+  },
+  {
+    "id": "natural-relevance-7",
+    "pattern": "module-boundaries",
+    "query": "Both routes now duplicate how they decide membership eligibility"
+  },
+  {
+    "id": "natural-relevance-8",
+    "pattern": "cache-stampede",
+    "query": "What keeps everybody from rebuilding the cache the instant it expires"
+  },
+  {
+    "id": "natural-relevance-9",
+    "pattern": "optimistic-concurrency",
+    "query": "Açık olan iki düzenleme ekranı birbirinin kaydını ezmesin"
+  },
+  {
+    "id": "natural-relevance-10",
+    "pattern": "n-plus-one-queries",
+    "query": "We load a collection and make a separate select for each row"
+  },
+  {
+    "id": "natural-relevance-11",
+    "pattern": "authorization-object-scope",
+    "query": "A different workspace must not see an invoice even with the invoice number"
+  },
+  {
+    "id": "natural-relevance-12",
+    "pattern": "zero-downtime-migrations",
+    "query": "Eski sürüm çalışmaya devam ederken yeni veritabanı sütununa geçelim"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "name": "@eneskeremaydin/seniormode",
+  "version": "1.0.0",
+  "description": "Real-world engineering knowledge for AI coding agents. Includes a local Agent Skill, engineering decision records, CLI, and MCP.",
+  "type": "module",
+  "license": "(MIT AND CC-BY-4.0)",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "seniormode": "./bin/seniormode.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    "schema/",
+    "docs/",
+    "examples/",
+    "assets/",
+    "AGENTS.md",
+    "LICENSE",
+    "LICENSE-CONTENT.md",
+    ".github/CONTRIBUTING.md",
+    ".github/ACCESSIBILITY.md",
+    ".github/CODE_OF_CONDUCT.md",
+    ".github/SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnesKeremAYDIN/SeniorMode.git"
+  },
+  "scripts": {
+    "catalog": "node scripts/catalog.js --write",
+    "check": "node scripts/catalog.js --check",
+    "test": "node --test",
+    "verify": "npm run check && npm test",
+    "benchmark": "node benchmarks/run.js",
+    "benchmark:agent": "node benchmarks/agent-benchmark.js",
+    "docs:generate": "node scripts/documents.js --write",
+    "docs:check": "node scripts/documents.js --check",
+    "prelaunch:check": "node scripts/check-release-files.js",
+    "release:check": "node scripts/release-check.js",
+    "demo": "node examples/shuffle.mjs",
+    "prepack": "npm run check"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "@sqlite.org/sqlite-wasm": "3.54.1-build1",
+    "ajv": "8.20.0",
+    "commander": "15.1.0",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0"
+  }
+}

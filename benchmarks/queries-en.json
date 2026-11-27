@@ -1,0 +1,152 @@
+[
+  {
+    "id": "training-shuffle",
+    "query": "training shuffle repeatedly plays one instructor variety permutation",
+    "pattern": "music-shuffle"
+  },
+  {
+    "id": "venue-retry",
+    "query": "venue booking charged again after network timeout repeated payment request",
+    "pattern": "payment-idempotency"
+  },
+  {
+    "id": "incident-feed",
+    "query": "timeline duplicated after new entries inserted next page stable timestamp id",
+    "pattern": "cursor-pagination"
+  },
+  {
+    "id": "chamber-hold",
+    "query": "two people reserve last workshop booth simultaneously double booking lease",
+    "pattern": "reservation-concurrency"
+  },
+  {
+    "id": "directory-collision",
+    "query": "reject unknown package IDs fast with bit array maybe present false positives",
+    "pattern": "bloom-filter"
+  },
+  {
+    "id": "layout-focus",
+    "query": "modal opened from row button keyboard return focus when row deleted accessible",
+    "pattern": "accessibility-keyboard"
+  },
+  {
+    "id": "form-duplicate",
+    "query": "client validation unique handles race server form error input",
+    "pattern": "form-validation-boundaries"
+  },
+  {
+    "id": "profile-stale",
+    "query": "saved profile looks old replica lag after save guarantee see change",
+    "pattern": "read-your-writes"
+  },
+  {
+    "id": "tab-reorder",
+    "query": "search stale result older response resolves last dropdown text race",
+    "pattern": "requests-race-cancellation"
+  },
+  {
+    "id": "headlining-read",
+    "query": "celebrity lots of followers newsfeed fanout avoid expensive writes prep lists",
+    "pattern": "feed-fanout"
+  },
+  {
+    "id": "shelf-modal",
+    "query": "bookmark toggle slow responses optimistic updates rollback newer user intent",
+    "pattern": "optimistic-ui"
+  },
+  {
+    "id": "schema-rollout",
+    "query": "rename database column without downtime old and new deploy backfill rolling",
+    "pattern": "zero-downtime-migrations"
+  },
+  {
+    "id": "webhook-retries",
+    "query": "signed webhooks verify raw body repeated shipments idempotent processing",
+    "pattern": "webhook-verification"
+  },
+  {
+    "id": "checkout-retry",
+    "query": "three retry layers multiply calls jitter downstream timeout budget",
+    "pattern": "retry-backoff"
+  },
+  {
+    "id": "survey-memory",
+    "query": "process large file line records without loading memory fail partial output",
+    "pattern": "bounded-memory-streaming"
+  },
+  {
+    "id": "schema-contract",
+    "query": "independently deployed provider removed field old client consumer contract tests",
+    "pattern": "contract-testing"
+  },
+  {
+    "id": "notifications",
+    "query": "unsubscribe after queued email preference reread before sending",
+    "pattern": "consent-derived-preferences"
+  },
+  {
+    "id": "road-edge",
+    "query": "distance in latitude longitude degrees radius kilometres same latitudes project crs",
+    "pattern": "geometry-coordinate-systems"
+  },
+  {
+    "id": "job-dedupe",
+    "query": "daily scheduler restart missed job lease occurrence id cron durable",
+    "pattern": "durable-job-scheduling"
+  },
+  {
+    "id": "inventory-queue",
+    "query": "ticket sale opening traffic spike fair queue page refresh waiting room",
+    "pattern": "virtual-waiting-room"
+  },
+  {
+    "id": "discussion-ack",
+    "query": "tablet offline message delivery lost acknowledgement before saving durable queue",
+    "pattern": "message-acknowledgment"
+  },
+  {
+    "id": "timezone-sunday",
+    "query": "every sunday 9 local berlin recurring after daylight saving utc save timezone",
+    "pattern": "time-zone-scheduling"
+  },
+  {
+    "id": "broker-outbox",
+    "query": "operation committed then event publish crash database and message broker dual write",
+    "pattern": "transactional-outbox"
+  },
+  {
+    "id": "tenant-record",
+    "query": "permissions records by ID tenant isolation same role other tenant invoice",
+    "pattern": "authorization-object-scope"
+  },
+  {
+    "id": "recovery-gate",
+    "query": "health check dependency outage restart loop readiness liveness startup",
+    "pattern": "readiness-liveness"
+  },
+  {
+    "id": "rate-replicas",
+    "query": "fixed window boundary burst verification sms per user two instances token bucket",
+    "pattern": "rate-limiting"
+  },
+  {
+    "id": "stable-text",
+    "query": "editing shared text simultaneous changes position shift same revision operations",
+    "pattern": "operational-transformation"
+  },
+  {
+    "id": "plain-unit",
+    "query": "simple pure business rule duplicate callers extract local module not microservice",
+    "pattern": "module-boundaries"
+  },
+  {
+    "id": "restore-objective",
+    "query": "backup restore drill RPO RTO lost committed writes 24 hour backup",
+    "pattern": "disaster-recovery"
+  },
+  {
+    "id": "fuel-order",
+    "query": "dependencies course order cycle cannot schedule directed graph prerequisite",
+    "pattern": "topological-sort"
+  }
+]

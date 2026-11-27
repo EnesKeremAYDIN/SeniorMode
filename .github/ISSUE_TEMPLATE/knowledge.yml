@@ -1,0 +1,18 @@
+name: Engineering decision
+description: Propose a pattern or correct a decision record.
+title: "[Knowledge] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and constraints
+      description: Describe the situation, relevant record ID, and why the decision matters.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary sources and verification
+      description: Link specifications or primary sources and suggest a practical test.
+    validations:
+      required: true

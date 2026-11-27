@@ -1,0 +1,14 @@
+node_modules/
+coverage/
+*.tgz
+*.log
+.env
+.env.*
+!.env.example
+benchmarks/runs/
+.agents/
+.claude/
+.cursor/
+.gemini/
+.opencode/
+skills-lock.json

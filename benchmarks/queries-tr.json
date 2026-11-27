@@ -1,0 +1,122 @@
+[
+  {
+    "id": "turkish-reservation",
+    "pattern": "reservation-concurrency",
+    "query": "İki müşteri son odayı aynı anda ayırtıyor. Ödeme beklerken odayı kısa süreli tutmak istiyorum."
+  },
+  {
+    "id": "turkish-payment",
+    "pattern": "payment-idempotency",
+    "query": "Ödeme isteği zaman aşımına uğrayınca yeniden deneniyor ve bazen çift tahsilat oluyor."
+  },
+  {
+    "id": "turkish-pagination",
+    "pattern": "cursor-pagination",
+    "query": "Akışa yeni kayıt gelince sonraki sayfada bazı kayıtlar tekrarlanıyor."
+  },
+  {
+    "id": "turkish-presence",
+    "pattern": "websocket-presence",
+    "query": "Bir arkadaş metroya inince çevrimiçi görünmeye devam ediyor. Bağlantı koptuğunu nasıl anlayabilirim?"
+  },
+  {
+    "id": "turkish-shuffle",
+    "pattern": "music-shuffle",
+    "query": "Aynı sanatçının şarkıları karışık çalmada arka arkaya geliyor."
+  },
+  {
+    "id": "turkish-cache",
+    "pattern": "cache-stampede",
+    "query": "Yüksek trafik anında önbellek boşaldığında bütün istekler veri tabanına gidiyor."
+  },
+  {
+    "id": "turkish-upload",
+    "pattern": "resumable-uploads",
+    "query": "Dosya yükleme yarıda kesilince baştan yüklemek zorunda kalıyoruz."
+  },
+  {
+    "id": "turkish-tenancy",
+    "pattern": "authorization-object-scope",
+    "query": "Kullanıcı başka kiracıya ait faturayı görüyor."
+  },
+  {
+    "id": "turkish-index",
+    "pattern": "composite-indexes",
+    "query": "Sorgu planına göre müşteriye ve tarihe birlikte hizmet edecek birden çok sütunlu indeks kurmak istiyorum."
+  },
+  {
+    "id": "turkish-restore",
+    "pattern": "disaster-recovery",
+    "query": "Yedekten geri yükleme tatbikatında veri kaybını ve kurtarma süresini ölçmeliyiz."
+  },
+  {
+    "id": "turkish-async-ui",
+    "pattern": "eventual-consistency-feedback",
+    "query": "Rapor hazırlanırken süreç devam ediyor diye bir durum göstergesi ve sonra hata bildirimi lazım."
+  },
+  {
+    "id": "turkish-old-search",
+    "pattern": "requests-race-cancellation",
+    "query": "Yavaş gelen eski arama yanıtı, güncel sonuçların üzerine yazıyor."
+  },
+  {
+    "id": "turkish-offline",
+    "pattern": "offline-sync-conflicts",
+    "query": "Çevrimdışı düzenlenen denetim listeleri tekrar birleşirken silinen kayıt geri geliyor."
+  },
+  {
+    "id": "turkish-sentence-sse",
+    "pattern": "sse-notifications",
+    "query": "İşlem ilerlemesini canlı göstermek için sunucudan tarayıcıya tek yönlü olay göndereceğim."
+  },
+  {
+    "id": "turkish-queue-ack",
+    "pattern": "message-acknowledgment",
+    "query": "Telefon kapalıyken mesaj kuyruğunda kalsın, kalıcı olarak alındığında teslim onayı dönsün."
+  },
+  {
+    "id": "turkish-shortlink",
+    "pattern": "short-url-identifiers",
+    "query": "Kısa bağlantı kodu üretirken iki kişinin aynı kimliği almasını engellemek istiyorum."
+  },
+  {
+    "id": "turkish-timezone",
+    "pattern": "time-zone-scheduling",
+    "query": "Yaz saati değişse de hatırlatma her pazar aynı yerel saatte çalışsın."
+  },
+  {
+    "id": "turkish-webhook",
+    "pattern": "webhook-verification",
+    "query": "Ham istek gövdesi üzerinden webhook imzasını doğrulayıp aynı bildirimi iki defa işlememeliyiz."
+  },
+  {
+    "id": "turkish-replica",
+    "pattern": "read-your-writes",
+    "query": "Profil güncellendi ama eski fotoğraf görünüyor. Replika gecikmesi olabilir."
+  },
+  {
+    "id": "turkish-cutover",
+    "pattern": "zero-downtime-migrations",
+    "query": "Canlı veritabanında kolonları değiştireceğiz. Eski kolonla yeni kolon bir süre beraber çalışmalı."
+  },
+  {
+    "id": "turkish-event-order",
+    "pattern": "event-ordering",
+    "query": "Olaylar ters sırayla gelince eski güncelleme yeni kaydı eziyor."
+  },
+  {
+    "id": "turkish-default-form",
+    "pattern": "progressive-enhancement",
+    "query": "Sayfanın istemci kodu yüklenmese bile JavaScript olmadan form göndermek istiyorum."
+  },
+  {
+    "id": "turkish-arrival",
+    "pattern": "load-test-arrival-model",
+    "query": "Servis yavaşlayınca yük testindeki istek geliş hızı da düşüyor. Gerçek beklemeyi nasıl ölçeriz?"
+  },
+  {
+    "id": "turkish-transfer-distance",
+    "pattern": "geometry-coordinate-systems",
+    "query": "Enlem ve boylamdan kilometre hesabı yaparken uzaklık kutuplara yakın yerlerde yanlış çıkıyor."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {"id":"natural-reservation-tr","pattern":"reservation-concurrency","query":"Küçük otelim için rezervasyon sistemi yap."},
+  {"id":"natural-reservation-en","pattern":"reservation-concurrency","query":"Build a reservation system for my small hotel."},
+  {"id":"natural-shuffle-tr","pattern":"music-shuffle","query":"Müzik uygulamama karışık çalma ekle."},
+  {"id":"natural-shuffle-en","pattern":"music-shuffle","query":"Add shuffle to my music app."},
+  {"id":"natural-payment-tr","pattern":"payment-idempotency","query":"Ödeme alan bir sepet yap."},
+  {"id":"natural-payment-en","pattern":"payment-idempotency","query":"Build a shopping cart that accepts payments."},
+  {"id":"natural-pagination-tr","pattern":"cursor-pagination","query":"Bu akışta bazı öğeler iki kez görünüyor. Sebebini bul."},
+  {"id":"natural-pagination-en","pattern":"cursor-pagination","query":"Some items in this feed show up twice. Find out why."}
+]

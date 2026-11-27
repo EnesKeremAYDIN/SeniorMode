@@ -1,0 +1,17 @@
+name: Agent integration
+description: Propose or correct a host integration.
+title: "[Integration] "
+body:
+  - type: input
+    id: host
+    attributes:
+      label: Host, version, and OS
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Project or global paths and tested behavior
+      description: Distinguish installation, MCP protocol, and model behavior. Use synthetic prompts and share no credentials.
+    validations:
+      required: true

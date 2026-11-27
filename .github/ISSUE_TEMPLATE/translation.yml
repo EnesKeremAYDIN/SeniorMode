@@ -1,0 +1,16 @@
+name: Translation
+description: Improve localization or propose a language.
+title: "[Translation] "
+body:
+  - type: input
+    id: locale
+    attributes:
+      label: Locale and document
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Current wording, suggested wording, and review evidence
+    validations:
+      required: true

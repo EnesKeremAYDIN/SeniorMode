@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a focused change to the product or developer workflow.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: User goal and current limitation
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Expected outcome and how to verify it
+    validations:
+      required: true
