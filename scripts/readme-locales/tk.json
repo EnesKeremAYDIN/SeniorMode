@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Türkmençe",
+    "installAnchor": "install",
+    "nav": {
+      "install": "Gurnama",
+      "usage": "Ulanylyşy",
+      "directory": "Başarnyklar katalogy",
+      "examples": "Mysallar",
+      "faq": "Sorag-jogap",
+      "contribute": "Goşant goşmak"
+    },
+    "headings": {
+      "install": "Gurnama",
+      "ai": "AI bilen guruň",
+      "support": "Goldaw berýän agentler",
+      "use": "Nädip ulanmaly",
+      "newProject": "Täze taslama",
+      "existing": "Bar bolan taslama",
+      "standards": "In Engineeringenerçilik standartlary",
+      "library": "Bilimleriň katalogy",
+      "directory": "Başarnyklar katalogy",
+      "real": "Hakyky mysallar",
+      "how": "Bu nähili işleýär",
+      "limitations": "Çäklendirmeler",
+      "roadmap": "Mol kartasy",
+      "docs": "Resminamalar",
+      "contributors": "Goşant goşanlar",
+      "thanks": "Minnetdarlyk",
+      "license": "Ygtyýarnama",
+      "stars": "Staryldyz taryhy",
+      "releases": "Çykdy",
+      "shuffle": "Näme üçin çalyşmak döwülýär?",
+      "what": "SeniorMode näme?",
+      "why": "Näme üçin SeniorMode?",
+      "compare": "Öň we soň",
+      "scopes": "Taslama we global çäk",
+      "manual": "El bilen gurnamak",
+      "managed": "CLI dolandyrylýan gurnama",
+      "troubleshoot": "Näsazlyklary düzeltmek",
+      "security": "Howpsuzlyk syýasaty",
+      "conduct": "Özüňi alyp baryş şertleri"
+    },
+    "columns": {
+      "host": "Agent",
+      "records": "In Engineeringenerçilik kararlary",
+      "categories": "Kategoriýalar",
+      "native": "El bilen / SeniorMode taslama ýoly",
+      "project": "Vercel skills taslama ýoly",
+      "global": "Vercel skills global ýol",
+      "task": "Ulanyjy haýyşy",
+      "decision": "In Engineeringenerçilik karary"
+    },
+    "text": {
+      "tagline": "Emeli aň kod ýazýar. SeniorMode oňa inženerçilik kararlaryny kabul etmäge kömek edýär.",
+      "subtitle": "Emeli aň bilen kod ýazýan agentler üçin amaly inženerçilik bilimleri.",
+      "made": "Türkiýede döredildi 🇹🇷",
+      "what": "SeniorMode kod ýazýan agentiňize inženerçilik kararlarynyň ýygyndysyny we olary ulanmagyň tertibini berýär. Agent töwekgelçilikleri görüp, taslamaňyza laýyk ýoly saýlap, netijäni synap bilýär.",
+      "quickStart": "Taslamanyň kök bukjasynda agentiňize degişli buýrugy işlediň. Vercel gurnaýjysynyň talap edýän wersiýasy —",
+      "firstRun": "Agent sessiýasyny täzeden başlaň we öz sözleriňiziň üýtgemegini soraň. Öý eýesi ussatlygy saýlamasa, SeniorMode agzap geçiň. Codex-de, `$seniormode` aç-açan ussatlyk salgylanmasydyr. Baglanan ýazgylar, MCP serweri bolmazdan işleýär.",
+      "cliMcp": "Meýletin CLI ýerli ýazgylary gözleýär. MCP, şeýle hem, agentiňize standartlara we iş akymlaryna girmäge mümkinçilik berýär. SeniorMode ýerli derejede API açary bolmazdan işleýär. Agentiňiz öz hasabyny talap edip biler.",
+      "contribute": "Inženerçilik kararyny goşuň, mysal ýa-da terjime gowulaşdyryň ýa-da has gowy işläp biljek zatlary aýdyň.",
+      "license": "Kod we ussatlyk iş tertibi MIT ulanýar. Inženerçilik karar kitaphanasy we döredilen katalog sahypalary CC BY 4.0 ulanýar.",
+      "scopes": "Maslahat berilýän gurnawçy, deslapky taslamany ulanýar. Islege bagly global baýdak öý derejesindäki ýerini üýtgedýär. Dolandyrylan SeniorMode CLI diňe bar bolan taslama ýazýar. Aşakdaky her bir başarnyk ýoluna seniormode goşuň. Tilde, öý katalogyňyzy aňladýar.",
+      "external": "Vercel skills `skills-lock.json`-da taslama gurnamalaryny we `.skill-lock.json`-de global gurnamalary ýazga alýar. Taslama täzelenmeleri üçin `--project` we global amallar üçin `--global` ulanyň. Gurnaýjy saýlanan başarnyk bukjasyny we gulp faýlyny üýtgedip biler.",
+      "manual": "Qhli `skills/seniormode` katalogyny ygtybarly barlagdan öý eýesiniň başarnyklar katalogyna göçüriň. `SKILL.md`, salgylanmalary we ygtyýarnamalary bilelikde saklaň. El bilen göçürmäňizi täzelemek ýa-da aýyrmak üçin, ýerli üýtgeşmeleri gözden geçirenden soň diňe şol bukjany çalyşyň ýa-da pozuň.",
+      "managed": "SeniorMode-yň çeşme kodunyň bukjasynda zerur baglylyklary guranyňyzdan soň, bar bolan taslama üçin aşakdaky buýruklary birin-birin işlediň. CLI üçin zerur wersiýa —",
+      "ownership": "CLI täzelemezden ýa-da aýyrmazdan öň faýllary özüniň gurnandygyny we olaryň üýtgedilmändigini barlaýar. Diňe öz dolandyrýan başarnygyny we onuň gurnama ýazgylaryny üýtgedýär. Gerek bolsa, agentiňizde MCP-ni sazlaň.",
+      "troubleshoot": "Taslamanyň köküni, gurnama ýoluny we Node.js wersiýasyny barlaň. Sessiýany täzeden başlaň, soňra agent entek tapmasa, adyndan SeniorMode çagyryň. Dolandyrylan CLI ýalňyşlyklary üçin iş wagtynyň gollanmasyna serediň."
+    },
+    "cases": [
+      [
+        "Aýdym-saz çalşygy",
+        "Aýdym-saz programmamda üýtgeşiklik goşuň.",
+        "Aýdymyň atlaryny we her usul üçin doly tertibi görmek üçin bu mysaly işlediň."
+      ],
+      [
+        "Iň soňky otaglar",
+        "Kiçijik myhmanhanam üçin bron ulgamyny guruň.",
+        "Synag bir wagtyň özünde iki haýyş iberýär. Biri otagy kitaplaýar. Beýlekisi bolsa tapdy."
+      ],
+      [
+        "Töleg gaýtadan synanyşyň",
+        "Tölegler bilen töleg guruň.",
+        "Synag ilkinji jogaby taşlaýar, haýyşy gaýtadan ulanýar we diňe bir zarýadyň ýazylandygyny tassyklaýar."
+      ],
+      [
+        "Iýmitde gaýtalanýan ýazgylar",
+        "Bu iýmitdäki käbir ýazgylar iki gezek görkezilýär. Munuň sebäbini biliň.",
+        "Mysal haýyşlaryň arasynda ýazgy goýýar we iýmiň dowam etmeginiň iki ýoluny görkezýär, şol sanda bir ýazgyny gaýtalamazlyk."
+      ]
+    ],
+    "contribution": [
+      "Recordazgy goşmazdan ozal karar üçin katalogy gözläň.",
+      "Asyl ssenariýler, çeşmeler, lakamlar we çekler bilen kanoniki Iňlis Markdown-y redaktirläň.",
+      "Katalogy täzeden dörediň we alnan resminamalary we indeksleri çekmek islegiňize goşuň.",
+      "Barlaglary işlediň. Terjime üçin degişli iňlis dilindäki teksti, baglanyşyklary, buýruklary we gowaklary gözden geçiriň."
+    ],
+    "questions": [
+      [
+        "Maňa SeniorMode API açary gerekmi?",
+        "Ussatlyk, CLI we MCP serweri, SeniorMode API açary bolmazdan ýerli işleýär. Agentiňize öz hasaby ýa-da modeli girişi gerek bolup biler. Git ýa-da Vercel skills bilen gurmak, tora girmegi talap edip biler."
+      ],
+      [
+        "SeniorMode awtomatiki işjeňleşermi?",
+        "Awtomatiki açyş agentiňize bagly. Gurlandan soň sessiýany täzeden açyň we ussatlyk saýlanmasa SeniorMode belläň."
+      ],
+      [
+        "Täzelemek ýa-da aýyrmak üçin haýsy gurnaýjyny ulanmaly?",
+        "Göçürmäni guran usuly ulanyň. Vercel skills gulp faýllarynda öz nusgalaryny yzarlaýar. SeniorMode CLI öz gurnama ýazgysyny barlaýar we redaktirlenen ýa-da dolandyrylmadyk bukjalary goraýar."
+      ],
+      [
+        "Näme terjime edildi?",
+        "Gollanmalary, mysallary we katalogdaky gysgaça düşündirişleri ýokarydaky menýuda görkezilen dillerde okap bilersiňiz. Doly ýazgylar we standartlar iňlis dilinde. Gözleg iňlis we türk dillerinde işleýär. Agentiňiz netijäni öz diliňizde düşündirip biler."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Koduň işlemegi ýeterlik däl.",
+    "installLead": "Kodlaşdyrma agentiňize bu haýyşy beriň ýa-da terminal buýrugy üçin aşakdaky agentiňizi saýlaň.",
+    "prompt": "SeniorMode-y {source} salgysyndan guruň. Kod ýazýan agentime we häzirki taslamama degişli gurnama görkezmelerini ýerine ýetiriň. Faýl ýazmazdan öň maksat bukjasyny barlaň, sazlamalarymy we başarnyga girizilen üýtgeşmeleri saklaň. Başarnygy ulanyp bolýandygyny barlaň. Bar bolan nusganyň üstünden ýazmazdan öň soraň. MCP sazlamasyny diňe aýratyn haýyş edenimde ýerine ýetiriň.",
+    "newScenario": [
+      "Aýdym-saz akym programmasyny döretmek üçin SeniorMode ulanyň.",
+      "Gurmak isleýän zadyňyzy aýdyp beriň. Agentiňiz başlangyç dizaýny saýlaýar, ilkinji peýdaly wersiýasyny gurýar we işleýşini barlaýar.",
+      "Täze taslama başlap bilerinmi?",
+      "Hawa. Taslama bukjasyny açyň we agentiňize SeniorMode bilen näme gurmak isleýändigiňizi aýdyň."
+    ],
+    "existingScenario": [
+      "Aýdym-saz programmamda üýtgeşiklik goşmak üçin SeniorMode ulanyň.",
+      "Taslamadaky üýtgeşmäni ýa-da meseläni suratlandyryň. Agentiňiz ilki bar bolan kody okaýar. Gözegçilik sorasaňyz, faýllary redaktirlemezden netijeleri habar berýär.",
+      "Muny bar bolan taslamada ulanyp bilerinmi?",
+      "Hawa. Aýratynlyk, düzediş, refaktor ýa-da audit üçin SeniorMode ulanyň. Gözegçilik diňe okalýar."
+    ],
+    "hostSupport": "SeniorMode bu bäş agentiň islendigine guruň. Gabat gelýän müşderiden MCP ulanyp bilersiňiz."
+  },
+  "footer": {
+    "starPrompt": "Eger SeniorMode indiki taslamaňyza kömek etse, beýlekiler tapyp biler ýaly, {star}.",
+    "starAction": "GitHub-de ýyldyz beriň",
+    "acknowledgments": "SeniorMode bu açyk taslamalarda gurulýar."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Algoritmler we maglumatlar gurluşlary",
+      "architecture": "Binagärlik",
+      "backend": "Yzky we API-ler",
+      "concurrency": "Gabat gelmek",
+      "data": "Maglumat we ammar",
+      "frontend": "Öň tarapy",
+      "geospatial": "Geosfera",
+      "networking": "Torlaýyn aragatnaşyk",
+      "performance": "Çykyş",
+      "product": "Önümiň özüni alyp barşy",
+      "reliability": "Ygtybarlylyk",
+      "security": "Howpsuzlyk",
+      "testing": "Synag"
+    },
+    "standardLabels": {
+      "greenfield": "Grinfild meýilnamasy",
+      "architecture": "Binagärlik",
+      "structure": "Taslamanyň gurluşy",
+      "modularity": "Modullyk we gaýtadan ulanmak",
+      "code-principles": "Kod ýörelgeleri",
+      "dependencies": "Baglylyklar",
+      "api": "API şertnamalary",
+      "data": "Maglumat we ammar",
+      "security": "Howpsuzlyk",
+      "configuration": "Sazlama",
+      "reliability": "Ygtybarlylyk",
+      "observability": "Gözegçilik",
+      "performance": "Çykyş",
+      "testing": "Synag",
+      "documentation": "Resminamalar",
+      "refactoring": "Ygtybarly gaýtadan işlemek"
+    },
+    "directory": "Aşakda durýan meseläňizi tapyň. Her ýazgy, opsiýalar, söwdalar we netijäni barlamagyň usullary bilen iňlis gollanmasyna baglanyşýar.",
+    "shuffle": "Şol bir alty aýdymyň üç çalşygy, tötänleýin oýnamagyň näme üçin gaýtalanyp biljekdigini görkezýär.",
+    "shuffleLab": "Göni demony synap görüň",
+    "shuffleColumns": [
+      "Usul",
+      "Aýdymçy zakazy",
+      "Goňşy gaýtalanýar"
+    ],
+    "shuffleMethods": [
+      "Tötänleýin görnüş",
+      "Balykçy atesates",
+      "Aýdymçydan habarly"
+    ],
+    "checkoutSteps": [
+      "**Talap.** \"Aragatnaşyk kesilende töleg käwagt iki gezek tölenýär.\"",
+      "**Derňäň.** Jogap müşderä ýetmänkä töleg üstünlikli bolup biler.",
+      "**Düzediş saýlaň.** Şol bir satyn alyş belgisi bilen gaýtadan synanyşmak ulgamyň asyl tölegini tanamaga mümkinçilik berýär.",
+      "**Barlaň.** Exampleerli mysal ilkinji jogaby taşlaýar. Gaýtadan synanyşmak HTTP `{status}` gaýtarýar we maglumatlar bazasynda ** {total} zarýad ** bar."
+    ],
+    "audit": [
+      "Bar bolan taslama gözegçilik ediň",
+      "Iýmitimde ýazgylaryň näme üçin iki gezek peýda bolýandygyny bilmek üçin SeniorMode ulanyň."
+    ],
+    "usage": "SeniorMode islegiňizden başlaýar we taslamany gözden geçirýär. Onda sorajak bolmagyňyzy bilmeýän kararlaryňyzy görkezýär, haýsy gollanmanyň gabat gelýändigini barlaýar we netijäniň nädip tassyklanandygyny düşündirýär.",
+    "ownership": "Vercel skills we SeniorMode CLI hersi gurnan nusgalaryny yzarlaýarlar. Gurnan gural bilen bir nusgasyny täzeläň ýa-da aýyryň. El bilen göçürmek üçin bukjany çalyşmazdan ýa-da aýyrmazdan ozal ýerli üýtgeşmeleri gözden geçiriň.",
+    "contribution": "scripts/directory-locales/ aşagyndaky her faýla ýazgy ID-si üçin at we gysga mesele beýany goşuň. Katalog kanoniki ýazgylara baglanyşýar, Bilimler katalogy bolsa katalogy görkezýär. Ussatlyk görkezijileri we CLI / MCP gözleg şol bir ýazgylary ulanýar. Bu gollanmanyň iňlis bölümi generatorlary düşündirýär.",
+    "outcomes": [
+      "Her aýdym nobatda durýar we pleýlistiň rugsat bermegi bilen şol bir aýdymçynyň aýdymlary aýrylýar.",
+      "Islegler bir ýere geleninde-de diňe bir myhman soňky otagy bron edip biler.",
+      "Müşderiler iki gezek töleg almazdan ýitirilen jogapdan soň gaýtadan synanyşyp bilerler.",
+      "Öňki ýazgylar iýmitde iki gezek görkezilmezden täze ýazgylar gelip biler."
+    ]
+  },
+  "sections": {
+    "accessibility": "Elýeterlilik",
+    "mission": "Isleýän netijäňizden başlaň. SeniorMode agentiňize adaty haýyşy taslamaňyza laýyk gelýän, möhüm zatlary goraýan we tassyklap boljak kararlara öwürmäge kömek edýär. Bilim, siziň we wekiliňiziň barlamagy üçin ýerli derejede saklanýar.",
+    "architecture": "Agent Skill ugurlary Gurmak, Audit we degişli ülňüler üçin işleýär. CLI we MCP iňlis ýazgylaryny we ýatda saklaýan SQLite iňlis we türk talaplaryny gözleýärler. Dolandyrylan gurnamalar ussatlygy saýlanan taslama göçürýär. Katalog we README generatorlary bu materialy agentler we okyjylar üçin tertipleýär.",
+    "governance": "Saklaýjy, göwrümi, çeşmeleri, synaglary, ygtyýarnamasy we kanoniki material bilen yzygiderliligi gözden geçirýär. Täze kategoriýany, bozulan üýtgeşmäni ýa-da goýberiş syýasatyna üýtgetmeleri ara alyp maslahatlaşmak üçin bir meseläni ulanyň. Saklaýjy, goýberilişiň haçan boljakdygyny kesgitleýär we belliklerinde möhüm çäklendirmeleri ýazýar.",
+    "safety": "Ýerli CLI we MCP serweri hiç hili SeniorMode telemetri ibermeýär. Kodlaşdyrma agentiňiz we üçünji tarap gurnaýjynyň öz maglumat sazlamalary bar. Göçürilen salgylanmalara tehniki material hökmünde serediň we başarnyk görkezmelerine we ýerine ýetirip boljak kody üýtgetmeleri gözden geçiriň.",
+    "reporting": "Howpsuzlyk syýasaty arkaly güman edilýän gowşaklyklary habar beriň. Täsir eden wersiýasyny, täsirini we minimal subutnamalaryny hususy kanalda paýlaşyň. Duýgur subutnamalary jemgyýetçilik meselelerinden daşda saklaň.",
+    "roadmap": [
+      "Täze we bar bolan taslamalar üçin adaty haýyşlardan açyşy gowulandyryň.",
+      "Gaýtalanýan kararyň has anyk söwda ýa-da çeklere mätäç bolan ýazgylaryny goşuň.",
+      "Goldaw agentleri we dilleri boýunça gurnamany ygtybarly saklaň.",
+      "Gabat gelýän ylgawlar bar bolanda köpelip boljak açyş we ýerine ýetiriş deňeşdirmelerini çap ediň.",
+      "Meseleleri we goşantlary hakyky iş akymlaryna täsiri bilen ileri tutuň."
+    ],
+    "cli": "Çeşme gözleginde, `npm ci` bilen garaşlylygy guruň. CLI ýazgy gözläp ýa-da açyp biler. Doly buýruk sanawy üçin `node bin/seniormode.js --help` işlediň.",
+    "mcp": "Nx-i CLI we `mcp` argumentine mutlak ýol bilen işletmek üçin agentiňizi sazlaň. Windows-daky JSON ýollary öňe çyzgylary ulanyp biler. Serwer stdio-dan diňe okalýan ýedi gural bilen üpjün edýär. Gurnalan Skill bilen ýazgylary, ülňüleri we iş akymlaryny paýlaşýar.",
+    "activate": [
+      "Soragda `$seniormode` saýlaň.",
+      "Talapda `/seniormode` ýa-da SeniorMode adyny saýlaň.",
+      "Agent söhbetdeşliginde `/` bilen ussatlygy saýlaň. Cursor, `.cursor/skills` astynda taslama başarnyklaryny hem tapýar.",
+      "Tapyndylary barlamak üçin `/skills list` ulanyň, soňra adyndan SeniorMode soraň.",
+      "`seniormode` adyny soraň. OpenCode wersiýaňyz üpjün edilende `opencode debug skill` ulanyň."
+    ],
+    "mcpNotes": [
+      "Codex täzeden açyň. Hasaby `codex mcp remove seniormode` bilen aýyryň.",
+      "Hasaba alynmagy `claude mcp list` bilen barlaň. Işleýän düwün bu Windows sazlamasy bilen gönüden-göni işleýär.",
+      "Bu ýazgyny `mcpServers` birleşdiriň. Cursor `.cursor/mcp.json` ulanýar we Gemini CLI taslamanyň çäginde `.gemini/settings.json` ulanýar.",
+      "Serwer serwerini OpenCode konfigurasiýaňyzda `mcp` bilen birleşdiriň."
+    ],
+    "toolHeaders": [
+      "Gural",
+      "Giriş",
+      "Netije"
+    ],
+    "tools": [
+      "Reýtingdäki gabat gelýän ýazgylar",
+      "Recordazga alyň, opsiýalar, barlaglar we çeşmeler",
+      "Karar düzgünleri we söwda şertnamalary",
+      "Barlag sanawy",
+      "Standart şahsyýetnamalar we haçan ulanmaly",
+      "Bir doly standart",
+      "Gurmak, audit ýa-da iş ýörelgeleri"
+    ],
+    "checksLabel": "Kod we tassyklama",
+    "checks": [
+      "Işläp bolýan mysal, ähli aýdym atlaryny görkezýär. Tötänleýin deňeşdirmeler bilen tertiplemek, her tertibe deň deňlik bermeýär. Synaglar, üç elementli sanawyň alty sany permutasiýasyny, saz saklanyşyny we agdyklyk edýän hudo .nigiň käbir gaýtalanmalaryny öňüni alyp bolmajak sanawlaryny barlaýar.",
+      "Iki maglumat bazasy birikmesi bir otag we gije üçin bäsleşýär. Bir haýyş `201`, beýlekisi `409` gaýtarýar we bir bron saklanýar. Bu mysal, bir gije derrew tassyklamagy öz içine alýar.",
+      "Synag ilkinji jogaby taşlaýar we aýratyn baglanyşykdan synanyşýar. Şol bir satyn alyş ID-si başga mukdarda ulanylanda, bir saklanan zarýady we gapma-garşylygy barlaýar. Hakyky üpjün ediji bilen näbelli netijäni şertnamasyna laýyklykda ýaraşdyryň.",
+      "Sahypa haýyşlarynyň arasynda täze ýazgy gelýär. Offset ID-leri `8, 6` gaýtarýar we `8` elementini gaýtalaýar. cursor `(9, 8)`-den `6, 99` bilen dowam edýär. Synag bu goýmany öz içine alýar we bar bolan ofset ýoluny gorap saklaýar."
+    ]
+  },
+  "projectSafety": "Gurnaýjyny işletmezden öň maksat bukjasyny we ýerli üýtgeşmeleri barlaň.",
+  "addLanguage": "Öz diliňizi goşuň",
+  "translationForm": "Täze terjime ýa-da düzediş teklip ediň"
+}

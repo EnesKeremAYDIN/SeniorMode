@@ -140,7 +140,7 @@ const de = translation(
   ],
   [
     "Welche Inhalte sind übersetzt?",
-    "Anleitungen, Beispiele und die Kurzbeschreibungen im Skill-Verzeichnis gibt es in acht Sprachen. Die vollständigen Einträge und Standards sind auf Englisch. Die Suche unterstützt Englisch und Türkisch. Dein Agent kann das Ergebnis in deiner Sprache erklären."
+    "Anleitungen, Beispiele und die Kurzbeschreibungen im Skill-Verzeichnis gibt es in den Sprachen im Menü oben. Die vollständigen Einträge und Standards sind auf Englisch. Die Suche unterstützt Englisch und Türkisch. Dein Agent kann das Ergebnis in deiner Sprache erklären."
   ],
 ],
 );
@@ -257,7 +257,7 @@ const es = translation(
   ],
   [
     "¿Qué está traducido?",
-    "Las guías, los ejemplos y los resúmenes del directorio están en ocho idiomas. Los registros completos y los estándares están en inglés. Puedes buscar en inglés y turco, y tu agente puede explicar el resultado en tu idioma."
+    "En el menú de arriba puedes elegir el idioma de las guías, los ejemplos y los resúmenes del directorio. Los registros completos y los estándares están en inglés. Puedes buscar en inglés y turco, y tu agente puede explicar el resultado en tu idioma."
   ],
 ],
 );
@@ -374,7 +374,7 @@ const fr = translation(
   ],
   [
     "Qu’est-ce qui est traduit ?",
-    "Les guides, les exemples et les résumés du répertoire sont disponibles en huit langues. Les fiches complètes et les standards sont en anglais. La recherche fonctionne en anglais et en turc. Votre agent peut expliquer le résultat dans votre langue."
+    "Le menu en haut de la page permet de choisir la langue des guides, des exemples et des résumés du répertoire. Les fiches complètes et les standards sont en anglais. La recherche fonctionne en anglais et en turc. Votre agent peut expliquer le résultat dans votre langue."
   ],
 ],
 );
@@ -492,7 +492,7 @@ const ja = translation(
   ],
   [
     "翻訳の対象は何ですか",
-    "ガイド、使用例、スキルディレクトリの概要は8言語で読めます。記録の本文と標準ガイドは英語です。検索は英語とトルコ語に対応し、エージェントに自分の言語で説明してもらえます。"
+    "ガイド、使用例、スキルディレクトリの概要は、ページ上部のメニューから言語を選んで読めます。記録の本文と標準ガイドは英語です。検索は英語とトルコ語に対応し、エージェントに自分の言語で説明してもらえます。"
   ],
 ],
 );
@@ -609,7 +609,7 @@ const ptBr = translation(
   ],
   [
     "O que foi traduzido?",
-    "Guias, exemplos e resumos do diretório estão disponíveis em oito idiomas. Os registros completos e os padrões estão em inglês. A busca funciona em inglês e turco, e seu agente pode explicar o resultado no seu idioma."
+    "No menu no topo da página, você pode escolher o idioma dos guias, exemplos e resumos do diretório. Os registros completos e os padrões estão em inglês. A busca funciona em inglês e turco, e seu agente pode explicar o resultado no seu idioma."
   ],
 ],
 );
@@ -726,7 +726,7 @@ const zhCN = translation(
   ],
   [
     "哪些内容有翻译",
-    "指南、示例和技能目录的摘要都有八种语言。完整记录与工程标准使用英语。搜索支持英语和土耳其语，智能体也可以用你的语言解释结果。"
+    "你可以在页面顶部切换指南、示例和技能目录摘要的语言。完整记录与工程标准使用英语。搜索支持英语和土耳其语，智能体也可以用你的语言解释结果。"
   ],
 ],
 );

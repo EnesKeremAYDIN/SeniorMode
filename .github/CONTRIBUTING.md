@@ -2,11 +2,13 @@
 
 # Contributing to SeniorMode
 
-[English](#en) · [Türkçe](#tr) · [Deutsch](#de) · [Español](#es) · [Français](#fr) · [日本語](#ja) · [Português (Brasil)](#pt-br) · [简体中文](#zh-cn)
+[English](#en) · [Türkçe](#tr) · [Deutsch](#de) · [Español](#es) · [Français](#fr) · [日本語](#ja) · [Português (Brasil)](#pt-br) · [简体中文](#zh-cn) · [العربية](#ar) · [Azərbaycanca](#az) · [فارسی](#fa) · [हिन्दी](#hi) · [Bahasa Indonesia](#id) · [Italiano](#it) · [Қазақша](#kk) · [한국어](#ko) · [Кыргызча](#ky) · [Русский](#ru) · [ไทย](#th) · [Türkmençe](#tk) · [Татарча](#tt) · [ئۇيغۇرچە](#ug) · [Українська](#uk) · [Oʻzbekcha](#uz) · [Tiếng Việt](#vi) · [繁體中文](#zh-hant)
 
 <a id="en"></a>
 
 ## English
+
+<div lang="en" dir="ltr">
 
 The maintainer reviews changes for scope, sources, tests, licensing and consistency with the canonical material. Use an issue to discuss a new category, a breaking change, or a change to the release policy. The maintainer decides when a release is ready and records important limitations in its notes.
 
@@ -30,8 +32,8 @@ The canonical Markdown supplies the CLI and MCP decision library directly. The c
 
 ### Edit the documentation sources
 
-- `scripts/documents.js` renders the eight READMEs and this guide and verifies their links and anchors. `scripts/document-paths.js` defines the README locations and section anchors. `scripts/document-directory.js` checks that each Directory translation covers the canonical IDs.
-- `scripts/document-locales.js` contains the English and Turkish guides and labels. `scripts/document-other-locales.js` contains the other six languages.
+- `scripts/documents.js` renders the READMEs and this guide and verifies their links and anchors. `scripts/document-paths.js` defines the README locations and section anchors. `scripts/document-directory.js` checks that each Directory translation covers the canonical IDs.
+- `scripts/document-locales.js` assembles the shared language menu and contains the English and Turkish guide copy. `scripts/document-other-locales.js` contains the original translations for German, Spanish, French, Japanese, Brazilian Portuguese, and Simplified Chinese. `scripts/document-locale-files.js` loads the complete translations in `scripts/readme-locales/`.
 - `scripts/document-experience.js` contains onboarding prompts, project scenarios, and README footer copy. The English contribution guide lives in `scripts/document-contribution.js`.
 - `scripts/document-product.js` contains benefit-focused example descriptions, installer ownership guidance, and the localized Directory category and standard names. Use `scripts/directory-locales/` for individual titles and problem descriptions.
 - `scripts/document-sections.js` contains localized integration, example verification, governance, roadmap, security and accessibility link copy.
@@ -48,9 +50,24 @@ For a category proposal, identify several distinct decisions that belong togethe
 
 Review imported text for unrelated agent instructions, embedded secrets, and copied material before proposing it. Give attribution for content and examples as described in the license.
 
+<a id="add-a-language"></a>
+
+### Add your language
+
+[Propose a language or suggest a translation fix](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml). You can also send a pull request with a new translation or a correction.
+
+1. Choose a canonical BCP 47 language tag, the name readers use for the language, and the writing direction. Look in the language menu and translation issues for work already underway.
+2. Use an existing file in `scripts/readme-locales/` as a starting point. Translate every section against the English sources listed above. Keep commands, paths, placeholders, and the advertised scope intact.
+3. Add a file with the same tag in `scripts/directory-locales/`. Keep the IDs from `en.json` and translate their titles and problem descriptions. Localize the category and standard names in the README language file.
+4. Run `npm run docs:generate`, `npm run docs:check`, `npm run verify`, `npm run benchmark`, and `npm run release:check`. Check the language menu, links, and GitHub layout on a narrow screen. Include the sources and regenerated files in your pull request.
+
+</div>
+
 <a id="tr"></a>
 
 ## Türkçe
+
+<div lang="tr" dir="ltr">
 
 Proje sahibi değişiklikleri kapsam, kaynaklar, testler, lisans ve ana kayıtlarla tutarlılık açısından inceler. Yeni kategori, uyumluluğu etkileyen değişiklik veya yayın politikası için bir issue açabilirsin. Yayına ne zaman hazır olduğuna proje sahibi karar verir ve önemli sınırları sürüm notlarına yazar.
 
@@ -73,9 +90,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [Beceri Dizini](../docs/i18n/tr/README.md#skill-directory) · [Davranış kuralları](CODE_OF_CONDUCT.md) · [Güvenlik politikası](SECURITY.md) · [Erişilebilirlik](ACCESSIBILITY.md)
 
+<a id="add-a-language-tr"></a>
+
+### Kendi dilini ekle
+
+[Yeni bir dil öner veya çeviri düzeltmesi gönder](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="de"></a>
 
 ## Deutsch
+
+<div lang="de" dir="ltr">
 
 Der Maintainer prüft Umfang, Quellen, Tests, Lizenz und Übereinstimmung mit den Originalen. Besprich neue Kategorien, inkompatible Änderungen und die Veröffentlichungspraxis in einem Issue. Der Maintainer entscheidet über die Veröffentlichung und hält wichtige Grenzen in den Versionshinweisen fest.
 
@@ -98,9 +125,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [Skill-Verzeichnis](../docs/i18n/de/README.md#skill-directory) · [Verhaltensregeln](CODE_OF_CONDUCT.md) · [Sicherheit](SECURITY.md) · [Barrierefreiheit](ACCESSIBILITY.md)
 
+<a id="add-a-language-de"></a>
+
+### Eigene Sprache hinzufügen
+
+[Eine Sprache vorschlagen oder eine Übersetzung korrigieren](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="es"></a>
 
 ## Español
+
+<div lang="es" dir="ltr">
 
 El responsable revisa el alcance, las fuentes, las pruebas, la licencia y la coherencia con los registros originales. Abre una incidencia para debatir categorías nuevas, cambios incompatibles o cambios en la política de lanzamientos. El responsable decide cuándo publicar y registra las limitaciones relevantes.
 
@@ -123,9 +160,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [Directorio de habilidades](../docs/i18n/es/README.md#skill-directory) · [Código de conducta](CODE_OF_CONDUCT.md) · [Política de seguridad](SECURITY.md) · [Accesibilidad](ACCESSIBILITY.md)
 
+<a id="add-a-language-es"></a>
+
+### Añade tu idioma
+
+[Propón un idioma o una corrección de traducción](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="fr"></a>
 
 ## Français
+
+<div lang="fr" dir="ltr">
 
 Le mainteneur vérifie le périmètre, les sources, les tests, la licence et la cohérence avec les fiches d’origine. Ouvrez une issue pour discuter d’une nouvelle catégorie, d’une rupture de compatibilité ou d’un changement de politique de publication. Le mainteneur décide de la sortie et en signale les limites.
 
@@ -148,9 +195,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [Répertoire des skills](../docs/i18n/fr/README.md#skill-directory) · [Code de conduite](CODE_OF_CONDUCT.md) · [Politique de sécurité](SECURITY.md) · [Accessibilité](ACCESSIBILITY.md)
 
+<a id="add-a-language-fr"></a>
+
+### Ajouter votre langue
+
+[Proposer une langue ou une correction de traduction](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="ja"></a>
 
 ## 日本語
+
+<div lang="ja" dir="ltr">
 
 メンテナーは範囲、出典、テスト、ライセンス、原本との整合性を確認します。新しい分類、互換性に関わる変更、公開方針は issue で相談できます。公開の判断はメンテナーが行い、重要な制約をリリースノートに記録します。
 
@@ -173,9 +230,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [スキルディレクトリ](../docs/i18n/ja/README.md#skill-directory) · [行動規範](CODE_OF_CONDUCT.md) · [セキュリティ](SECURITY.md) · [アクセシビリティ](ACCESSIBILITY.md)
 
+<a id="add-a-language-ja"></a>
+
+### 自分の言語を追加
+
+[言語の追加や翻訳の修正を提案する](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="pt-br"></a>
 
 ## Português (Brasil)
+
+<div lang="pt-BR" dir="ltr">
 
 A manutenção revisa escopo, fontes, testes, licença e coerência com os registros originais. Use uma issue para discutir categorias novas, mudanças incompatíveis ou a política de lançamentos. A manutenção decide quando publicar e registra as limitações importantes nas notas.
 
@@ -198,9 +265,19 @@ npm run benchmark
 
 [Contributing (English)](#en) · [Diretório de habilidades](../docs/i18n/pt-BR/README.md#skill-directory) · [Código de conduta](CODE_OF_CONDUCT.md) · [Política de segurança](SECURITY.md) · [Acessibilidade](ACCESSIBILITY.md)
 
+<a id="add-a-language-pt-br"></a>
+
+### Adicione seu idioma
+
+[Sugira um idioma ou uma correção de tradução](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
 <a id="zh-cn"></a>
 
 ## 简体中文
+
+<div lang="zh-CN" dir="ltr">
 
 维护者会审核范围、来源、测试、许可，以及是否与原始记录一致。新增类别、破坏兼容性的变更和发布政策可通过 issue 讨论。维护者决定何时发布，并在发布说明中记录重要限制。
 
@@ -222,3 +299,653 @@ npm run benchmark
 ```
 
 [Contributing (English)](#en) · [技能目录](../docs/i18n/zh-CN/README.md#skill-directory) · [行为准则](CODE_OF_CONDUCT.md) · [安全策略](SECURITY.md) · [无障碍](ACCESSIBILITY.md)
+
+<a id="add-a-language-zh-cn"></a>
+
+### 添加你的语言
+
+[建议新增语言或修正翻译](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="ar"></a>
+
+## العربية
+
+<div lang="ar" dir="rtl">
+
+يقوم المشرف بمراجعة التغييرات فيما يتعلق بالنطاق والمصادر والاختبارات والترخيص والاتساق مع المواد الأساسية. استخدم مشكلة لمناقشة فئة جديدة، أو تغيير جذري، أو تغيير في سياسة الإصدار. يقرر المشرف متى يكون الإصدار جاهزًا ويسجل القيود المهمة في ملاحظاته.
+
+أضف قرارًا هندسيًا، أو قم بتحسين مثال أو ترجمة، أو أخبرنا بما يمكن أن يعمل بشكل أفضل.
+
+1. ابحث في الكتالوج عن القرار قبل إضافة سجل.
+2. قم بتحرير Markdown الإنجليزي الأساسي باستخدام السيناريوهات والمصادر والأسماء المستعارة والتحققات الأصلية.
+3. قم بإعادة إنشاء الكتالوج وقم بتضمين المستندات والفهارس الناتجة في طلب السحب الخاص بك.
+4. تشغيل الشيكات. للحصول على ترجمة، راجع النص الإنجليزي المقابل والروابط والأوامر والتحذيرات.
+
+أضف عنوانًا وبيان مشكلة قصيرًا لمعرف السجل إلى كل ملف ضمن `scripts/directory-locales/`. يرتبط الدليل بالسجلات الأساسية، ويشير كتالوج المعرفة إلى الدليل. تستخدم فهارس المهارات وبحث CLI/MCP نفس السجلات. يشرح القسم الإنجليزي من هذا الدليل المولدات.
+
+<div dir="ltr">
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+</div>
+
+[Contributing (English)](#en) · [دليل المهارات](../docs/i18n/ar/README.md#skill-directory) · [مدونة قواعد السلوك](CODE_OF_CONDUCT.md) · [السياسة الأمنية](SECURITY.md) · [إمكانية الوصول](ACCESSIBILITY.md)
+
+<a id="add-a-language-ar"></a>
+
+### أضف لغتك
+
+[اقترح لغة جديدة أو تصحيحًا للترجمة](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="az"></a>
+
+## Azərbaycanca
+
+<div lang="az" dir="ltr">
+
+Tərtibatçı dəyişiklikləri əhatə dairəsi, mənbələri, testləri, lisenziyalaşdırma və kanonik materiala uyğunluğu üçün nəzərdən keçirir. Yeni kateqoriyanı, kəskin dəyişikliyi və ya buraxılış siyasətindəki dəyişikliyi müzakirə etmək üçün məsələdən istifadə edin. Nəzarətçi buraxılışın nə vaxt hazır olacağına qərar verir və onun qeydlərində mühüm məhdudiyyətləri qeyd edir.
+
+Mühəndislik qərarı əlavə edin, nümunə və ya tərcüməni təkmilləşdirin və ya daha yaxşı nəyin işləyə biləcəyini bizə deyin.
+
+1. Yeni qeyd əlavə etməzdən əvvəl həmin qərarın kataloqda olub-olmadığını yoxlayın.
+2. Əsas ingilisdilli Markdown faylını redaktə edin. Öz ssenarinizi, mənbələri, alternativ axtarış ifadələrini və yoxlamaları əlavə edin.
+3. Kataloqu yenidən yaradın. Yenilənmiş sənədləri və indeksləri pull request-ə daxil edin.
+4. Yoxlamaları işə salın. Tərcümə hazırlayırsınızsa, ingiliscə mətnlə yanaşı keçidləri, əmrləri və vacib qeydləri də yoxlayın.
+
+`scripts/directory-locales/` altında hər bir fayla qeyd ID-si üçün başlıq və qısa problem bəyanatı əlavə edin. Kataloq kanonik qeydlərə, Bilik Kataloq isə Kataloqa işarə edir. Bacarıq indeksləri və CLI/MCP axtarışı eyni qeydlərdən istifadə edir. Bu təlimatın İngilis bölməsi generatorları izah edir.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Bacarıq kataloqu](../docs/i18n/az/README.md#skill-directory) · [Davranış kodeksi](CODE_OF_CONDUCT.md) · [Təhlükəsizlik siyasəti](SECURITY.md) · [Əlçatanlıq](ACCESSIBILITY.md)
+
+<a id="add-a-language-az"></a>
+
+### Dilini əlavə et
+
+[Yeni tərcümə və ya düzəliş təklif et](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="fa"></a>
+
+## فارسی
+
+<div lang="fa" dir="rtl">
+
+نگهدارنده تغییرات را برای دامنه، منابع، آزمایش‌ها، مجوزها و سازگاری با مواد متعارف بررسی می‌کند. از یک موضوع برای بحث در مورد یک دسته جدید، یک تغییر قطعی یا تغییر در خط مشی انتشار استفاده کنید. نگهدارنده تصمیم می گیرد که یک نسخه آماده باشد و محدودیت های مهم را در یادداشت های خود ثبت می کند.
+
+یک تصمیم مهندسی اضافه کنید، یک مثال یا ترجمه را بهبود ببخشید، یا به ما بگویید چه چیزی می‌تواند بهتر کار کند.
+
+1. قبل از افزودن رکورد، کاتالوگ را برای تصمیم گیری جستجو کنید.
+2. Markdown انگلیسی متعارف را با سناریوهای اصلی، منابع، نام‌های مستعار و بررسی‌ها ویرایش کنید.
+3. کاتالوگ را بازسازی کنید و اسناد و نمایه های حاصل را در درخواست کشش خود بگنجانید.
+4. چک ها را اجرا کنید. برای ترجمه، متن انگلیسی مربوطه، پیوندها، دستورات و هشدارها را مرور کنید.
+
+یک عنوان و یک بیانیه مشکل کوتاه برای شناسه رکورد به هر فایل زیر `scripts/directory-locales/` اضافه کنید. دایرکتوری به سوابق متعارف پیوند می زند و کاتالوگ دانش به دایرکتوری اشاره می کند. شاخص های مهارت و جستجوی CLI/MCP از همان رکوردها استفاده می کنند. بخش انگلیسی این راهنما ژنراتورها را توضیح می دهد.
+
+<div dir="ltr">
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+</div>
+
+[Contributing (English)](#en) · [فهرست راهنماهای مهندسی](../docs/i18n/fa/README.md#skill-directory) · [منشور رفتار](CODE_OF_CONDUCT.md) · [سیاست امنیتی](SECURITY.md) · [قابلیت دسترسی](ACCESSIBILITY.md)
+
+<a id="add-a-language-fa"></a>
+
+### زبان خودت را اضافه کن
+
+[پیشنهاد زبان تازه یا اصلاح ترجمه](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="hi"></a>
+
+## हिन्दी
+
+<div lang="hi" dir="ltr">
+
+अनुरक्षक विहित सामग्री के दायरे, स्रोतों, परीक्षणों, लाइसेंसिंग और स्थिरता के लिए परिवर्तनों की समीक्षा करता है। किसी नई श्रेणी, ब्रेकिंग परिवर्तन, या रिलीज़ नीति में बदलाव पर चर्चा करने के लिए किसी मुद्दे का उपयोग करें। अनुरक्षक यह निर्णय लेता है कि कोई रिलीज़ कब तैयार है और अपने नोट्स में महत्वपूर्ण सीमाएँ दर्ज करता है।
+
+एक इंजीनियरिंग निर्णय जोड़ें, एक उदाहरण या अनुवाद में सुधार करें, या हमें बताएं कि क्या बेहतर काम कर सकता है।
+
+1. रिकॉर्ड जोड़ने से पहले निर्णय के लिए कैटलॉग खोजें।
+2. मूल परिदृश्यों, स्रोतों, उपनामों और जाँचों के साथ विहित अंग्रेजी मार्कडाउन को संपादित करें।
+3. कैटलॉग को पुन: उत्पन्न करें और परिणामी दस्तावेज़ों और अनुक्रमणिका को अपने पुल अनुरोध में शामिल करें।
+4. चेक चलाएँ. अनुवाद के लिए, संबंधित अंग्रेजी पाठ, लिंक, आदेश और चेतावनी की समीक्षा करें।
+
+`scripts/directory-locales/` के अंतर्गत प्रत्येक फ़ाइल में रिकॉर्ड आईडी के लिए एक शीर्षक और एक संक्षिप्त समस्या विवरण जोड़ें। निर्देशिका विहित रिकॉर्ड से लिंक करती है, और ज्ञान कैटलॉग निर्देशिका की ओर इशारा करती है। कौशल सूचकांक और CLI/MCP खोज समान रिकॉर्ड का उपयोग करते हैं। इस गाइड का अंग्रेजी अनुभाग जेनरेटर की व्याख्या करता है।
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [कौशल निर्देशिका](../docs/i18n/hi/README.md#skill-directory) · [आचार संहिता](CODE_OF_CONDUCT.md) · [सुरक्षा नीति](SECURITY.md) · [सरल उपयोग](ACCESSIBILITY.md)
+
+<a id="add-a-language-hi"></a>
+
+### अपनी भाषा जोड़ें
+
+[नई भाषा या अनुवाद में सुधार सुझाएँ](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="id"></a>
+
+## Bahasa Indonesia
+
+<div lang="id" dir="ltr">
+
+Pengelola meninjau perubahan untuk cakupan, sumber, pengujian, perizinan, dan konsistensi dengan materi kanonik. Gunakan isu untuk mendiskusikan kategori baru, perubahan yang dapat menyebabkan gangguan, atau perubahan pada kebijakan rilis. Pengelola memutuskan kapan rilis siap dan mencatat batasan-batasan penting dalam catatannya.
+
+Tambahkan keputusan teknik, perbaiki contoh atau terjemahan, atau beri tahu kami apa yang bisa lebih baik.
+
+1. Cari katalog untuk keputusan sebelum menambahkan catatan.
+2. Edit Penurunan Harga Bahasa Inggris kanonik dengan skenario, sumber, alias, dan pemeriksaan asli.
+3. Buat ulang katalog dan sertakan dokumen dan indeks yang dihasilkan dalam permintaan penarikan Anda.
+4. Jalankan pemeriksaan. Untuk terjemahan, tinjau teks bahasa Inggris yang sesuai, tautan, perintah, dan peringatan.
+
+Tambahkan judul dan pernyataan masalah singkat untuk ID rekaman ke setiap file di bawah `scripts/directory-locales/`. Direktori tertaut ke catatan kanonis, dan Katalog Pengetahuan mengarah ke Direktori. Indeks keterampilan dan pencarian CLI/MCP menggunakan catatan yang sama. Bagian bahasa Inggris dari panduan ini menjelaskan tentang generator.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Direktori Keterampilan](../docs/i18n/id/README.md#skill-directory) · [Kode etik](CODE_OF_CONDUCT.md) · [Kebijakan keamanan](SECURITY.md) · [Aksesibilitas](ACCESSIBILITY.md)
+
+<a id="add-a-language-id"></a>
+
+### Tambahkan bahasa Anda
+
+[Usulkan bahasa baru atau perbaikan terjemahan](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="it"></a>
+
+## Italiano
+
+<div lang="it" dir="ltr">
+
+Il manutentore esamina le modifiche per ambito, fonti, test, licenza e coerenza con il materiale canonico. Utilizza un problema per discutere di una nuova categoria, di una modifica sostanziale o di una modifica alla politica di rilascio. Il manutentore decide quando un rilascio è pronto e registra importanti limitazioni nelle sue note.
+
+Aggiungi una decisione tecnica, migliora un esempio o una traduzione oppure dicci cosa potrebbe funzionare meglio.
+
+1. Cerca la decisione nel catalogo prima di aggiungere un record.
+2. Modifica il canonico Markdown inglese con scenari, fonti, alias e controlli originali.
+3. Rigenera il catalogo e includi i documenti e gli indici risultanti nella tua richiesta pull.
+4. Esegui i controlli. Per una traduzione, rivedere il testo, i collegamenti, i comandi e gli avvertimenti in inglese corrispondenti.
+
+Aggiungi un titolo e una breve dichiarazione del problema per l'ID del record a ciascun file in `scripts/directory-locales/`. La Directory si collega ai documenti canonici e il Catalogo della conoscenza punta alla Directory. Gli indici di competenza e la ricerca CLI/MCP utilizzano gli stessi record. La sezione inglese di questa guida spiega i generatori.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Elenco delle competenze](../docs/i18n/it/README.md#skill-directory) · [Codice di condotta](CODE_OF_CONDUCT.md) · [Politica di sicurezza](SECURITY.md) · [Accessibilità](ACCESSIBILITY.md)
+
+<a id="add-a-language-it"></a>
+
+### Aggiungi la tua lingua
+
+[Proponi una nuova lingua o una correzione](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="kk"></a>
+
+## Қазақша
+
+<div lang="kk" dir="ltr">
+
+Техникалық қызмет көрсетуші өзгерістерді ауқым, көздер, сынақтар, лицензиялау және канондық материалға сәйкестік бойынша қарайды. Жаңа санатты, үзіліссіз өзгертуді немесе шығару саясатындағы өзгертуді талқылау үшін мәселені пайдаланыңыз. Қолданушы шығарылым қашан дайын екенін шешеді және оның жазбаларында маңызды шектеулерді жазады.
+
+Инженерлік шешімді қосыңыз, мысалды немесе аударманы жақсартыңыз немесе не жақсырақ жұмыс істейтінін айтыңыз.
+
+1. Жазбаны қоспас бұрын шешім үшін каталогтан іздеңіз.
+2. Түпнұсқа сценарийлермен, көздермен, бүркеншік аттармен және тексерулермен канондық ағылшын Markdown өңдеңіз.
+3. Каталогты қайта жасаңыз және алынған құжаттар мен индекстерді тарту сұрауыңызға қосыңыз.
+4. Тексерулерді орындаңыз. Аударма үшін сәйкес ағылшын тіліндегі мәтінді, сілтемелерді, пәрмендерді және ескертулерді қарап шығыңыз.
+
+`scripts/directory-locales/` астындағы әрбір файлға жазба идентификаторы үшін тақырып пен қысқаша мәселе мәлімдемесін қосыңыз. Каталог канондық жазбаларға сілтеме жасайды, ал Білім каталогы каталогқа нұсқайды. Біліктілік индекстері мен CLI/MCP іздеу бірдей жазбаларды пайдаланады. Осы нұсқаулықтың ағылшынша бөлімінде генераторлар түсіндіріледі.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Дағдылар каталогы](../docs/i18n/kk/README.md#skill-directory) · [Мінез-құлық кодексі](CODE_OF_CONDUCT.md) · [Қауіпсіздік саясаты](SECURITY.md) · [Қол жетімділік](ACCESSIBILITY.md)
+
+<a id="add-a-language-kk"></a>
+
+### Өз тіліңізді қосыңыз
+
+[Жаңа аударма немесе түзету ұсыну](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="ko"></a>
+
+## 한국어
+
+<div lang="ko" dir="ltr">
+
+관리자는 범위, 소스, 테스트, 라이센스 및 표준 자료와의 일관성에 대한 변경 사항을 검토합니다. 이슈를 사용하여 새로운 카테고리, 주요 변경 사항 또는 릴리스 정책 변경 사항에 대해 논의하세요. 관리자는 릴리스가 언제 준비되는지 결정하고 노트에 중요한 제한 사항을 기록합니다.
+
+엔지니어링 결정을 추가하거나, 예제나 번역을 개선하거나, 무엇이 더 나은지 알려주세요.
+
+1. 기록을 추가하기 전에 카탈로그에서 결정을 검색하세요.
+2. 원본 시나리오, 소스, 별칭 및 검사를 사용하여 표준 영어 마크다운을 편집합니다.
+3. 카탈로그를 다시 생성하고 끌어오기 요청에 결과 문서와 색인을 포함합니다.
+4. 검사를 실행하십시오. 번역하려면 해당 영어 텍스트, 링크, 명령 및 주의 사항을 검토하세요.
+
+`scripts/directory-locales/` 아래의 각 파일에 레코드 ID에 대한 제목과 짧은 문제 설명을 추가합니다. 디렉토리는 표준 레코드에 연결되고 지식 카탈로그는 디렉토리를 가리킵니다. 스킬 인덱스와 CLI/MCP 검색은 동일한 레코드를 사용합니다. 이 가이드의 영어 섹션에서는 생성기에 대해 설명합니다.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [스킬 디렉토리](../docs/i18n/ko/README.md#skill-directory) · [행동강령](CODE_OF_CONDUCT.md) · [보안정책](SECURITY.md) · [접근성](ACCESSIBILITY.md)
+
+<a id="add-a-language-ko"></a>
+
+### 내 언어 추가하기
+
+[새 언어 또는 번역 수정 제안하기](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="ky"></a>
+
+## Кыргызча
+
+<div lang="ky" dir="ltr">
+
+Колдоочу өзгөртүүлөрдүн көлөмүн, булактарын, сыноолорду, лицензиялоону жана канондук материалга шайкештигин карап чыгат. Жаңы категорияны, үзгүлтүксүз өзгөртүүнү же чыгаруу саясатын өзгөртүүнү талкуулоо үчүн маселени колдонуңуз. Чыгаруу качан даяр болорун тейлөөчү чечет жана анын эскертүүлөрүндө маанилүү чектөөлөрдү жазат.
+
+Инженердик чечимди кошуңуз, мисалды же котормону жакшыртыңыз же эмне жакшыраак иштей турганын айтыңыз.
+
+1. Жазууну кошуудан мурун чечимди каталогдон издеңиз.
+2. Оригиналдуу сценарийлер, булактар, лакап аттар жана текшерүүлөр менен канондук англисче Markdownду түзөтүңүз.
+3. Каталогду кайра жаратыңыз жана алынган документтерди жана индекстерди тартуу өтүнүчүңүзгө киргизиңиз.
+4. Текшерүүлөрдү жүргүзүңүз. Котормо үчүн тиешелүү англисче текстти, шилтемелерди, буйруктарды жана эскертүүлөрдү карап чыгыңыз.
+
+`scripts/directory-locales/` астындагы ар бир файлга жазуу идентификаторуна аталышты жана көйгөйдүн кыскача билдирүүсүн кошуңуз. Каталог канондук жазууларга, ал эми Билим каталогу каталогго шилтеме кылат. Чеберликтин индекстери жана CLI/MCP издөө бир эле жазууларды колдонушат. Бул колдонмонун англис бөлүмү генераторлорду түшүндүрөт.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Көндүмдөр каталогу](../docs/i18n/ky/README.md#skill-directory) · [Жүрүм-турум кодекси](CODE_OF_CONDUCT.md) · [Коопсуздук саясаты](SECURITY.md) · [Жеткиликтүүлүк](ACCESSIBILITY.md)
+
+<a id="add-a-language-ky"></a>
+
+### Өз тилиңизди кошуңуз
+
+[Жаңы котормо же оңдоо сунуштоо](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="ru"></a>
+
+## Русский
+
+<div lang="ru" dir="ltr">
+
+Сопровождающий проверяет изменения на предмет объема, источников, тестов, лицензирования и соответствия каноническому материалу. Используйте проблему, чтобы обсудить новую категорию, критическое изменение или изменение политики выпуска. Сопровождающий решает, когда релиз будет готов, и записывает важные ограничения в свои примечания.
+
+Добавьте инженерное решение, улучшите пример или перевод или расскажите нам, что могло бы работать лучше.
+
+1. Прежде чем добавлять запись, ищите решение в каталоге.
+2. Отредактируйте канонический английский Markdown, используя оригинальные сценарии, источники, псевдонимы и проверки.
+3. Восстановите каталог и включите полученные документы и индексы в свой запрос на включение.
+4. Запустите проверки. Для перевода просмотрите соответствующий английский текст, ссылки, команды и предостережения.
+
+Добавьте заголовок и краткое описание проблемы для идентификатора записи в каждый файл в папке `scripts/directory-locales/`. Справочник ссылается на канонические записи, а Каталог знаний указывает на Справочник. Индексы навыков и поиск CLI/MCP используют одни и те же записи. В английском разделе данного руководства описаны генераторы.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Каталог навыков](../docs/i18n/ru/README.md#skill-directory) · [Кодекс поведения](CODE_OF_CONDUCT.md) · [Политика безопасности](SECURITY.md) · [Доступность](ACCESSIBILITY.md)
+
+<a id="add-a-language-ru"></a>
+
+### Добавить свой язык
+
+[Предложить новый перевод или исправление](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="th"></a>
+
+## ไทย
+
+<div lang="th" dir="ltr">
+
+ผู้ดูแลจะตรวจสอบการเปลี่ยนแปลงขอบเขต แหล่งที่มา การทดสอบ ใบอนุญาต และความสอดคล้องกับเนื้อหาตามรูปแบบบัญญัติ ใช้ประเด็นเพื่อหารือเกี่ยวกับหมวดหมู่ใหม่ การเปลี่ยนแปลงที่สำคัญ หรือการเปลี่ยนแปลงนโยบายการเผยแพร่ ผู้ดูแลจะตัดสินใจว่าเมื่อใดที่รีลีสจะพร้อมและบันทึกข้อจำกัดที่สำคัญไว้ในบันทึกย่อ
+
+เพิ่มการตัดสินใจทางวิศวกรรม ปรับปรุงตัวอย่างหรือการแปล หรือบอกเราว่าสิ่งใดทำงานได้ดีกว่า
+
+1. ค้นหาแค็ตตาล็อกเพื่อดูการตัดสินใจก่อนเพิ่มบันทึก
+2. แก้ไข Markdown ภาษาอังกฤษตามรูปแบบบัญญัติด้วยสถานการณ์ แหล่งที่มา นามแฝง และเช็คดั้งเดิม
+3. สร้างแค็ตตาล็อกใหม่และรวมเอกสารและดัชนีผลลัพธ์ในคำขอดึงของคุณ
+4. ดำเนินการตรวจสอบ สำหรับการแปล ให้ตรวจสอบข้อความภาษาอังกฤษ ลิงก์ คำสั่ง และคำเตือนที่เกี่ยวข้อง
+
+เพิ่มชื่อเรื่องและคำชี้แจงปัญหาสั้นๆ สำหรับรหัสบันทึกลงในแต่ละไฟล์ภายใต้ `scripts/directory-locales/` ไดเร็กทอรีจะลิงก์ไปยังบันทึกตามรูปแบบบัญญัติ และแค็ตตาล็อกความรู้จะชี้ไปที่ไดเร็กทอรี ดัชนีทักษะและการค้นหา CLI/MCP ใช้บันทึกเดียวกัน ส่วนภาษาอังกฤษของคู่มือนี้จะอธิบายเกี่ยวกับเครื่องปั่นไฟ
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [ไดเรกทอรีทักษะ](../docs/i18n/th/README.md#skill-directory) · [จรรยาบรรณ](CODE_OF_CONDUCT.md) · [นโยบายความปลอดภัย](SECURITY.md) · [การเข้าถึง](ACCESSIBILITY.md)
+
+<a id="add-a-language-th"></a>
+
+### เพิ่มภาษาของคุณ
+
+[เสนอภาษาใหม่หรือแจ้งแก้ไขคำแปล](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="tk"></a>
+
+## Türkmençe
+
+<div lang="tk" dir="ltr">
+
+Saklaýjy, göwrümi, çeşmeleri, synaglary, ygtyýarnamasy we kanoniki material bilen yzygiderliligi gözden geçirýär. Täze kategoriýany, bozulan üýtgeşmäni ýa-da goýberiş syýasatyna üýtgetmeleri ara alyp maslahatlaşmak üçin bir meseläni ulanyň. Saklaýjy, goýberilişiň haçan boljakdygyny kesgitleýär we belliklerinde möhüm çäklendirmeleri ýazýar.
+
+Inženerçilik kararyny goşuň, mysal ýa-da terjime gowulaşdyryň ýa-da has gowy işläp biljek zatlary aýdyň.
+
+1. Recordazgy goşmazdan ozal karar üçin katalogy gözläň.
+2. Asyl ssenariýler, çeşmeler, lakamlar we çekler bilen kanoniki Iňlis Markdown-y redaktirläň.
+3. Katalogy täzeden dörediň we alnan resminamalary we indeksleri çekmek islegiňize goşuň.
+4. Barlaglary işlediň. Terjime üçin degişli iňlis dilindäki teksti, baglanyşyklary, buýruklary we gowaklary gözden geçiriň.
+
+`scripts/directory-locales/` aşagyndaky her faýla ýazgy ID-si üçin at we gysga mesele beýany goşuň. Katalog kanoniki ýazgylara baglanyşýar, Bilimler katalogy bolsa katalogy görkezýär. Ussatlyk görkezijileri we CLI / MCP gözleg şol bir ýazgylary ulanýar. Bu gollanmanyň iňlis bölümi generatorlary düşündirýär.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Başarnyklar katalogy](../docs/i18n/tk/README.md#skill-directory) · [Özüňi alyp baryş şertleri](CODE_OF_CONDUCT.md) · [Howpsuzlyk syýasaty](SECURITY.md) · [Elýeterlilik](ACCESSIBILITY.md)
+
+<a id="add-a-language-tk"></a>
+
+### Öz diliňizi goşuň
+
+[Täze terjime ýa-da düzediş teklip ediň](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="tt"></a>
+
+## Татарча
+
+<div lang="tt" dir="ltr">
+
+Саклаучы масштаб, чыганаклар, тестлар, лицензияләү һәм каноник материал белән эзлеклелек өчен үзгәрешләрне карый. Яңа категория, бозылу яки чыгару политикасына үзгәрешләр кертү өчен проблема кулланыгыз. Саклаучы чыгарылыш әзер булганда карар кабул итә һәм мөһим чикләүләрне үз язмаларына яздыра.
+
+Инженерлык карарын өстәгез, мисалны яки тәрҗемәне яхшыртыгыз, яисә яхшырак нәрсә эшләргә икәнен әйтегез.
+
+1. Язма өстәгәнче карар өчен каталогны эзләгез.
+2. Оригиналь сценарийлар, чыганаклар, псевдонимнар һәм тикшерүләр белән каноник Инглиз Маркдаунны редакцияләгез.
+3. Каталогны яңартыгыз һәм килеп чыккан документлар һәм индексларны үзегезнең сорауга кертегез.
+4. Чекларны эшләгез. Тәрҗемә өчен тиешле инглиз текстын, сылтамаларны, боерыкларны һәм упкыннарны карагыз.
+
+`scripts/directory-locales/` астындагы һәр файлга язу ID өчен исем һәм кыска проблема аңлатмасы өстәгез. Белешмәлек каноник язмаларга бәйләнә, һәм Белем каталогы каталогка күрсәтә. Осталык индекслары һәм CLI / MCP эзләү бер үк язмаларны кулланалар. Бу кулланманың инглиз бүлеге генераторларны аңлата.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Осталык белешмәсе](../docs/i18n/tt/README.md#skill-directory) · [Тәртип кодексы](CODE_OF_CONDUCT.md) · [Куркынычсызлык политикасы](SECURITY.md) · [Уңайлык](ACCESSIBILITY.md)
+
+<a id="add-a-language-tt"></a>
+
+### Үз телеңне өстә
+
+[Яңа тәрҗемә яки төзәтмә тәкъдим ит](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="ug"></a>
+
+## ئۇيغۇرچە
+
+<div lang="ug" dir="rtl">
+
+قوغدىغۇچى دائىرە ، مەنبە ، سىناق ، ئىجازەتنامە ۋە قانۇنىيەتلىك ماتېرىياللارنىڭ بىردەكلىكىنى ئۆزگەرتىدۇ. بىر مەسىلىنى ئىشلىتىپ يېڭى سەھىپە ، بۆسۈش خاراكتېرلىك ئۆزگىرىش ياكى قويۇپ بېرىش سىياسىتىگە ئۆزگەرتىش ئېلىپ بېرىڭ. قوغدىغۇچى قويۇپ بېرىشنىڭ قاچان تەييارلىنىدىغانلىقىنى قارار قىلىدۇ ۋە خاتىرىسىدىكى مۇھىم چەكلىمىلەرنى خاتىرىلەيدۇ.
+
+ئىنژېنېرلىق قارارىنى قوشۇڭ ، مىسال ياكى تەرجىمىنى ياخشىلاڭ ياكى بىزگە تېخىمۇ ياخشى ئىش قىلالايدىغانلىقىنى سۆزلەپ بېرىڭ.
+
+1. خاتىرە قوشۇشتىن بۇرۇن قارارنىڭ مۇندەرىجىسىنى ئىزدەڭ.
+2. ئەسلى سىنارىيە ، مەنبەلەر ، ئىسىملار ۋە تەكشۈرۈشلەر بىلەن Canonical English Markdown نى تەھرىرلەڭ.
+3. مۇندەرىجىنى قايتا ھاسىل قىلىڭ ھەمدە ھاسىل بولغان ھۆججەت ۋە كۆرسەتكۈچلەرنى تارتىش تەلىپىڭىزگە كىرگۈزۈڭ.
+4. تەكشۈرۈشنى ئىجرا قىلىڭ. تەرجىمە ئۈچۈن ماس كېلىدىغان ئىنگلىزچە تېكىست ، ئۇلىنىش ، بۇيرۇق ۋە ئۆڭكۈرلەرنى كۆرۈڭ.
+
+`scripts/directory-locales/` ئاستىدىكى ھەر بىر ھۆججەتكە خاتىرە كىملىكى ئۈچۈن تېما ۋە قىسقا مەسىلە باياناتى قوشۇڭ. مۇندەرىجە قانۇنىيەتلىك خاتىرىلەرگە ئۇلىنىدۇ ، بىلىملەر مۇندەرىجىسى مۇندەرىجىنى كۆرسىتىدۇ. ماھارەت كۆرسەتكۈچى ۋە CLI / MCP ئىزدەش ئوخشاش خاتىرىلەرنى ئىشلىتىدۇ. بۇ قوللانمىنىڭ ئىنگلىزچە بۆلىكى گېنېراتورلارنى چۈشەندۈرۈپ بېرىدۇ.
+
+<div dir="ltr">
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+</div>
+
+[Contributing (English)](#en) · [ماھارەت مۇندەرىجىسى](../docs/i18n/ug/README.md#skill-directory) · [ھەرىكەت مىزانى](CODE_OF_CONDUCT.md) · [بىخەتەرلىك سىياسىتى](SECURITY.md) · [قولايلىق](ACCESSIBILITY.md)
+
+<a id="add-a-language-ug"></a>
+
+### ئۆز تىلىڭىزنى قوشۇڭ
+
+[يېڭى تەرجىمە ياكى تۈزىتىش تەكلىپى بېرىڭ](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="uk"></a>
+
+## Українська
+
+<div lang="uk" dir="ltr">
+
+Супроводжувач переглядає зміни щодо обсягу, джерел, тестів, ліцензування та узгодженості з канонічним матеріалом. Використовуйте проблему, щоб обговорити нову категорію, критичну зміну або зміну політики випуску. Супроводжувач вирішує, коли випуск буде готовий, і записує важливі обмеження у своїх примітках.
+
+Додайте інженерне рішення, покращте приклад чи переклад або скажіть нам, що може працювати краще.
+
+1. Перш ніж додавати запис, знайдіть рішення в каталозі.
+2. Відредагуйте канонічну англійську розмітку з оригінальними сценаріями, джерелами, псевдонімами та перевірками.
+3. Відновіть каталог і додайте отримані документи та індекси до свого запиту на отримання.
+4. Проведіть перевірки. Для перекладу перегляньте відповідний англійський текст, посилання, команди та застереження.
+
+Додайте заголовок і короткий опис проблеми для ідентифікатора запису до кожного файлу в `scripts/directory-locales/`. Довідник посилається на канонічні записи, а Каталог знань вказує на Довідник. Індекси навичок і пошук CLI/MCP використовують однакові записи. Англомовний розділ цього посібника пояснює генератори.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Довідник навичок](../docs/i18n/uk/README.md#skill-directory) · [Кодекс поведінки](CODE_OF_CONDUCT.md) · [Політика безпеки](SECURITY.md) · [Доступність](ACCESSIBILITY.md)
+
+<a id="add-a-language-uk"></a>
+
+### Додати свою мову
+
+[Запропонувати новий переклад або виправлення](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="uz"></a>
+
+## Oʻzbekcha
+
+<div lang="uz" dir="ltr">
+
+Ta'minotchi o'zgarishlarni ko'lami, manbalari, sinovlari, litsenziyalash va kanonik materiallarga muvofiqligini ko'rib chiqadi. Yangi toifani muhokama qilish uchun muammodan foydalaning, keskin o'zgarish yoki chiqarish siyosatiga o'zgartirish. Reliz qachon tayyor bo'lishini ta'minlovchi hal qiladi va uning qaydlarida muhim cheklovlarni qayd etadi.
+
+Muhandislik qarorini qo'shing, misol yoki tarjimani yaxshilang yoki bizga nima yaxshiroq ishlashini ayting.
+
+1. Yozuvni qo'shishdan oldin qaror uchun katalogni qidiring.
+2. Asl stsenariylar, manbalar, taxalluslar va cheklar bilan kanonik inglizcha Markdownni tahrirlang.
+3. Katalogni qayta yarating va olingan hujjatlar va indekslarni tortib olish so'rovingizga kiriting.
+4. Tekshiruvlarni bajaring. Tarjima uchun tegishli inglizcha matn, havolalar, buyruqlar va ogohlantirishlarni ko'rib chiqing.
+
+`scripts/directory-locales/` ostidagi har bir faylga yozuv identifikatori uchun sarlavha va qisqa muammo bayonini qo'shing. Katalog kanonik yozuvlarga, bilimlar katalogi esa katalogga ishora qiladi. Malaka indekslari va CLI/MCP qidiruvi bir xil yozuvlardan foydalanadi. Ushbu qo'llanmaning ingliz bo'limi generatorlarni tushuntiradi.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Ko'nikmalar katalogi](../docs/i18n/uz/README.md#skill-directory) · [Xulq-atvor kodeksi](CODE_OF_CONDUCT.md) · [Xavfsizlik siyosati](SECURITY.md) · [Foydalanish imkoniyati](ACCESSIBILITY.md)
+
+<a id="add-a-language-uz"></a>
+
+### Oʻz tilingizni qoʻshing
+
+[Yangi tarjima yoki tuzatish taklif qiling](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="vi"></a>
+
+## Tiếng Việt
+
+<div lang="vi" dir="ltr">
+
+Người bảo trì xem xét các thay đổi về phạm vi, nguồn, kiểm tra, cấp phép và tính nhất quán với tài liệu chuẩn. Sử dụng một vấn đề để thảo luận về một danh mục mới, một thay đổi quan trọng hoặc thay đổi đối với chính sách phát hành. Người bảo trì quyết định khi nào bản phát hành sẵn sàng và ghi lại những hạn chế quan trọng trong ghi chú của mình.
+
+Thêm một quyết định kỹ thuật, cải thiện một ví dụ hoặc bản dịch hoặc cho chúng tôi biết điều gì có thể hoạt động tốt hơn.
+
+1. Tìm kiếm danh mục để tìm quyết định trước khi thêm bản ghi.
+2. Chỉnh sửa Markdown tiếng Anh chuẩn với các kịch bản, nguồn, bí danh và kiểm tra gốc.
+3. Tạo lại danh mục và bao gồm các tài liệu và chỉ mục kết quả trong yêu cầu kéo của bạn.
+4. Chạy kiểm tra. Để có bản dịch, hãy xem lại văn bản tiếng Anh, liên kết, lệnh và cảnh báo tương ứng.
+
+Thêm tiêu đề và tuyên bố vấn đề ngắn cho ID bản ghi vào mỗi tệp trong `scripts/directory-locales/`. Thư mục liên kết đến các bản ghi chuẩn và Danh mục kiến thức trỏ đến Thư mục. Chỉ số kỹ năng và tìm kiếm CLI/MCP sử dụng cùng một bản ghi. Phần tiếng Anh của hướng dẫn này giải thích về máy phát điện.
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [Thư mục kỹ năng](../docs/i18n/vi/README.md#skill-directory) · [Quy tắc ứng xử](CODE_OF_CONDUCT.md) · [Chính sách bảo mật](SECURITY.md) · [Khả năng tiếp cận](ACCESSIBILITY.md)
+
+<a id="add-a-language-vi"></a>
+
+### Thêm ngôn ngữ của bạn
+
+[Đề xuất ngôn ngữ mới hoặc sửa bản dịch](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>
+
+<a id="zh-hant"></a>
+
+## 繁體中文
+
+<div lang="zh-Hant" dir="ltr">
+
+維護者會稽核範圍、來源、測試、許可，以及是否與原始記錄一致。新增類別、破壞相容性的變更和釋出政策可透過 issue 討論。維護者決定何時釋出，並在釋出說明中記錄重要限制。
+
+歡迎增加新的工程決策，改進範例或翻譯，也歡迎告訴我們哪裡還可以做得更好。
+
+1. 新增記錄前先在目錄中查詢已有決策。
+2. 編輯英文原文並提供原創場景、來源、別名和驗證。
+3. 重新產生目錄和索引，把生成檔一同提交審查。
+4. 執行檢查，翻譯時比對英文中的連結、指令和限制。
+
+在 `scripts/directory-locales/` 下每個檔案中，為該 ID 新增標題和簡短的問題描述。技能目錄連結到原始記錄，知識目錄則指向技能目錄。技能索引以及 CLI 和 MCP 的搜尋都使用同一批記錄。本指南的英文部分介紹了各個生成器的作用。
+
+```sh
+npm run catalog
+npm run docs:generate
+npm run verify
+npm run docs:check
+npm run benchmark
+```
+
+[Contributing (English)](#en) · [技能目錄](../docs/i18n/zh-Hant/README.md#skill-directory) · [行為準則](CODE_OF_CONDUCT.md) · [安全策略](SECURITY.md) · [無障礙](ACCESSIBILITY.md)
+
+<a id="add-a-language-zh-hant"></a>
+
+### 新增你的語言
+
+[建議新增語言或修正翻譯](https://github.com/EnesKeremAYDIN/SeniorMode/issues/new?template=translation.yml) · [README translation steps (English)](#add-a-language)
+
+</div>

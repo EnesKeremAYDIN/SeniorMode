@@ -6,6 +6,7 @@ import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Client } from '@modelcontextprotocol/client';
 import { StdioClientTransport } from '@modelcontextprotocol/client/stdio';
+import { locales } from './document-locales.js';
 import { markdownTree, validateDocumentLinks } from './documents.js';
 
 const repo = fileURLToPath(new URL('../', import.meta.url));
@@ -44,9 +45,9 @@ try {
     assert(!existsSync(join(installed, folder)), `Unexpected maintainer files in package: ${folder}`);
   }
   const translations = join(installed, 'docs', 'i18n');
-  const locales = ['de', 'es', 'fr', 'ja', 'pt-BR', 'tr', 'zh-CN'];
-  assert.deepEqual(readdirSync(translations).sort(), locales);
-  for (const locale of locales) {
+  const localized = Object.keys(locales).filter(locale => locale !== 'en').sort();
+  assert.deepEqual(readdirSync(translations).sort(), localized);
+  for (const locale of localized) {
     assert.deepEqual(readdirSync(join(translations, locale)), ['README.md']);
   }
 

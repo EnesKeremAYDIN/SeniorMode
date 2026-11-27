@@ -1,4 +1,7 @@
+import { readmeLocaleSection } from './document-locale-files.js';
+
 export const readmeSectionsByLocale = {
+  ...readmeLocaleSection('sections'),
   "en": {
     "accessibility": "Accessibility",
     "mission": "Start with the result you want. SeniorMode helps your agent turn an ordinary request into decisions that fit your project, protect what matters, and can be verified. The knowledge stays available locally for you and your agent to inspect.",

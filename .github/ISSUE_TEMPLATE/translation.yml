@@ -2,15 +2,27 @@ name: Translation
 description: Improve localization or propose a language.
 title: "[Translation] "
 body:
+  - type: dropdown
+    id: request
+    attributes:
+      label: What would you like to do?
+      options:
+        - Add a language
+        - Improve an existing translation
+    validations:
+      required: true
   - type: input
     id: locale
     attributes:
-      label: Locale and document
+      label: Language name and tag
+      description: Give the name used by readers of the language and its BCP 47 tag, if known.
+      placeholder: Português (Brasil), pt-BR
     validations:
       required: true
   - type: textarea
-    id: evidence
+    id: details
     attributes:
-      label: Current wording, suggested wording, and review evidence
+      label: What should we add or improve?
+      description: For a correction, include the README section or Directory record ID and the wording you suggest. For a new language, tell us whether you can help translate or review it.
     validations:
       required: true

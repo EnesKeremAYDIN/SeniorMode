@@ -1,4 +1,7 @@
+import { readmeLocaleSection } from './document-locale-files.js';
+
 export const readmeFooterByLocale = {
+  ...readmeLocaleSection('footer'),
   en: { starPrompt: 'If SeniorMode helps on your next project, {star} so others can find it.', starAction: 'give it a star on GitHub', acknowledgments: 'SeniorMode builds on these open projects.' },
   tr: { starPrompt: 'SeniorMode işine yaradıysa başkalarının da projeyi keşfedebilmesi için {star}.', starAction: 'GitHub’da yıldız verebilirsin', acknowledgments: 'SeniorMode bu açık projelerin üzerine kurulu.' },
   de: { starPrompt: 'Wenn dir SeniorMode bei einem Projekt hilft, {star}, damit andere es leichter finden.', starAction: 'gib ihm einen Stern auf GitHub', acknowledgments: 'SeniorMode baut auf diesen offenen Projekten auf.' },
@@ -18,6 +21,7 @@ function experience(working, installLead, prompt, newScenario, existingScenario,
 }
 
 export const experienceByLocale = {
+  ...readmeLocaleSection('experience'),
   en: experience(
     'Working code is not enough.',
     'Give this prompt to your coding agent, or choose your agent below for the terminal command.',

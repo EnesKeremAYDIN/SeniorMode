@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Oʻzbekcha",
+    "installAnchor": "install",
+    "nav": {
+      "install": "O'rnatish",
+      "usage": "Foydalanish",
+      "directory": "Ko'nikmalar katalogi",
+      "examples": "Misollar",
+      "faq": "Tez-tez so'raladigan savollar",
+      "contribute": "Hissa"
+    },
+    "headings": {
+      "install": "O'rnatish",
+      "ai": "AI bilan o'rnating",
+      "support": "Qo'llab-quvvatlanadigan agentlar",
+      "use": "Qanday foydalanish kerak",
+      "newProject": "Yangi loyiha",
+      "existing": "Mavjud loyiha",
+      "standards": "Muhandislik standartlari",
+      "library": "Bilimlar katalogi",
+      "directory": "Ko'nikmalar katalogi",
+      "real": "Haqiqiy dunyo misollari",
+      "how": "Bu qanday ishlaydi",
+      "limitations": "Cheklovlar",
+      "roadmap": "Yo'l xaritasi",
+      "docs": "Hujjatlar",
+      "contributors": "Ishtirokchilar",
+      "thanks": "Minnatdorchilik",
+      "license": "Litsenziya",
+      "stars": "Yulduzlar tarixi",
+      "releases": "Relizlar",
+      "shuffle": "Nima uchun aralashish buzilgandek tuyuladi?",
+      "what": "SeniorMode nima?",
+      "why": "Nima uchun SeniorMode?",
+      "compare": "Oldin va keyin",
+      "scopes": "Loyiha va global miqyos",
+      "manual": "Qo'lda o'rnatish",
+      "managed": "CLI tomonidan boshqariladigan o'rnatish",
+      "troubleshoot": "Muammolarni bartaraf etish",
+      "security": "Xavfsizlik siyosati",
+      "conduct": "Xulq-atvor kodeksi"
+    },
+    "columns": {
+      "host": "Agent",
+      "records": "Muhandislik qarorlari",
+      "categories": "Kategoriyalar",
+      "native": "Qo'lda / SeniorMode loyiha yo'li",
+      "project": "Vercel skills loyiha yo'li",
+      "global": "Vercel skills global yo'l",
+      "task": "Foydalanuvchi so'rovi",
+      "decision": "Muhandislik qarori"
+    },
+    "text": {
+      "tagline": "Sunʼiy intellekt kod yozadi. SeniorMode unga muhandislik qarorlarini qabul qilishda yordam beradi.",
+      "subtitle": "Sunʼiy intellekt yordamida kod yozuvchi agentlar uchun amaliy muhandislik bilimlari.",
+      "made": "Turkiyada yaratilgan 🇹🇷",
+      "what": "SeniorMode kod yozuvchi agentingizga muhandislik qarorlari kutubxonasini va ularni qoʻllash tartibini beradi. Agent xatarlarni aniqlaydi, loyihangizga mos yondashuvni tanlaydi va natijani sinab koʻradi.",
+      "quickStart": "Loyihaning asosiy jildida agentingizga mos buyruqni bajaring. Vercel oʻrnatuvchisi uchun kerakli versiya",
+      "firstRun": "Agent seansini qayta ishga tushiring va o'z so'zlaringiz bilan o'zgartirishni so'rang. Agar uy egasi mahoratni tanlamasa, SeniorMode-ni eslatib o'ting. Codex da `$seniormode` aniq mahorat ma'lumotnomasidir. Birlashtirilgan yozuvlar MCP serverisiz ishlaydi.",
+      "cliMcp": "Ixtiyoriy CLI mahalliy yozuvlarni qidiradi. MCP shuningdek, agentingizga standartlar va ish oqimlariga kirish imkonini beradi. SeniorMode mahalliy sifatida API kalitisiz ishlaydi. Sizning agentingiz o'z hisobini talab qilishi mumkin.",
+      "contribute": "Muhandislik qarorini qo'shing, misol yoki tarjimani yaxshilang yoki bizga nima yaxshiroq ishlashini ayting.",
+      "license": "Kod va mahorat ish oqimlari MIT dan foydalanadi. Muhandislik qarorlari kutubxonasi va uning yaratilgan katalog sahifalari CC BY 4.0 dan foydalanadi.",
+      "scopes": "Tavsiya etilgan o'rnatuvchi sukut bo'yicha loyiha doirasidan foydalanadi. Uning ixtiyoriy global bayrog'i uy darajasidagi joylashuvni o'zgartiradi. Boshqariladigan SeniorMode CLI faqat mavjud loyihaga yozadi. Quyidagi har bir mahorat yo'liga seniormode qo'shing. Tilde sizning uy katalogingizni anglatadi.",
+      "external": "Vercel skills `skills-lock.json`-da loyiha o'rnatishlarni va `.skill-lock.json`-da global o'rnatishlarni qayd qiladi. Loyiha yangilanishlari uchun `--project` va global operatsiyalar uchun `--global` dan foydalaning. O'rnatuvchi tanlangan mahorat papkasini va blokirovka faylini o'zgartirishi mumkin.",
+      "manual": "Ishonchli kassadan to'liq `skills/seniormode` katalogini xostning malakalar katalogiga nusxalang. `SKILL.md`, ma'lumotnomalar va litsenziyalarni birga saqlang. Qo'lda nusxangizni yangilash yoki o'chirish uchun har qanday mahalliy tahrirlarni ko'rib chiqqandan so'ng faqat shu jildni almashtiring yoki o'chiring.",
+      "managed": "SeniorMode manba kodi jildida bogʻliqliklarni oʻrnatgach, quyidagi buyruqlarni mavjud loyiha uchun ketma-ket bajaring. CLI uchun kerakli versiya",
+      "ownership": "Boshqariladigan CLI o'rnatilgan fayllarga tegishli ekanligini va ularni yangilash yoki o'chirishdan oldin ular o'zgartirilmaganligini tekshiradi. U boshqariladigan mahorat va uning o'rnatish yozuvlaridagi o'zgarishlarni cheklaydi. Agar kerak bo'lsa, agentingizda MCP ni sozlang.",
+      "troubleshoot": "Loyiha ildizini, o'rnatish yo'lini va Node.js versiyasini tekshiring. Seansni qayta ishga tushiring, so'ngra agent uni hali aniqlamagan bo'lsa, SeniorMode ni nomi bilan chaqiring. Boshqariladigan CLI xatolar uchun ish vaqti qoʻllanmasiga qarang."
+    },
+    "cases": [
+      [
+        "Musiqa aralash",
+        "Musiqa ilovamga aralash qo'shing.",
+        "Har bir usul uchun qo'shiq nomlari va to'liq tartibni ko'rish uchun ushbu misolni ishga tushiring."
+      ],
+      [
+        "Oxirgi xonani bron qilish",
+        "Mening kichik mehmonxonam uchun bron qilish tizimini yarating.",
+        "Sinov bir vaqtning o'zida ikkita so'rov yuboradi. Biri xonani kitob qiladi. Boshqasi uni olingan deb topadi."
+      ],
+      [
+        "Toʻlovni qaytadan urinish",
+        "To'lovlar bilan kassa yarating.",
+        "Sinov birinchi javobni o'chirib tashlaydi, so'rovni qaytadan sinab ko'radi va faqat bitta to'lov qayd etilganligini tasdiqlaydi."
+      ],
+      [
+        "Tasmadagi takroriy postlar",
+        "Ushbu tasmadagi ba'zi postlar ikki marta chiqadi. Buning sababini bilib oling.",
+        "Misol so'rovlar orasiga post qo'shadi va tasmani davom ettirishning ikkita usulini, shu jumladan postni takrorlashdan saqlaydigan usulni ko'rsatadi."
+      ]
+    ],
+    "contribution": [
+      "Yozuvni qo'shishdan oldin qaror uchun katalogni qidiring.",
+      "Asl stsenariylar, manbalar, taxalluslar va cheklar bilan kanonik inglizcha Markdownni tahrirlang.",
+      "Katalogni qayta yarating va olingan hujjatlar va indekslarni tortib olish so'rovingizga kiriting.",
+      "Tekshiruvlarni bajaring. Tarjima uchun tegishli inglizcha matn, havolalar, buyruqlar va ogohlantirishlarni ko'rib chiqing."
+    ],
+    "questions": [
+      [
+        "Menga SeniorMode API kaliti kerakmi?",
+        "Qobiliyat, CLI va MCP serverlari SeniorMode API kalitisiz mahalliy ishlaydi. Sizning agentingiz o'z hisobiga yoki modelga kirishga muhtoj bo'lishi mumkin. Git yoki Vercel skills bilan o'rnatish tarmoqqa kirishni talab qilishi mumkin."
+      ],
+      [
+        "SeniorMode avtomatik ravishda faollashadimi?",
+        "Avtomatik kashfiyot agentingizga bog'liq. O'rnatishdan so'ng seansni qayta ishga tushiring va agar mahorat tanlanmagan bo'lsa, SeniorMode ni eslatib o'ting."
+      ],
+      [
+        "Yangilash yoki oʻchirish uchun qaysi oʻrnatuvchidan foydalanishim kerak?",
+        "Nusxani o'rnatgan usuldan foydalaning. Vercel skills qulflangan fayllardagi o'z nusxalarini kuzatib boradi. SeniorMode CLI o'zining o'rnatish yozuvini tekshiradi va tahrirlangan yoki boshqarilmaydigan papkalarni himoya qiladi."
+      ],
+      [
+        "Nima tarjima qilingan?",
+        "Qo'llanmalar, misollar va katalog xulosalari yuqoridagi menyudagi tillarda mavjud. To'liq yozuvlar va standartlar ingliz tilida. Qidiruv ingliz va turk tillarini qoʻllab-quvvatlaydi va agentingiz natijani sizning tilingizda tushuntirishi mumkin."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Kodning ishlashi kifoya emas.",
+    "installLead": "Ushbu so'rovni kodlash agentingizga bering yoki terminal buyrug'i uchun quyida agentingizni tanlang.",
+    "prompt": "SeniorMode-ni {source}-dan o'rnating. Mening kodlash agentim va joriy loyiham uchun o'rnatish ko'rsatmalariga amal qiling. Yozishdan oldin maqsadli katalogni tekshiring, sozlamalarimni va mavjud mahorat tahrirlarini saqlang va mahorat mavjudligini tekshiring. Mavjud nusxani qayta yozishdan oldin so'rang. Alohida so'rov uchun MCP sozlamalarini qoldiring.",
+    "newScenario": [
+      "Musiqiy oqim ilovasini yaratish uchun SeniorMode dan foydalaning.",
+      "Nimani qurmoqchi ekanligingizni tasvirlab bering. Sizning agentingiz boshlang'ich dizaynni tanlaydi, birinchi foydali versiyani yaratadi va uning qanday ishlashini tekshiradi.",
+      "Yangi loyihani boshlashim mumkinmi?",
+      "Ha. Loyiha papkasini oching va agentingizga SeniorMode bilan nima qurmoqchi ekanligingizni ayting."
+    ],
+    "existingScenario": [
+      "Musiqa ilovamga aralash qoʻshish uchun SeniorMode dan foydalaning.",
+      "Loyihangizdagi o'zgarish yoki muammoni tasvirlab bering. Sizning agentingiz avval mavjud kodni o'qiydi. Auditni so'raganingizda, u fayllarni tahrir qilmasdan topilmalar haqida xabar beradi.",
+      "Buni mavjud loyihada ishlata olamanmi?",
+      "Ha. Xususiyat, tuzatish, refaktor yoki audit uchun SeniorMode dan foydalaning. Tekshirish faqat o'qish uchun boshlanadi."
+    ],
+    "hostSupport": "SeniorMode ni ushbu besh agentdan biriga o'rnating. Mos mijozdan MCP dan ham foydalanishingiz mumkin."
+  },
+  "footer": {
+    "starPrompt": "Agar SeniorMode keyingi loyihangizga yordam bersa, boshqalar uni topishi uchun {star}.",
+    "starAction": "GitHub da yulduzcha bering",
+    "acknowledgments": "SeniorMode ushbu ochiq loyihalarga asoslanadi."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Algoritmlar va ma'lumotlar tuzilmalari",
+      "architecture": "Arxitektura",
+      "backend": "Backend va API",
+      "concurrency": "Bir vaqtning o'zida",
+      "data": "Ma'lumotlar va saqlash",
+      "frontend": "Frontend",
+      "geospatial": "Geofazoviy",
+      "networking": "Tarmoqqa ulanish",
+      "performance": "Ishlash",
+      "product": "Mahsulot harakati",
+      "reliability": "Ishonchlilik",
+      "security": "Xavfsizlik",
+      "testing": "Sinov"
+    },
+    "standardLabels": {
+      "greenfield": "Greenfield rejalashtirish",
+      "architecture": "Arxitektura",
+      "structure": "Loyiha tuzilishi",
+      "modularity": "Modullilik va qayta foydalanish",
+      "code-principles": "Kod tamoyillari",
+      "dependencies": "Bog'liqlar",
+      "api": "API shartnomalari",
+      "data": "Ma'lumotlar va saqlash",
+      "security": "Xavfsizlik",
+      "configuration": "Konfiguratsiya",
+      "reliability": "Ishonchlilik",
+      "observability": "Kuzatish qobiliyati",
+      "performance": "Ishlash",
+      "testing": "Sinov",
+      "documentation": "Hujjatlar",
+      "refactoring": "Xavfsiz refaktoring"
+    },
+    "directory": "Quyida duch kelgan muammoni toping. Har bir yozuv variantlari, kelishuvlari va natijani tekshirish usullari bilan ingliz qo'llanmasiga havola qiladi.",
+    "shuffle": "Xuddi shu oltita qo'shiqning uchta aralashishi tasodifiy ijro etish nima uchun hali ham takrorlanishi mumkinligini ko'rsatadi.",
+    "shuffleLab": "Jonli demoni sinab ko'ring",
+    "shuffleColumns": [
+      "Usul",
+      "Rassom buyurtmasi",
+      "Qo'shni takrorlashlar"
+    ],
+    "shuffleMethods": [
+      "Tasodifiy tartiblash",
+      "Fisher-Yates",
+      "Rassomdan xabardor"
+    ],
+    "checkoutSteps": [
+      "**So'rov.** \"Aloqam uzilib qolganda, ba'zan to'lov menga ikki marta to'lanadi.\"",
+      "**Tekshirish.** Javob mijozga yetguncha to‘lov muvaffaqiyatli bo‘lishi mumkin.",
+      "**Tuzatishni tanlang.** Xuddi shu xarid identifikatori bilan qayta urinish tizimga asl toʻlovni tanib olish imkonini beradi.",
+      "**Tasdiqlash.** Mahalliy misol birinchi javobni olib tashlaydi. Qayta urinish HTTP `{status}` ni qaytaradi va ma'lumotlar bazasida **{total} to'lovi** mavjud."
+    ],
+    "audit": [
+      "Mavjud loyihani tekshirish",
+      "Xabarlar tasmada nima uchun ikki marta paydo bo'lishini bilish uchun SeniorMode dan foydalaning."
+    ],
+    "usage": "SeniorMode sizning so'rovingiz bilan boshlanadi va loyihani tekshiradi. U siz soʻrashni bilmagan qarorlaringizni aniqlaydi, qaysi koʻrsatmalar mos kelishini tekshiradi va natija qanday tasdiqlanganligini tushuntiradi.",
+    "ownership": "Vercel skills va SeniorMode CLI har biri o'rnatgan nusxalarini kuzatib boradi. Nusxasini o'rnatgan vosita bilan yangilang yoki olib tashlang. Qo'lda nusxa olish uchun jildni almashtirish yoki olib tashlashdan oldin mahalliy tahrirlarni ko'rib chiqing.",
+    "contribution": "scripts/directory-locales/ ostidagi har bir faylga yozuv identifikatori uchun sarlavha va qisqa muammo bayonini qo'shing. Katalog kanonik yozuvlarga, bilimlar katalogi esa katalogga ishora qiladi. Malaka indekslari va CLI/MCP qidiruvi bir xil yozuvlardan foydalanadi. Ushbu qo'llanmaning ingliz bo'limi generatorlarni tushuntiradi.",
+    "outcomes": [
+      "Har bir qo'shiq navbatda qoladi va pleylist ruxsat berganida bir xil ijrochining treklari bir-biridan ajratiladi.",
+      "So'rovlar birga kelgan taqdirda ham oxirgi xonani faqat bitta mehmon bron qilishi mumkin.",
+      "Mijozlar javob yoʻqolganidan keyin ikki marta toʻlov olinmasdan qayta urinib koʻrishlari mumkin.",
+      "Yangi xabarlar oldingi postlar tasmada ikki marta ko'rsatilmasdan kelishi mumkin."
+    ]
+  },
+  "sections": {
+    "accessibility": "Foydalanish imkoniyati",
+    "mission": "O'zingiz xohlagan natijadan boshlang. SeniorMode agentingizga oddiy so‘rovni loyihangizga mos keladigan, muhim narsalarni himoya qiladigan va tekshirilishi mumkin bo‘lgan qarorlarga aylantirishga yordam beradi. Bilim siz va agentingiz tekshirishi uchun mahalliy bo'lib qoladi.",
+    "architecture": "Agent Skill marshrutlari Build, Audit va tegishli standartlarda ishlaydi. CLI va MCP bir xil ingliz yozuvlaridan foydalanadi va ingliz va turkcha so'rovlar uchun xotirada SQLite qidiruvi. Boshqariladigan o'rnatishlar ko'nikmalarni tanlangan loyihaga ko'chiradi. Katalog va README generatorlari ushbu materialni agentlar va o'quvchilar uchun tashkil qiladi.",
+    "governance": "Ta'minotchi o'zgarishlarni ko'lami, manbalari, sinovlari, litsenziyalash va kanonik materiallarga muvofiqligini ko'rib chiqadi. Yangi toifani muhokama qilish uchun muammodan foydalaning, keskin o'zgarish yoki chiqarish siyosatiga o'zgartirish. Reliz qachon tayyor bo'lishini ta'minlovchi hal qiladi va uning qaydlarida muhim cheklovlarni qayd etadi.",
+    "safety": "Mahalliy CLI va MCP serverlari SeniorMode telemetriyasini yubormaydi. Kodlash agentingiz va uchinchi tomon oʻrnatuvchingiz oʻz maʼlumotlar sozlamalariga ega. Yuklab olingan havolalarni texnik material sifatida ko'rib chiqing va mahorat ko'rsatmalari va bajariladigan koddagi o'zgarishlarni ko'rib chiqing.",
+    "reporting": "Xavfsizlik siyosati orqali shubhali zaifliklar haqida xabar bering. Ta'sir qilingan versiya, ta'sir va minimal dalillarni shaxsiy kanalda baham ko'ring. Nozik dalillarni jamoat muammolaridan uzoqroq tuting.",
+    "roadmap": [
+      "Yangi va mavjud loyihalar uchun oddiy so'rovlardan kashfiyotni yaxshilang.",
+      "Takroriy qaror qabul qilish uchun aniqroq kelishuvlar yoki tekshiruvlar kerak bo'lgan manba yozuvlarini qo'shing.",
+      "O'rnatishni qo'llab-quvvatlanadigan agentlar va tillarda ishonchli saqlang.",
+      "Tegishli yugurishlar mavjud bo'lganda, takrorlanadigan kashfiyotlar va amalga oshirish taqqoslashlarini nashr qiling.",
+      "Haqiqiy ish jarayonlariga ta'siri bo'yicha masalalar va hissalarni birinchi o'ringa qo'ying."
+    ],
+    "cli": "Manbani tekshirishda `npm ci` bilan bog'liqliklarni o'rnating. CLI yozuvni qidirishi yoki ochishi mumkin. To'liq buyruqlar ro'yxati uchun `node bin/seniormode.js --help` ni ishga tushiring.",
+    "mcp": "Agentingizni CLI va `mcp` argumentiga mutlaq yo'l bilan tugunni ishga tushirish uchun sozlang. Windows-dagi JSON yo'llari oldinga qiyshiq chiziqlardan foydalanishi mumkin. Server stdio orqali yettita faqat o'qish uchun mo'ljallangan vositani taqdim etadi. U o'rnatilgan Skill bilan yozuvlar, standartlar va ish oqimlarini baham ko'radi.",
+    "activate": [
+      "So'rovda `$seniormode` ni tanlang.",
+      "So'rovda `/seniormode` ni tanlang yoki SeniorMode deb nomlang.",
+      "Agent chatida `/` bilan mahoratni tanlang. Cursor shuningdek, `.cursor/skills` ostida loyiha ko'nikmalarini topadi.",
+      "Kashfiyotni tekshirish uchun `/skills list` dan foydalaning, so'ngra nomi bilan SeniorMode so'rang.",
+      "Nomi bo'yicha `seniormode` so'rang. OpenCode versiyangiz taqdim etganda `opencode debug skill` dan foydalaning."
+    ],
+    "mcpNotes": [
+      "Codex-ni qayta ishga tushiring. `codex mcp remove seniormode` bilan ro'yxatdan o'tishni olib tashlang.",
+      "Ro'yxatdan o'tishni `claude mcp list` bilan tekshiring. Running Node to'g'ridan-to'g'ri ushbu Windows sozlamalari bilan ishlaydi.",
+      "Ushbu yozuvni `mcpServers` ga birlashtiring. Cursor loyiha doirasida `.cursor/mcp.json` va Gemini CLI `.gemini/settings.json` dan foydalanadi.",
+      "OpenCode konfiguratsiyasida mahalliy serverni `mcp` bilan birlashtiring."
+    ],
+    "toolHeaders": [
+      "Asbob",
+      "Kirish",
+      "Natija"
+    ],
+    "tools": [
+      "Reytingli mos yozuvlar",
+      "Yozuv, variantlar, tekshiruvlar va manbalar",
+      "Qaror qabul qilish qoidalari va kelishuvlar",
+      "Tekshirish ro'yxati",
+      "Standart identifikatorlar va ulardan qachon foydalanish kerak",
+      "Bitta to'liq standart",
+      "Qurilish, tekshirish yoki ishlash tamoyillari"
+    ],
+    "checksLabel": "Kod va tekshirish",
+    "checks": [
+      "Ishlaydigan misol barcha qo'shiq nomlarini ko'rsatadi. Tasodifiy taqqoslash bilan saralash har bir buyurtmaga teng koeffitsientlarni bermaydi. Sinovlar uchta elementdan iborat ro'yxatning oltita o'zgarishini, trekning saqlanishini va ijro ro'yxatlarini tekshiradi, bunda dominant rassom ba'zi takrorlashlarni muqarrar qiladi.",
+      "Ikki ma'lumotlar bazasi ulanishi bir xona va tun uchun raqobatlashadi. Bitta so'rov `201`, ikkinchisi `409`ni qaytaradi va bitta bandlov saqlanadi. Bu misol bir kecha uchun darhol tasdiqlashni o'z ichiga oladi.",
+      "Sinov birinchi javobni bekor qiladi va alohida ulanishdan qayta urinib ko'radi. Bir xil xarid identifikatori boshqa miqdor bilan qayta ishlatilsa, u bitta saqlangan toʻlovni va ziddiyatni tekshiradi. Haqiqiy provayder bilan uning shartnomasiga muvofiq noma'lum natijani yarashtiring.",
+      "Sahifa so'rovlari orasida yangi post keladi. Ofset `8, 6` identifikatorlarini qaytaradi va `8` bandini takrorlaydi. cursor `(9, 8)` dan `6, 99` bilan davom etadi. Sinov ushbu qo'shishni qamrab oladi va mavjud ofset yo'nalishini saqlaydi."
+    ]
+  },
+  "projectSafety": "O'rnatuvchini ishga tushirishdan oldin maqsadli papkani tekshiring va har qanday mahalliy tahrirlarni ko'rib chiqing.",
+  "addLanguage": "Oʻz tilingizni qoʻshing",
+  "translationForm": "Yangi tarjima yoki tuzatish taklif qiling"
+}

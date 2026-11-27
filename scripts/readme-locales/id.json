@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Bahasa Indonesia",
+    "installAnchor": "install",
+    "nav": {
+      "install": "Instalasi",
+      "usage": "Penggunaan",
+      "directory": "Direktori Keterampilan",
+      "examples": "Contoh",
+      "faq": "Pertanyaan Umum",
+      "contribute": "Berkontribusi"
+    },
+    "headings": {
+      "install": "Instal",
+      "ai": "Instal dengan AI",
+      "support": "Agen yang didukung",
+      "use": "Cara menggunakan",
+      "newProject": "Proyek baru",
+      "existing": "Proyek yang ada",
+      "standards": "Standar teknik",
+      "library": "Katalog Pengetahuan",
+      "directory": "Direktori Keterampilan",
+      "real": "Contoh dunia nyata",
+      "how": "Bagaimana cara kerjanya",
+      "limitations": "Keterbatasan",
+      "roadmap": "Peta jalan",
+      "docs": "Dokumentasi",
+      "contributors": "Kontributor",
+      "thanks": "Ucapan Terima Kasih",
+      "license": "Lisensi",
+      "stars": "Sejarah bintang",
+      "releases": "Rilis",
+      "shuffle": "Mengapa shuffle terasa rusak?",
+      "what": "Apa itu SeniorMode?",
+      "why": "Mengapa SeniorMode?",
+      "compare": "Sebelum dan sesudah",
+      "scopes": "Proyek dan cakupan global",
+      "manual": "Instalasi manual",
+      "managed": "instalasi yang dikelola CLI",
+      "troubleshoot": "Pemecahan masalah",
+      "security": "Kebijakan keamanan",
+      "conduct": "Kode etik"
+    },
+    "columns": {
+      "host": "Agen",
+      "records": "Keputusan Rekayasa",
+      "categories": "Kategori",
+      "native": "Jalur proyek manual / SeniorMode",
+      "project": "jalur proyek Vercel skills",
+      "global": "jalur global Vercel skills",
+      "task": "Permintaan pengguna",
+      "decision": "Keputusan rekayasa"
+    },
+    "text": {
+      "tagline": "AI bisa menulis kode. SeniorMode membantunya mengambil keputusan rekayasa perangkat lunak.",
+      "subtitle": "Pengetahuan praktis rekayasa perangkat lunak untuk agen AI yang menulis kode.",
+      "made": "Dibuat di Türkiye 🇹🇷",
+      "what": "SeniorMode memberi agen pemrograman Anda pustaka keputusan rekayasa perangkat lunak beserta cara menerapkannya. Agen dapat mengenali risiko, memilih pendekatan yang cocok untuk proyek Anda, dan menguji hasilnya.",
+      "quickStart": "Dari direktori utama proyek, jalankan perintah untuk agen yang Anda gunakan. Penginstal Vercel memerlukan",
+      "firstRun": "Mulai kembali sesi agen dan minta perubahan dengan kata-kata Anda sendiri. Sebutkan SeniorMode jika tuan rumah tidak memilih keterampilan. Di Codex, `$seniormode` adalah referensi keterampilan eksplisit. Catatan yang dibundel berfungsi tanpa server MCP.",
+      "cliMcp": "CLI opsional mencari catatan lokal. MCP juga memberi agen Anda akses ke standar dan alur kerja. SeniorMode berjalan secara lokal tanpa kunci API. Agen Anda mungkin memerlukan akunnya sendiri.",
+      "contribute": "Tambahkan keputusan teknik, perbaiki contoh atau terjemahan, atau beri tahu kami apa yang bisa lebih baik.",
+      "license": "Alur kerja kode dan keterampilan menggunakan MIT. Pustaka keputusan teknik dan halaman katalog yang dihasilkannya menggunakan CC BY 4.0.",
+      "scopes": "Penginstal yang direkomendasikan menggunakan cakupan proyek secara default. Bendera global opsionalnya mengubah lokasi tingkat rumah. SeniorMode CLI yang dikelola hanya menulis ke proyek yang sudah ada. Tambahkan seniormode ke setiap jalur keterampilan di bawah. Tilde berarti direktori home Anda.",
+      "external": "Vercel skills mencatat instalasi proyek di `skills-lock.json` dan instalasi global di `.skill-lock.json`. Gunakan `--project` untuk pembaruan proyek dan `--global` untuk operasi global. Pemasang dapat mengubah folder keterampilan yang dipilih dan mengunci file.",
+      "manual": "Salin seluruh direktori `skills/seniormode` dari checkout tepercaya ke direktori keterampilan host. Pertahankan `SKILL.md`, referensi, dan lisensi bersama-sama. Untuk menyegarkan atau menghapus salinan manual Anda, ganti atau hapus hanya folder tersebut setelah meninjau pengeditan lokal apa pun.",
+      "managed": "Setelah memasang dependensi di direktori kode sumber SeniorMode, jalankan perintah berikut satu per satu untuk proyek yang sudah ada. Versi yang diperlukan untuk menjalankan CLI adalah",
+      "ownership": "CLI yang dikelola memeriksa apakah ia memiliki file yang diinstal dan tidak dimodifikasi sebelum memperbarui atau menghapusnya. Ini membatasi perubahan pada keterampilan yang dikelola dan catatan pemasangannya. Konfigurasikan MCP di agen Anda jika Anda membutuhkannya.",
+      "troubleshoot": "Periksa root proyek, jalur instalasi, dan versi Node.js. Mulai ulang sesi, lalu panggil SeniorMode berdasarkan nama jika agen belum menemukannya. Untuk kesalahan CLI yang dikelola, lihat panduan runtime."
+    },
+    "cases": [
+      [
+        "Pengacakan musik",
+        "Tambahkan acak ke aplikasi musik saya.",
+        "Jalankan contoh ini untuk melihat judul lagu dan urutan lengkap setiap metode."
+      ],
+      [
+        "Reservasi kamar terakhir",
+        "Bangun sistem reservasi untuk hotel kecil saya.",
+        "Tes mengirimkan dua permintaan secara bersamaan. Seseorang memesan kamar. Yang lain menemukannya sudah diambil."
+      ],
+      [
+        "Coba lagi pembayaran",
+        "Bangun checkout dengan pembayaran.",
+        "Pengujian tersebut membatalkan balasan pertama, mencoba ulang permintaan tersebut, dan mengonfirmasi bahwa hanya satu tagihan yang dicatat."
+      ],
+      [
+        "Postingan berulang di feed",
+        "Beberapa postingan di feed ini muncul dua kali. Cari tahu alasannya.",
+        "Contoh ini menyisipkan postingan di antara permintaan dan menunjukkan dua cara untuk melanjutkan feed, termasuk cara menghindari pengulangan postingan."
+      ]
+    ],
+    "contribution": [
+      "Cari katalog untuk keputusan sebelum menambahkan catatan.",
+      "Edit Penurunan Harga Bahasa Inggris kanonik dengan skenario, sumber, alias, dan pemeriksaan asli.",
+      "Buat ulang katalog dan sertakan dokumen dan indeks yang dihasilkan dalam permintaan penarikan Anda.",
+      "Jalankan pemeriksaan. Untuk terjemahan, tinjau teks bahasa Inggris yang sesuai, tautan, perintah, dan peringatan."
+    ],
+    "questions": [
+      [
+        "Apakah saya memerlukan kunci SeniorMode API?",
+        "Server keterampilan, CLI, dan MCP berjalan secara lokal tanpa kunci SeniorMode API. Agen Anda mungkin memerlukan akses akun atau modelnya sendiri. Menginstal dari Git atau dengan Vercel skills memerlukan akses jaringan."
+      ],
+      [
+        "Apakah SeniorMode akan aktif secara otomatis?",
+        "Penemuan otomatis bergantung pada agen Anda. Mulai ulang sesi setelah menginstal dan sebutkan SeniorMode jika skill tidak dipilih."
+      ],
+      [
+        "Pemasang mana yang harus saya gunakan untuk memperbarui atau mencopot pemasangan?",
+        "Gunakan metode yang menginstal salinannya. Vercel skills melacak salinannya sendiri di file kunci. SeniorMode CLI memeriksa catatan instalasinya sendiri dan melindungi folder yang diedit atau tidak dikelola."
+      ],
+      [
+        "Apa yang diterjemahkan?",
+        "Panduan, contoh, dan ringkasan Direktori tersedia dalam bahasa pada menu di atas. Catatan dan standar lengkap dalam bahasa Inggris. Pencarian mendukung bahasa Inggris dan Turki, dan agen Anda dapat menjelaskan hasilnya dalam bahasa Anda."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Kode yang bisa berjalan saja belum cukup.",
+    "installLead": "Berikan perintah ini kepada agen pengkode Anda, atau pilih agen Anda di bawah untuk perintah terminal.",
+    "prompt": "Instal SeniorMode dari {source}. Ikuti petunjuk instalasi untuk agen pengkodean saya dan proyek saat ini. Periksa direktori target sebelum menulis, pertahankan pengaturan saya dan pengeditan keterampilan yang ada, dan verifikasi bahwa keterampilan tersebut tersedia. Tanyakan sebelum menimpa salinan yang sudah ada. Tinggalkan pengaturan MCP untuk permintaan terpisah.",
+    "newScenario": [
+      "Gunakan SeniorMode untuk membuat aplikasi streaming musik.",
+      "Jelaskan apa yang ingin Anda bangun. Agen Anda memilih desain awal, membuat versi pertama yang berguna, dan memeriksa cara kerjanya.",
+      "Bisakah saya memulai proyek baru?",
+      "Ya. Buka folder proyek dan beri tahu agen Anda apa yang ingin Anda buat dengan SeniorMode."
+    ],
+    "existingScenario": [
+      "Gunakan SeniorMode untuk menambahkan pengacakan ke aplikasi musik saya.",
+      "Jelaskan perubahan atau masalah dalam proyek Anda. Agen Anda membaca kode yang ada terlebih dahulu. Saat Anda meminta audit, ia melaporkan temuannya tanpa mengedit file.",
+      "Bisakah saya menggunakan ini pada proyek yang sudah ada?",
+      "Ya. Gunakan SeniorMode untuk fitur, perbaikan, pemfaktoran ulang, atau audit. Audit dimulai hanya baca."
+    ],
+    "hostSupport": "Instal SeniorMode di salah satu dari lima agen ini. Anda juga dapat menggunakan MCP dari klien yang kompatibel."
+  },
+  "footer": {
+    "starPrompt": "Jika SeniorMode membantu proyek Anda berikutnya, {star} agar orang lain dapat menemukannya.",
+    "starAction": "beri bintang di GitHub",
+    "acknowledgments": "SeniorMode dibangun berdasarkan proyek terbuka ini."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Algoritma dan struktur data",
+      "architecture": "Arsitektur",
+      "backend": "Backend dan API",
+      "concurrency": "Konkurensi",
+      "data": "Data dan penyimpanan",
+      "frontend": "Bagian depan",
+      "geospatial": "Geospasial",
+      "networking": "Jaringan",
+      "performance": "Kinerja",
+      "product": "Perilaku produk",
+      "reliability": "Keandalan",
+      "security": "Keamanan",
+      "testing": "Pengujian"
+    },
+    "standardLabels": {
+      "greenfield": "Perencanaan lahan hijau",
+      "architecture": "Arsitektur",
+      "structure": "Struktur proyek",
+      "modularity": "Modularitas dan penggunaan kembali",
+      "code-principles": "Prinsip kode",
+      "dependencies": "Ketergantungan",
+      "api": "kontrak API",
+      "data": "Data dan penyimpanan",
+      "security": "Keamanan",
+      "configuration": "Konfigurasi",
+      "reliability": "Keandalan",
+      "observability": "Observabilitas",
+      "performance": "Kinerja",
+      "testing": "Pengujian",
+      "documentation": "Dokumentasi",
+      "refactoring": "Pemfaktoran ulang yang aman"
+    },
+    "directory": "Temukan masalah yang Anda hadapi di bawah. Setiap entri tertaut ke panduan bahasa Inggris dengan opsi, trade-off, dan cara untuk memeriksa hasilnya.",
+    "shuffle": "Tiga pengacakan dari enam lagu yang sama menunjukkan mengapa pemutaran acak masih terasa berulang.",
+    "shuffleLab": "Coba demo langsung",
+    "shuffleColumns": [
+      "Metode",
+      "Pesanan artis",
+      "Pengulangan yang berdekatan"
+    ],
+    "shuffleMethods": [
+      "Sortir acak",
+      "Fisher – Yates",
+      "Sadar artis"
+    ],
+    "checkoutSteps": [
+      "**Permintaan.** “Checkout terkadang menagih saya dua kali saat koneksi saya terputus.”",
+      "**Menyelidiki.** Pembayaran dapat berhasil sebelum balasan sampai ke pelanggan.",
+      "**Pilih perbaikan.** Mencoba lagi dengan ID pembelian yang sama memungkinkan sistem mengenali pembayaran asli.",
+      "**Memeriksa.** Contoh lokal memberikan balasan pertama. Percobaan ulang akan mengembalikan HTTP `{status}` dan database berisi **biaya {total}**."
+    ],
+    "audit": [
+      "Audit proyek yang ada",
+      "Gunakan SeniorMode untuk mencari tahu mengapa postingan muncul dua kali di feed saya."
+    ],
+    "usage": "SeniorMode dimulai dengan permintaan Anda dan memeriksa proyek. Ini menunjukkan keputusan yang mungkin tidak Anda tanyakan, memeriksa panduan mana yang sesuai, dan menjelaskan bagaimana hasilnya diverifikasi.",
+    "ownership": "Vercel skills dan SeniorMode CLI masing-masing melacak salinan yang mereka instal. Perbarui atau hapus salinan dengan alat yang menginstalnya. Untuk salinan manual, tinjau pengeditan lokal sebelum mengganti atau menghapus folder.",
+    "contribution": "Tambahkan judul dan pernyataan masalah singkat untuk ID rekaman ke setiap file di bawah scripts/directory-locales/. Direktori tertaut ke catatan kanonis, dan Katalog Pengetahuan mengarah ke Direktori. Indeks keterampilan dan pencarian CLI/MCP menggunakan catatan yang sama. Bagian bahasa Inggris dari panduan ini menjelaskan tentang generator.",
+    "outcomes": [
+      "Setiap lagu tetap berada dalam antrean, dan lagu dari artis yang sama akan diberi jarak jika daftar putar memungkinkan.",
+      "Hanya satu tamu yang dapat memesan kamar terakhir, meskipun permintaan datang bersamaan.",
+      "Pelanggan dapat mencoba kembali setelah respons hilang tanpa dikenakan biaya dua kali.",
+      "Postingan baru dapat muncul tanpa membuat postingan sebelumnya muncul dua kali di feed."
+    ]
+  },
+  "sections": {
+    "accessibility": "Aksesibilitas",
+    "mission": "Mulailah dengan hasil yang Anda inginkan. SeniorMode membantu agen Anda mengubah permintaan biasa menjadi keputusan yang sesuai dengan proyek Anda, melindungi hal yang penting, dan dapat diverifikasi. Pengetahuan tetap tersedia secara lokal untuk Anda dan agen Anda periksa.",
+    "architecture": "Rute Agent Skill berfungsi untuk Membangun, Audit, dan standar yang relevan. CLI dan MCP menggunakan catatan bahasa Inggris yang sama dan pencarian SQLite dalam memori untuk kueri bahasa Inggris dan Turki. Instalasi terkelola menyalin Keterampilan ke dalam proyek yang dipilih. Katalog dan generator README mengatur materi ini untuk agen dan pembaca.",
+    "governance": "Pengelola meninjau perubahan untuk cakupan, sumber, pengujian, perizinan, dan konsistensi dengan materi kanonik. Gunakan isu untuk mendiskusikan kategori baru, perubahan yang dapat menyebabkan gangguan, atau perubahan pada kebijakan rilis. Pengelola memutuskan kapan rilis siap dan mencatat batasan-batasan penting dalam catatannya.",
+    "safety": "Server CLI dan MCP lokal tidak mengirimkan telemetri SeniorMode. Agen pengkodean dan penginstal pihak ketiga Anda memiliki pengaturan datanya sendiri. Perlakukan referensi yang diunduh sebagai materi teknis dan tinjau perubahan pada instruksi keterampilan dan kode yang dapat dieksekusi.",
+    "reporting": "Laporkan dugaan kerentanan melalui kebijakan keamanan. Bagikan versi yang terkena dampak, dampak, dan bukti minimal di saluran pribadi. Jauhkan bukti-bukti sensitif dari isu-isu publik.",
+    "roadmap": [
+      "Tingkatkan penemuan dari permintaan biasa untuk proyek baru dan yang sudah ada.",
+      "Tambahkan catatan bersumber ketika keputusan berulang memerlukan trade-off atau pemeriksaan yang lebih jelas.",
+      "Jaga agar instalasi tetap andal di seluruh agen dan bahasa yang didukung.",
+      "Publikasikan perbandingan penemuan dan implementasi yang dapat direproduksi ketika proses yang cocok tersedia.",
+      "Prioritaskan masalah dan kontribusi berdasarkan pengaruhnya terhadap alur kerja nyata."
+    ],
+    "cli": "Di checkout sumber, instal dependensi dengan `npm ci`. CLI dapat mencari atau membuka catatan. Jalankan `node bin/seniormode.js --help` untuk daftar perintah lengkap.",
+    "mcp": "Konfigurasikan agen Anda untuk menjalankan Node dengan jalur absolut ke argumen CLI dan `mcp`. jalur JSON di Windows dapat menggunakan garis miring ke depan. Server menyediakan tujuh alat read-only melalui stdio. Ini berbagi catatan, standar, dan alur kerja dengan Keterampilan yang diinstal.",
+    "activate": [
+      "Pilih `$seniormode` di prompt.",
+      "Pilih `/seniormode` atau beri nama SeniorMode dalam permintaan.",
+      "Pilih keterampilan dengan `/` di obrolan Agen. Cursor juga menemukan keterampilan proyek di bawah `.cursor/skills`.",
+      "Gunakan `/skills list` untuk memeriksa penemuan, lalu minta SeniorMode berdasarkan nama.",
+      "Minta `seniormode` berdasarkan nama. Gunakan `opencode debug skill` ketika versi OpenCode Anda menyediakannya."
+    ],
+    "mcpNotes": [
+      "Mulai ulang Codex. Hapus registrasi dengan `codex mcp remove seniormode`.",
+      "Periksa pendaftaran dengan `claude mcp list`. Menjalankan Node secara langsung berfungsi dengan pengaturan Windows ini.",
+      "Gabungkan entri ini ke `mcpServers`. Cursor menggunakan `.cursor/mcp.json` dan Gemini CLI menggunakan `.gemini/settings.json` pada lingkup proyek.",
+      "Gabungkan server lokal ke `mcp` dalam konfigurasi OpenCode Anda."
+    ],
+    "toolHeaders": [
+      "Alat",
+      "Masukan",
+      "Hasil"
+    ],
+    "tools": [
+      "Catatan yang cocok diberi peringkat",
+      "Rekam, opsi, pemeriksaan dan sumber",
+      "Aturan pengambilan keputusan dan trade-off",
+      "Daftar periksa verifikasi",
+      "ID standar dan kapan menggunakannya",
+      "Satu standar lengkap",
+      "Membangun, Audit atau prinsip operasi"
+    ],
+    "checksLabel": "Kode dan verifikasi",
+    "checks": [
+      "Contoh runnable menunjukkan semua judul lagu. Penyortiran dengan perbandingan acak tidak memberikan peluang yang sama pada setiap pesanan. Tes tersebut memeriksa keenam permutasi dari daftar tiga item, pelestarian lagu, dan daftar putar di mana artis dominan membuat beberapa pengulangan tidak dapat dihindari.",
+      "Dua koneksi database bersaing untuk ruangan dan malam yang sama. Satu permintaan mengembalikan `201`, permintaan lainnya `409`, dan satu pemesanan disimpan. Contoh ini mencakup konfirmasi langsung untuk satu malam.",
+      "Tes ini menghapus balasan pertama dan mencoba lagi dari koneksi terpisah. Ia memeriksa satu tagihan tersimpan dan konflik ketika ID pembelian yang sama digunakan kembali dengan jumlah yang berbeda. Dengan penyedia nyata, rekonsiliasi hasil yang tidak diketahui sesuai kontraknya.",
+      "Sebuah postingan baru muncul di antara permintaan halaman. Offset mengembalikan ID `8, 6` dan mengulangi item `8`. cursor berlanjut dari `(9, 8)` dengan `6, 99`. Pengujian ini mencakup penyisipan ini dan mempertahankan rute offset yang ada."
+    ]
+  },
+  "projectSafety": "Periksa folder target dan tinjau semua pengeditan lokal sebelum menjalankan penginstal.",
+  "addLanguage": "Tambahkan bahasa Anda",
+  "translationForm": "Usulkan bahasa baru atau perbaikan terjemahan"
+}

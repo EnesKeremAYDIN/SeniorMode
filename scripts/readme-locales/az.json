@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Azərbaycanca",
+    "installAnchor": "install",
+    "nav": {
+      "install": "Quraşdırma",
+      "usage": "İstifadəsi",
+      "directory": "Bacarıq kataloqu",
+      "examples": "Nümunələr",
+      "faq": "Tez-tez verilən suallar",
+      "contribute": "Töhfə vermək"
+    },
+    "headings": {
+      "install": "Quraşdırın",
+      "ai": "AI ilə quraşdırın",
+      "support": "Dəstəklənən agentlər",
+      "use": "Necə istifadə etmək olar",
+      "newProject": "Yeni layihə",
+      "existing": "Mövcud layihə",
+      "standards": "Mühəndislik standartları",
+      "library": "Bilik kataloqu",
+      "directory": "Bacarıq kataloqu",
+      "real": "Real dünya nümunələri",
+      "how": "Necə işləyir",
+      "limitations": "Məhdudiyyətlər",
+      "roadmap": "Yol xəritəsi",
+      "docs": "Sənədləşdirmə",
+      "contributors": "Töhfəçilər",
+      "thanks": "Təşəkkürlər",
+      "license": "Lisenziya",
+      "stars": "Ulduz tarixi",
+      "releases": "Buraxılışlar",
+      "shuffle": "Niyə qarışdırma pozulduğunu hiss edir?",
+      "what": "SeniorMode nədir?",
+      "why": "Niyə SeniorMode?",
+      "compare": "Əvvəl və sonra",
+      "scopes": "Layihə və qlobal əhatə dairəsi",
+      "manual": "Əl ilə quraşdırma",
+      "managed": "CLI tərəfindən idarə olunan quraşdırma",
+      "troubleshoot": "Problemlərin aradan qaldırılması",
+      "security": "Təhlükəsizlik siyasəti",
+      "conduct": "Davranış kodeksi"
+    },
+    "columns": {
+      "host": "Agent",
+      "records": "Mühəndislik Qərarları",
+      "categories": "Kateqoriyalar",
+      "native": "Manual / SeniorMode layihə yolu",
+      "project": "Vercel skills layihə yolu",
+      "global": "Vercel skills qlobal yol",
+      "task": "İstifadəçi sorğusu",
+      "decision": "Mühəndislik qərarı"
+    },
+    "text": {
+      "tagline": "Süni intellekt kod yazır. SeniorMode ona mühəndislik qərarları verməyə kömək edir.",
+      "subtitle": "Süni intellektlə kod yazan agentlər üçün praktik mühəndislik bilikləri.",
+      "made": "Türkiyədə hazırlanıb 🇹🇷",
+      "what": "SeniorMode kod yazan agentinizə mühəndislik qərarları kitabxanası və həmin qərarları tətbiq etmək üçün iş prosesi verir. Agent riskləri müəyyən edir, layihənizə uyğun yanaşma seçir və nəticəni yoxlayır.",
+      "quickStart": "Layihənin kök qovluğunda öz agentinizə uyğun əmri işlədin. Vercel quraşdırıcısı üçün tələb olunan versiya",
+      "firstRun": "Agent sessiyasını yenidən başladın və öz sözlərinizlə dəyişikliyi istəyin. Ev sahibi bacarığı seçməzsə, SeniorMode-i qeyd edin. Codex-də `$seniormode` açıq bacarıq istinadıdır. Birləşdirilmiş qeydlər MCP serveri olmadan işləyir.",
+      "cliMcp": "İsteğe bağlı CLI yerli qeydləri axtarır. MCP həmçinin agentinizə standartlara və iş axınlarına giriş imkanı verir. SeniorMode yerli olaraq API açarı olmadan işləyir. Agentiniz öz hesabını tələb edə bilər.",
+      "contribute": "Mühəndislik qərarı əlavə edin, nümunə və ya tərcüməni təkmilləşdirin və ya daha yaxşı nəyin işləyə biləcəyini bizə deyin.",
+      "license": "Kod və bacarıq iş axınları MIT istifadə edir. Mühəndislik qərarları kitabxanası və onun yaradılan kataloq səhifələri CC BY 4.0 istifadə edir.",
+      "scopes": "Tövsiyə olunan quraşdırıcı standart olaraq layihənin əhatə dairəsindən istifadə edir. Onun isteğe bağlı qlobal bayrağı ev səviyyəsindəki yeri dəyişir. İdarə olunan SeniorMode CLI yalnız mövcud layihəyə yazır. Aşağıdakı hər bir bacarıq yoluna seniormode əlavə edin. Tilde sizin ev kataloqunuz deməkdir.",
+      "external": "Vercel skills `skills-lock.json`-də layihə qurğularını və `.skill-lock.json`-də qlobal quraşdırmaları qeyd edir. Layihə yeniləmələri üçün `--project` və qlobal əməliyyatlar üçün `--global` istifadə edin. Quraşdırıcı seçilmiş bacarıq qovluğunu və kilid faylını dəyişə bilər.",
+      "manual": "Bütün `skills/seniormode` kataloqunu etibarlı yoxlamadan ev sahibinin bacarıqlar kataloquna kopyalayın. `SKILL.md`, istinadlar və lisenziyaları birlikdə saxlayın. Əl surətinizi yeniləmək və ya silmək üçün hər hansı yerli redaktələri nəzərdən keçirdikdən sonra yalnız həmin qovluğu dəyişdirin və ya silin.",
+      "managed": "SeniorMode-un mənbə kodu qovluğunda asılılıqları quraşdırdıqdan sonra bu əmrləri mövcud layihə üçün bir-bir işlədin. CLI üçün tələb olunan versiya",
+      "ownership": "İdarə olunan CLI quraşdırılmış fayllara sahib olduğunu və onları yeniləmədən və ya silməzdən əvvəl onların dəyişdirilmədiyini yoxlayır. O, idarə olunan bacarıqlara və onun quraşdırma qeydlərinə dəyişiklikləri məhdudlaşdırır. Ehtiyacınız olarsa, agentinizdə MCP-i konfiqurasiya edin.",
+      "troubleshoot": "Layihənin kökünü, quraşdırma yolunu və Node.js versiyasını yoxlayın. Sessiyanı yenidən başladın, sonra agent hələ kəşf etməyibsə, adı ilə SeniorMode çağırın. İdarə olunan CLI xətaları üçün icra vaxtı təlimatına baxın."
+    },
+    "cases": [
+      [
+        "Musiqi qarışığı",
+        "Musiqi proqramıma qarışıq əlavə edin.",
+        "Mahnı başlıqlarını və hər bir metodun tam sırasını görmək üçün bu nümunəni işə salın."
+      ],
+      [
+        "Son otaq rezervasiyası",
+        "Kiçik otelim üçün rezervasiya sistemi qurun.",
+        "Test eyni anda iki sorğu göndərir. Biri otağı kitab edir. Digəri götürülmüş tapır."
+      ],
+      [
+        "Ödənişi yenidən cəhd edin",
+        "Ödənişlərlə kassa qurun.",
+        "Test ilk cavabı rədd edir, sorğunu təkrar sınayır və yalnız bir ödənişin qeydə alındığını təsdiqləyir."
+      ],
+      [
+        "Lentdə təkrarlanan yazılar",
+        "Bu lentdəki bəzi yazılar iki dəfə göstərilir. Bunun səbəbini öyrənin.",
+        "Nümunə sorğular arasında yazı əlavə edir və lenti davam etdirməyin iki yolunu göstərir, o cümlədən yazının təkrarlanmasının qarşısını alan biri."
+      ]
+    ],
+    "contribution": [
+      "Yeni qeyd əlavə etməzdən əvvəl həmin qərarın kataloqda olub-olmadığını yoxlayın.",
+      "Əsas ingilisdilli Markdown faylını redaktə edin. Öz ssenarinizi, mənbələri, alternativ axtarış ifadələrini və yoxlamaları əlavə edin.",
+      "Kataloqu yenidən yaradın. Yenilənmiş sənədləri və indeksləri pull request-ə daxil edin.",
+      "Yoxlamaları işə salın. Tərcümə hazırlayırsınızsa, ingiliscə mətnlə yanaşı keçidləri, əmrləri və vacib qeydləri də yoxlayın."
+    ],
+    "questions": [
+      [
+        "Mənə SeniorMode API açarı lazımdır?",
+        "Bacarıq, CLI və MCP serveri SeniorMode API açarı olmadan yerli olaraq işləyir. Agentinizin öz hesabına və ya model girişinə ehtiyacı ola bilər. Git-dən və ya Vercel skills-dən quraşdırma şəbəkə girişi tələb edə bilər."
+      ],
+      [
+        "SeniorMode avtomatik aktivləşdiriləcək?",
+        "Avtomatik kəşf agentinizdən asılıdır. Quraşdırdıqdan sonra sessiyanı yenidən başladın və bacarıq seçilməyibsə SeniorMode-i qeyd edin."
+      ],
+      [
+        "Yeniləmə və ya silmək üçün hansı quraşdırıcıdan istifadə etməliyəm?",
+        "Surəti quraşdıran metoddan istifadə edin. Vercel skills kilid fayllarında öz nüsxələrini izləyir. SeniorMode CLI öz quraşdırma qeydini yoxlayır və redaktə edilmiş və ya idarə olunmayan qovluqları qoruyur."
+      ],
+      [
+        "Nə tərcümə olunur?",
+        "Təlimatlar, nümunələr və Kataloq xülasələri yuxarıdakı menyuda olan dillərdə mövcuddur. Tam qeydlər və standartlar ingilis dilindədir. Axtarış ingilis və türk dillərini dəstəkləyir və agentiniz nəticəni sizin dilinizdə izah edə bilər."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Kodun işləməsi kifayət etmir.",
+    "installLead": "Bu əmri kodlaşdırma agentinizə verin və ya terminal əmri üçün aşağıda agentinizi seçin.",
+    "prompt": "SeniorMode-i {source}-dən quraşdırın. Kodlaşdırma agentim və cari layihəm üçün quraşdırma təlimatlarına əməl edin. Yazmadan əvvəl hədəf kataloqunu yoxlayın, mənim parametrlərimi və hər hansı mövcud bacarıq redaktələrini qoruyun və bacarığın mövcud olduğunu yoxlayın. Mövcud nüsxənin üzərinə yazmadan əvvəl soruşun. Ayrı sorğu üçün MCP quraşdırmasını tərk edin.",
+    "newScenario": [
+      "Musiqi axını proqramı yaratmaq üçün SeniorMode istifadə edin.",
+      "Nə qurmaq istədiyinizi təsvir edin. Agentiniz başlanğıc dizaynı seçir, ilk faydalı versiyanı qurur və onun necə işlədiyini yoxlayır.",
+      "Yeni layihəyə başlaya bilərəmmi?",
+      "Bəli. Layihə qovluğunu açın və agentinizə SeniorMode ilə nə qurmaq istədiyinizi söyləyin."
+    ],
+    "existingScenario": [
+      "Musiqi proqramıma qarışıq əlavə etmək üçün SeniorMode istifadə edin.",
+      "Layihənizdəki dəyişikliyi və ya problemi təsvir edin. Agentiniz əvvəlcə mövcud kodu oxuyur. Audit üçün müraciət etdiyiniz zaman o, faylları redaktə etmədən tapıntıları bildirir.",
+      "Bunu mövcud layihədə istifadə edə bilərəmmi?",
+      "Bəli. Xüsusiyyət, düzəliş, refaktor və ya audit üçün SeniorMode istifadə edin. Audit yalnız oxumaq üçün başlayır."
+    ],
+    "hostSupport": "Bu beş agentdən hər hansı birində SeniorMode quraşdırın. Siz həmçinin uyğun müştəridən MCP istifadə edə bilərsiniz."
+  },
+  "footer": {
+    "starPrompt": "Əgər SeniorMode növbəti layihənizə kömək edirsə, {star} başqaları onu tapa bilsin.",
+    "starAction": "ona GitHub-də ulduz verin",
+    "acknowledgments": "SeniorMode bu açıq layihələr üzərində qurulur."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Alqoritmlər və məlumat strukturları",
+      "architecture": "Memarlıq",
+      "backend": "Backend və API-lər",
+      "concurrency": "Paralellik",
+      "data": "Məlumat və saxlama",
+      "frontend": "Frontend",
+      "geospatial": "Geoməkan",
+      "networking": "Şəbəkə",
+      "performance": "Performans",
+      "product": "Məhsulun davranışı",
+      "reliability": "Etibarlılıq",
+      "security": "Təhlükəsizlik",
+      "testing": "Test"
+    },
+    "standardLabels": {
+      "greenfield": "Greenfield planlaşdırması",
+      "architecture": "Memarlıq",
+      "structure": "Layihə strukturu",
+      "modularity": "Modulluq və təkrar istifadə",
+      "code-principles": "Kod prinsipləri",
+      "dependencies": "Asılılıqlar",
+      "api": "API müqavilələri",
+      "data": "Məlumat və saxlama",
+      "security": "Təhlükəsizlik",
+      "configuration": "Konfiqurasiya",
+      "reliability": "Etibarlılıq",
+      "observability": "Müşahidə qabiliyyəti",
+      "performance": "Performans",
+      "testing": "Test",
+      "documentation": "Sənədləşdirmə",
+      "refactoring": "Təhlükəsiz refaktorinq"
+    },
+    "directory": "Aşağıda qarşılaşdığınız problemi tapın. Hər bir giriş variantları, güzəştlər və nəticəni yoxlamaq yolları ilə İngilis bələdçisinə keçid verir.",
+    "shuffle": "Eyni altı mahnının üç qarışdırılması təsadüfi səsləndirmənin niyə hələ də təkrarlanan olduğunu göstərir.",
+    "shuffleLab": "Canlı demonu sınayın",
+    "shuffleColumns": [
+      "Metod",
+      "Rəssamın sifarişi",
+      "Qonşu təkrarlar"
+    ],
+    "shuffleMethods": [
+      "Təsadüfi çeşidləmə",
+      "Fisher-Yates",
+      "Sənətkardan xəbərdar"
+    ],
+    "checkoutSteps": [
+      "**Sorğu.** \"Bağlantım kəsildikdə, ödəniş bəzən məndən iki dəfə ödəniş alır.\"",
+      "**Araşdırın.** Cavab müştəriyə çatana qədər ödəniş uğurlu ola bilər.",
+      "**Düzəliş seçin.** Eyni alış ID ilə yenidən cəhd etmək sistemə ilkin ödənişi tanımağa imkan verir.",
+      "**Doğrulayın.** Yerli nümunə ilk cavabı buraxır. Yenidən cəhd HTTP `{status}` qaytarır və verilənlər bazasında **{total} ödənişi** var."
+    ],
+    "audit": [
+      "Mövcud layihəni yoxlayın",
+      "Yazıların lentimdə niyə iki dəfə göründüyünü öyrənmək üçün SeniorMode istifadə edin."
+    ],
+    "usage": "SeniorMode sorğunuzla başlayır və layihəni araşdırır. O, soruşmağınızı bilmədiyiniz qərarları aşkar edir, hansı təlimatın uyğun olduğunu yoxlayır və nəticənin necə təsdiqləndiyini izah edir.",
+    "ownership": "Vercel skills və SeniorMode CLI hər biri quraşdırdıqları nüsxələri izləyir. Bir nüsxəni quraşdıran alətlə yeniləyin və ya silin. Əl ilə nüsxələr üçün qovluğu dəyişdirməzdən və ya silməzdən əvvəl yerli redaktələri nəzərdən keçirin.",
+    "contribution": "scripts/directory-locales/ altında hər bir fayla qeyd ID-si üçün başlıq və qısa problem bəyanatı əlavə edin. Kataloq kanonik qeydlərə, Bilik Kataloq isə Kataloqa işarə edir. Bacarıq indeksləri və CLI/MCP axtarışı eyni qeydlərdən istifadə edir. Bu təlimatın İngilis bölməsi generatorları izah edir.",
+    "outcomes": [
+      "Hər mahnı növbədə qalır və pleylist imkan verdikdə eyni ifaçının trekləri aralanır.",
+      "Yalnız bir qonaq, hətta sorğular birlikdə gəlsə belə, sonuncu otağı sifariş edə bilər.",
+      "Müştərilər itirilmiş cavabdan sonra iki dəfə ödəniş etmədən yenidən cəhd edə bilərlər.",
+      "Əvvəlki yazılar lentdə iki dəfə görünmədən yeni yazılar gələ bilər."
+    ]
+  },
+  "sections": {
+    "accessibility": "Əlçatanlıq",
+    "mission": "İstədiyiniz nəticə ilə başlayın. SeniorMode agentinizə adi sorğunu layihənizə uyğun qərarlara çevirməyə kömək edir, vacib olanı qoruyur və yoxlanıla bilər. Bilik sizin və agentinizin yoxlaması üçün yerli olaraq mövcuddur.",
+    "architecture": "Agent Skill marşrutları Quraşdırma, Audit və müvafiq standartlara uyğun işləyir. CLI və MCP eyni İngilis qeydlərindən və ingilis və türk sorğuları üçün yaddaşda SQLite axtarışından istifadə edir. İdarə olunan qurğular Bacarıqları seçilmiş layihəyə köçürür. Kataloq və README generatorları bu materialı agentlər və oxucular üçün təşkil edir.",
+    "governance": "Tərtibatçı dəyişiklikləri əhatə dairəsi, mənbələri, testləri, lisenziyalaşdırma və kanonik materiala uyğunluğu üçün nəzərdən keçirir. Yeni kateqoriyanı, kəskin dəyişikliyi və ya buraxılış siyasətindəki dəyişikliyi müzakirə etmək üçün məsələdən istifadə edin. Nəzarətçi buraxılışın nə vaxt hazır olacağına qərar verir və onun qeydlərində mühüm məhdudiyyətləri qeyd edir.",
+    "safety": "Yerli CLI və MCP server SeniorMode telemetriyasını göndərmir. Kodlaşdırma agentinizin və üçüncü tərəf quraşdırıcınızın öz məlumat parametrləri var. Yüklənmiş arayışları texniki material kimi qəbul edin və bacarıq təlimatlarına və icra edilə bilən koda edilən dəyişiklikləri nəzərdən keçirin.",
+    "reporting": "Təhlükəsizlik siyasəti vasitəsilə şübhəli zəiflikləri bildirin. Təsirə məruz qalan versiyanı, təsiri və minimal sübutu şəxsi kanalda paylaşın. Həssas sübutları ictimai məsələlərdən uzaq tutun.",
+    "roadmap": [
+      "Yeni və mövcud layihələr üçün adi sorğulardan kəşfi təkmilləşdirin.",
+      "Təkrarlanan qərarın daha aydın güzəştlərə və ya yoxlamalara ehtiyac duyduğu mənbə qeydləri əlavə edin.",
+      "Dəstəklənən agentlər və dillər arasında quraşdırmanı etibarlı saxlayın.",
+      "Uyğun buraxılışlar mövcud olduqda təkrarlana bilən kəşf və tətbiq müqayisələrini dərc edin.",
+      "Problemləri və töhfələri onların real iş axınlarına təsiri ilə prioritetləşdirin."
+    ],
+    "cli": "Mənbə yoxlamasında `npm ci` ilə asılılıqları quraşdırın. CLI qeydi axtara və ya aça bilər. Tam komanda siyahısı üçün `node bin/seniormode.js --help`-i işə salın.",
+    "mcp": "Agentinizi CLI və `mcp` arqumentinə mütləq yol ilə Node-u işə salmaq üçün konfiqurasiya edin. Windows-dəki JSON yolları dirsək işarələrindən istifadə edə bilər. Server stdio üzərindən yeddi yalnız oxumaq üçün alət təqdim edir. O, qeydləri, standartları və iş axınlarını quraşdırılmış Skill ilə paylaşır.",
+    "activate": [
+      "Sorğuda `$seniormode` seçin.",
+      "Sorğuda `/seniormode` seçin və ya SeniorMode adını verin.",
+      "Agent söhbətində `/` ilə bacarıq seçin. Cursor həmçinin `.cursor/skills` altında layihə bacarıqları tapır.",
+      "Kəşfiyyatı yoxlamaq üçün `/skills list` istifadə edin, sonra adı ilə SeniorMode tələb edin.",
+      "Adı ilə `seniormode` tələb edin. OpenCode versiyanız bunu təmin etdikdə `opencode debug skill` istifadə edin."
+    ],
+    "mcpNotes": [
+      "Codex-i yenidən başladın. `codex mcp remove seniormode` ilə qeydiyyatı silin.",
+      "Qeydiyyatı `claude mcp list` ilə yoxlayın. Çalışan Node birbaşa bu Windows quraşdırma ilə işləyir.",
+      "Bu girişi `mcpServers`-a birləşdirin. Cursor `.cursor/mcp.json`, Gemini CLI isə layihə çərçivəsində `.gemini/settings.json` istifadə edir.",
+      "Yerli serveri OpenCode konfiqurasiyanızda `mcp` ilə birləşdirin."
+    ],
+    "toolHeaders": [
+      "Alət",
+      "Giriş",
+      "Nəticə"
+    ],
+    "tools": [
+      "Reytinqdə uyğun gələn rekordlar",
+      "Qeyd, seçimlər, çeklər və mənbələr",
+      "Qərar vermə qaydaları və mübadilələr",
+      "Doğrulama yoxlama siyahısı",
+      "Standart identifikatorlar və onlardan nə vaxt istifadə ediləcək",
+      "Tam bir standart",
+      "Yaradın, yoxlayın və ya fəaliyyət prinsipləri"
+    ],
+    "checksLabel": "Kod və yoxlama",
+    "checks": [
+      "İşlənə bilən nümunə bütün mahnı başlıqlarını göstərir. Təsadüfi müqayisə ilə çeşidləmə hər sifarişə bərabər nisbət vermir. Testlər dominant sənətçinin bəzi təkrarları qaçınılmaz etdiyi üç elementli siyahının bütün altı dəyişdirilməsini, trekin saxlanmasını və çalğı siyahılarını yoxlayır.",
+      "İki verilənlər bazası bağlantısı eyni otaq və gecə üçün yarışır. Bir sorğu `201`, digəri `409` qaytarır və bir rezervasiya saxlanılır. Bu nümunə bir gecə üçün dərhal təsdiqi əhatə edir.",
+      "Test ilk cavabı buraxır və ayrı bir əlaqədən yenidən cəhd edir. Eyni alış identifikatoru fərqli məbləğlə təkrar istifadə edildikdə o, bir saxlanmış ödənişi və münaqişəni yoxlayır. Həqiqi provayderlə müqaviləsinə uyğun olaraq naməlum nəticəni uzlaşdırın.",
+      "Səhifə sorğuları arasında yeni yazı gəlir. Ofset `8, 6` identifikatorlarını qaytarır və `8` elementini təkrarlayır. cursor `(9, 8)`-dən `6, 99` ilə davam edir. Test bu daxiletməni əhatə edir və mövcud ofset marşrutunu qoruyur."
+    ]
+  },
+  "projectSafety": "Quraşdırıcını işə salmazdan əvvəl hədəf qovluğunu yoxlayın və hər hansı yerli redaktələri nəzərdən keçirin.",
+  "addLanguage": "Dilini əlavə et",
+  "translationForm": "Yeni tərcümə və ya düzəliş təklif et"
+}

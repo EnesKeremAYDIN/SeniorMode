@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Italiano",
+    "installAnchor": "install",
+    "nav": {
+      "install": "Installazione",
+      "usage": "Utilizzo",
+      "directory": "Elenco delle competenze",
+      "examples": "Esempi",
+      "faq": "Domande frequenti",
+      "contribute": "Contribuire"
+    },
+    "headings": {
+      "install": "Installa",
+      "ai": "Installa con l'intelligenza artificiale",
+      "support": "Agenti supportati",
+      "use": "Come usare",
+      "newProject": "Nuovo progetto",
+      "existing": "Progetto esistente",
+      "standards": "Standard ingegneristici",
+      "library": "Catalogo della conoscenza",
+      "directory": "Elenco delle competenze",
+      "real": "Esempi del mondo reale",
+      "how": "Come funziona",
+      "limitations": "Limitazioni",
+      "roadmap": "Tabella di marcia",
+      "docs": "Documentazione",
+      "contributors": "Collaboratori",
+      "thanks": "Ringraziamenti",
+      "license": "Licenza",
+      "stars": "Storia delle stelle",
+      "releases": "Rilasci",
+      "shuffle": "Perché lo shuffle sembra rotto?",
+      "what": "Cos'è SeniorMode?",
+      "why": "Perché SeniorMode?",
+      "compare": "Prima e dopo",
+      "scopes": "Progetto e portata globale",
+      "manual": "Installazione manuale",
+      "managed": "Installazione gestita da CLI",
+      "troubleshoot": "Risoluzione dei problemi",
+      "security": "Politica di sicurezza",
+      "conduct": "Codice di condotta"
+    },
+    "columns": {
+      "host": "Agente",
+      "records": "Decisioni di ingegneria",
+      "categories": "Categorie",
+      "native": "Manuale / percorso del progetto SeniorMode",
+      "project": "percorso del progetto Vercel skills",
+      "global": "percorso globale Vercel skills",
+      "task": "Richiesta dell'utente",
+      "decision": "Decisione ingegneristica"
+    },
+    "text": {
+      "tagline": "L’AI scrive codice. SeniorMode la aiuta a prendere decisioni di ingegneria del software.",
+      "subtitle": "Conoscenze pratiche di ingegneria del software per gli agenti AI che scrivono codice.",
+      "made": "Realizzato in Turchia 🇹🇷",
+      "what": "SeniorMode mette a disposizione del tuo agente una raccolta di decisioni ingegneristiche e un flusso di lavoro per applicarle. L’agente può individuare i rischi, scegliere un approccio adatto al progetto e verificare il risultato.",
+      "quickStart": "Dalla cartella principale del progetto, esegui il comando relativo al tuo agente. Il programma di installazione di Vercel richiede",
+      "firstRun": "Riavvia la sessione dell'agente e chiedi la modifica con parole tue. Menziona SeniorMode se l'host non seleziona l'abilità. In Codex, `$seniormode` è il riferimento esplicito alla competenza. I record raggruppati funzionano senza un server MCP.",
+      "cliMcp": "L'opzione CLI ricerca i record locali. MCP fornisce inoltre al tuo agente l'accesso agli standard e ai flussi di lavoro. SeniorMode viene eseguito localmente senza una chiave API. Il tuo agente potrebbe richiedere un proprio account.",
+      "contribute": "Aggiungi una decisione tecnica, migliora un esempio o una traduzione oppure dicci cosa potrebbe funzionare meglio.",
+      "license": "I flussi di lavoro di codice e competenze utilizzano MIT. La libreria delle decisioni ingegneristiche e le pagine del catalogo generate utilizzano CC BY 4.0.",
+      "scopes": "Il programma di installazione consigliato utilizza l'ambito del progetto per impostazione predefinita. La sua bandiera globale opzionale modifica la posizione a livello di casa. Il SeniorMode CLI gestito scrive solo in un progetto esistente. Aggiungi seniormode a ciascun percorso di competenze di seguito. Tilde indica la tua directory home.",
+      "external": "Vercel skills registra le installazioni del progetto in `skills-lock.json` e le installazioni globali in `.skill-lock.json`. Utilizza `--project` per gli aggiornamenti del progetto e `--global` per le operazioni globali. L'installatore può modificare la cartella della specialità selezionata e il file di blocco.",
+      "manual": "Copia l'intera directory `skills/seniormode` da un checkout affidabile nella directory delle competenze dell'host. Conservare insieme `SKILL.md`, riferimenti e licenze. Per aggiornare o rimuovere la copia manuale, sostituisci o elimina solo quella cartella dopo aver esaminato eventuali modifiche locali.",
+      "managed": "Dopo aver installato le dipendenze nella copia locale del codice sorgente di SeniorMode, esegui questi comandi uno alla volta per un progetto esistente. Per usare la CLI serve",
+      "ownership": "Il CLI gestito verifica di essere proprietario dei file installati e che non siano modificati prima di aggiornarli o rimuoverli. Limita le modifiche alla competenza gestita e ai relativi record di installazione. Configura MCP nel tuo agente se ne hai bisogno.",
+      "troubleshoot": "Controlla la root del progetto, il percorso di installazione e la versione Node.js. Riavvia la sessione, quindi richiama SeniorMode per nome se l'agente deve ancora rilevarlo. Per gli errori CLI gestiti, consultare la guida al runtime."
+    },
+    "cases": [
+      [
+        "Musica casuale",
+        "Aggiungi riproduzione casuale alla mia app musicale.",
+        "Esegui questo esempio per vedere i titoli dei brani e l'ordine completo per ciascun metodo."
+      ],
+      [
+        "Prenotazioni dell'ultima camera",
+        "Costruisci un sistema di prenotazione per il mio piccolo hotel.",
+        "Il test invia due richieste contemporaneamente. Si prenota la stanza. L'altro lo trova occupato."
+      ],
+      [
+        "Nuovo tentativo di pagamento",
+        "Costruisci un checkout con i pagamenti.",
+        "Il test elimina la prima risposta, ritenta la richiesta e conferma che è stato registrato un solo addebito."
+      ],
+      [
+        "Post ripetuti in un feed",
+        "Alcuni post in questo feed vengono visualizzati due volte. Scopri perché.",
+        "L'esempio inserisce un post tra le richieste e mostra due modi per continuare il feed, incluso uno che evita la ripetizione di un post."
+      ]
+    ],
+    "contribution": [
+      "Cerca la decisione nel catalogo prima di aggiungere un record.",
+      "Modifica il canonico Markdown inglese con scenari, fonti, alias e controlli originali.",
+      "Rigenera il catalogo e includi i documenti e gli indici risultanti nella tua richiesta pull.",
+      "Esegui i controlli. Per una traduzione, rivedere il testo, i collegamenti, i comandi e gli avvertimenti in inglese corrispondenti."
+    ],
+    "questions": [
+      [
+        "Ho bisogno di una chiave SeniorMode API?",
+        "La competenza, CLI e il server MCP vengono eseguiti localmente senza una chiave SeniorMode API. Il tuo agente potrebbe aver bisogno del proprio account o dell'accesso al modello. L'installazione da Git o con Vercel skills può richiedere l'accesso alla rete."
+      ],
+      [
+        "SeniorMode si attiverà automaticamente?",
+        "Il rilevamento automatico dipende dal tuo agente. Riavvia la sessione dopo l'installazione e menziona SeniorMode se la competenza non è selezionata."
+      ],
+      [
+        "Quale programma di installazione devo utilizzare per aggiornare o disinstallare?",
+        "Utilizzare il metodo con cui è stata installata la copia. Vercel skills tiene traccia delle proprie copie nei file di blocco. Il SeniorMode CLI controlla il proprio record di installazione e protegge le cartelle modificate o non gestite."
+      ],
+      [
+        "Cosa viene tradotto?",
+        "Le guide, gli esempi e i riepiloghi della Directory sono disponibili nelle lingue nel menu in alto. La documentazione completa e gli standard sono in inglese. La ricerca supporta inglese e turco e il tuo agente può spiegare il risultato nella tua lingua."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Il codice funzionante è solo il punto di partenza.",
+    "installLead": "Fornisci questo messaggio al tuo agente di codifica o scegli il tuo agente di seguito per il comando del terminale.",
+    "prompt": "Installa SeniorMode da {source}. Segui le istruzioni di installazione per il mio agente di codifica e il progetto attuale. Controlla la directory di destinazione prima di scrivere, conserva le mie impostazioni ed eventuali modifiche alle competenze esistenti e verifica che la competenza sia disponibile. Chiedi prima di sovrascrivere una copia esistente. Lascia la configurazione MCP per una richiesta separata.",
+    "newScenario": [
+      "Utilizza SeniorMode per creare un'app di streaming musicale.",
+      "Descrivi cosa vuoi costruire. Il tuo agente sceglie un progetto iniziale, crea la prima versione utile e controlla come funziona.",
+      "Posso iniziare un nuovo progetto?",
+      "SÌ. Apri una cartella di progetto e comunica al tuo agente cosa vuoi creare con SeniorMode."
+    ],
+    "existingScenario": [
+      "Usa SeniorMode per aggiungere la riproduzione casuale alla mia app musicale.",
+      "Descrivi il cambiamento o il problema nel tuo progetto. Il tuo agente legge prima il codice esistente. Quando richiedi un audit, riporta i risultati senza modificare i file.",
+      "Posso usarlo su un progetto esistente?",
+      "SÌ. Utilizzare SeniorMode per una funzionalità, correzione, refactoring o controllo. Un controllo inizia in sola lettura."
+    ],
+    "hostSupport": "Installa SeniorMode in uno qualsiasi di questi cinque agenti. Puoi anche utilizzare MCP da un client compatibile."
+  },
+  "footer": {
+    "starPrompt": "Se SeniorMode ti aiuta nel tuo prossimo progetto, {star} così altri potranno trovarlo.",
+    "starAction": "dagli una stella su GitHub",
+    "acknowledgments": "SeniorMode si basa su questi progetti aperti."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Algoritmi e strutture dati",
+      "architecture": "Architettura",
+      "backend": "Backend e API",
+      "concurrency": "Concorrenza",
+      "data": "Dati e archiviazione",
+      "frontend": "Frontend",
+      "geospatial": "Geospaziale",
+      "networking": "Rete",
+      "performance": "Prestazioni",
+      "product": "Comportamento del prodotto",
+      "reliability": "Affidabilità",
+      "security": "Sicurezza",
+      "testing": "Test"
+    },
+    "standardLabels": {
+      "greenfield": "Pianificazione del greenfield",
+      "architecture": "Architettura",
+      "structure": "Struttura del progetto",
+      "modularity": "Modularità e riuso",
+      "code-principles": "Principi del codice",
+      "dependencies": "Dipendenze",
+      "api": "contratti API",
+      "data": "Dati e archiviazione",
+      "security": "Sicurezza",
+      "configuration": "Configurazione",
+      "reliability": "Affidabilità",
+      "observability": "Osservabilità",
+      "performance": "Prestazioni",
+      "testing": "Test",
+      "documentation": "Documentazione",
+      "refactoring": "Refactoring sicuro"
+    },
+    "directory": "Trova il problema che stai riscontrando di seguito. Ogni voce si collega a una guida inglese con opzioni, compromessi e modi per verificare il risultato.",
+    "shuffle": "Tre mescolamenti degli stessi sei brani mostrano perché la riproduzione casuale può ancora sembrare ripetitiva.",
+    "shuffleLab": "Prova la demo dal vivo",
+    "shuffleColumns": [
+      "Metodo",
+      "Ordine dell'artista",
+      "Ripetizioni adiacenti"
+    ],
+    "shuffleMethods": [
+      "Ordinamento casuale",
+      "Fisher-Yates",
+      "Consapevole dell'artista"
+    ],
+    "checkoutSteps": [
+      "**Richiesta.** \"A volte Checkout mi addebita due volte quando la mia connessione si interrompe.\"",
+      "**Investigare.** Il pagamento può avere successo prima che la risposta raggiunga il cliente.",
+      "**Scegli una soluzione.** Riprovare con lo stesso ID acquisto consente al sistema di riconoscere il pagamento originale.",
+      "**Verificare.** L'esempio locale elimina la prima risposta. Il nuovo tentativo restituisce HTTP `{status}` e il database contiene **addebito {total}**."
+    ],
+    "audit": [
+      "Controllare un progetto esistente",
+      "Utilizza SeniorMode per scoprire perché i post appaiono due volte nel mio feed."
+    ],
+    "usage": "SeniorMode parte dalla tua richiesta ed esamina il progetto. Individua le decisioni che potresti non sapere di chiedere, controlla quali linee guida si adattano e spiega come è stato verificato il risultato.",
+    "ownership": "Vercel skills e SeniorMode CLI tengono traccia delle copie installate. Aggiorna o rimuovi una copia con lo strumento che l'ha installata. Per le copie manuali, rivedere le modifiche locali prima di sostituire o rimuovere la cartella.",
+    "contribution": "Aggiungi un titolo e una breve dichiarazione del problema per l'ID del record a ciascun file in scripts/directory-locales/. La Directory si collega ai documenti canonici e il Catalogo della conoscenza punta alla Directory. Gli indici di competenza e la ricerca CLI/MCP utilizzano gli stessi record. La sezione inglese di questa guida spiega i generatori.",
+    "outcomes": [
+      "Ogni brano rimane in coda e i brani dello stesso artista vengono distanziati quando la playlist lo consente.",
+      "Solo un ospite può prenotare l'ultima camera, anche quando le richieste arrivano insieme.",
+      "I clienti possono riprovare dopo una risposta persa senza essere addebitati due volte.",
+      "I nuovi post possono arrivare senza che i post precedenti vengano visualizzati due volte nel feed."
+    ]
+  },
+  "sections": {
+    "accessibility": "Accessibilità",
+    "mission": "Inizia con il risultato che desideri. SeniorMode aiuta il tuo agente a trasformare una richiesta ordinaria in decisioni che si adattano al tuo progetto, proteggono ciò che conta e possono essere verificate. Le informazioni rimangono disponibili localmente affinché tu e il tuo agente possiate verificarle.",
+    "architecture": "I percorsi Agent Skill funzionano per costruire, verificare e gli standard pertinenti. CLI e MCP utilizzano gli stessi record inglesi e la ricerca SQLite in memoria per query in inglese e turco. Le installazioni gestite copiano la Skill in un progetto scelto. Il catalogo e i generatori README organizzano questo materiale per agenti e lettori.",
+    "governance": "Il manutentore esamina le modifiche per ambito, fonti, test, licenza e coerenza con il materiale canonico. Utilizza un problema per discutere di una nuova categoria, di una modifica sostanziale o di una modifica alla politica di rilascio. Il manutentore decide quando un rilascio è pronto e registra importanti limitazioni nelle sue note.",
+    "safety": "La CLI e il server MCP locali non inviano telemetria di SeniorMode. L’agente che scrive il codice e il programma di installazione di terze parti hanno impostazioni proprie per i dati. Tratta i riferimenti scaricati come materiale tecnico e controlla le modifiche alle istruzioni della skill e al codice eseguibile.",
+    "reporting": "Segnalare sospette vulnerabilità attraverso la policy di sicurezza. Condividi la versione interessata, l'impatto e le prove minime nel canale privato. Mantenere le prove sensibili fuori dalle questioni pubbliche.",
+    "roadmap": [
+      "Migliora la scoperta dalle richieste ordinarie per progetti nuovi ed esistenti.",
+      "Aggiungi record di origine laddove una decisione ricorrente necessita di compromessi o controlli più chiari.",
+      "Mantieni l'installazione affidabile tra gli agenti e le lingue supportati.",
+      "Pubblicare rilevamenti riproducibili e confronti di implementazione quando sono disponibili esecuzioni corrispondenti.",
+      "Dai priorità a problemi e contributi in base al loro effetto sui flussi di lavoro reali."
+    ],
+    "cli": "Nel checkout del sorgente, installa le dipendenze con `npm ci`. Il CLI può cercare o aprire un record. Esegui `node bin/seniormode.js --help` per l'elenco completo dei comandi.",
+    "mcp": "Configura il tuo agente per eseguire Node con il percorso assoluto dell'argomento CLI e `mcp`. I percorsi JSON su Windows possono utilizzare le barre. Il server fornisce sette strumenti di sola lettura su stdio. Condivide record, standard e flussi di lavoro con la Skill installata.",
+    "activate": [
+      "Selezionare `$seniormode` nel prompt.",
+      "Selezionare `/seniormode` o nominare SeniorMode nella richiesta.",
+      "Seleziona la competenza con `/` nella chat dell'agente. Cursor trova anche le competenze di progetto in `.cursor/skills`.",
+      "Utilizzare `/skills list` per verificare il rilevamento, quindi richiedere SeniorMode per nome.",
+      "Richiedi `seniormode` per nome. Utilizza `opencode debug skill` quando la tua versione OpenCode lo fornisce."
+    ],
+    "mcpNotes": [
+      "Riavvia Codex. Rimuovere la registrazione con `codex mcp remove seniormode`.",
+      "Controlla la registrazione con `claude mcp list`. L'esecuzione di Node funziona direttamente con questa configurazione Windows.",
+      "Unisci questa voce in `mcpServers`. Cursor utilizza `.cursor/mcp.json` e Gemini CLI utilizza `.gemini/settings.json` nell'ambito del progetto.",
+      "Unisci il server locale in `mcp` nella tua configurazione OpenCode."
+    ],
+    "toolHeaders": [
+      "Strumento",
+      "Ingresso",
+      "Risultato"
+    ],
+    "tools": [
+      "Record corrispondenti classificati",
+      "Record, opzioni, controlli e fonti",
+      "Regole decisionali e compromessi",
+      "Lista di controllo per la verifica",
+      "ID standard e quando utilizzarli",
+      "Uno standard completo",
+      "Costruire, controllare o principi operativi"
+    ],
+    "checksLabel": "Codice e verifica",
+    "checks": [
+      "L'esempio eseguibile mostra tutti i titoli dei brani. L'ordinamento con confronti casuali non dà a ciascun ordine probabilità uguali. I test controllano tutte e sei le permutazioni di un elenco di tre elementi, la conservazione delle tracce e le playlist in cui un artista dominante rende inevitabili alcune ripetizioni.",
+      "Due connessioni al database competono per la stessa stanza e la stessa notte. Una richiesta restituisce `201`, l'altra `409` e una prenotazione viene archiviata. Questo esempio riguarda la conferma immediata per una notte.",
+      "Il test elimina la prima risposta e riprova da una connessione separata. Controlla un addebito memorizzato e un conflitto quando lo stesso ID acquisto viene riutilizzato con un importo diverso. Con un vero fornitore, riconcilia un risultato sconosciuto secondo il suo contratto.",
+      "Un nuovo post arriva tra le richieste di pagina. L'offset restituisce gli ID `8, 6` e ripete l'elemento `8`. Il cursor continua da `(9, 8)` con `6, 99`. Il test copre questo inserimento e preserva il percorso di offset esistente."
+    ]
+  },
+  "projectSafety": "Controlla la cartella di destinazione ed esamina eventuali modifiche locali prima di eseguire un programma di installazione.",
+  "addLanguage": "Aggiungi la tua lingua",
+  "translationForm": "Proponi una nuova lingua o una correzione"
+}

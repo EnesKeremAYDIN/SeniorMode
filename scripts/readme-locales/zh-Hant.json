@@ -1,0 +1,263 @@
+{
+  "guide": {
+    "language": "繁體中文",
+    "installAnchor": "install",
+    "nav": {
+      "install": "安裝指南",
+      "usage": "使用",
+      "directory": "技能目錄",
+      "examples": "範例",
+      "faq": "常見問題",
+      "contribute": "貢獻"
+    },
+    "headings": {
+      "install": "安裝",
+      "ai": "讓 AI 安裝",
+      "support": "支援的助理",
+      "use": "使用方法",
+      "newProject": "新專案",
+      "existing": "現有專案",
+      "standards": "工程標準",
+      "library": "知識庫",
+      "directory": "技能目錄",
+      "real": "實際場景",
+      "how": "工作流程",
+      "limitations": "限制",
+      "roadmap": "路線圖",
+      "docs": "檔案",
+      "contributors": "貢獻者",
+      "thanks": "致謝",
+      "license": "許可證",
+      "stars": "星標歷史",
+      "releases": "釋出版本",
+      "shuffle": "隨機播放為什麼有時感覺不對",
+      "what": "SeniorMode 是什麼",
+      "why": "為什麼用 SeniorMode",
+      "compare": "前後對比",
+      "scopes": "專案與全域作用域",
+      "manual": "手動安裝",
+      "managed": "CLI 管理安裝",
+      "troubleshoot": "排查問題",
+      "security": "安全策略",
+      "conduct": "行為準則"
+    },
+    "columns": {
+      "host": "助理",
+      "records": "筆工程記錄",
+      "categories": "個類別",
+      "native": "手動或管理 CLI 的專案路徑",
+      "project": "Vercel skills 專案路徑",
+      "global": "Vercel skills 全域路徑",
+      "task": "使用者請求",
+      "decision": "工程決策"
+    },
+    "text": {
+      "tagline": "AI 會寫程式碼，SeniorMode 幫它做出合適的工程決策。",
+      "subtitle": "給 AI 程式設計助理的實用工程知識。",
+      "made": "在土耳其製作 🇹🇷",
+      "what": "SeniorMode 為你的程式設計助理提供工程決策資料庫，以及在專案中應用這些決策的流程。助理可以找出風險、挑選適合專案的做法，並驗證結果。",
+      "quickStart": "在專案根目錄執行適合你的助理的指令。Vercel 安裝工具需要",
+      "firstRun": "重啟會話，用自己的話描述任務。若助理未選用該技能，請明確提到 SeniorMode。 Codex 可以用 `$seniormode` 呼叫。內建記錄可在沒有 MCP 的情況下使用。",
+      "cliMcp": "可選的 CLI 用於搜尋本地記錄。透過 MCP，助理還可以查閱工程標準和工作流程。 SeniorMode 在本地執行，無需 API 金鑰。助理本身可能需要帳號。",
+      "contribute": "歡迎增加新的工程決策，改進範例或翻譯，也歡迎告訴我們哪裡還可以做得更好。",
+      "license": "程式碼與技能工作流程採用 MIT。知識記錄和產生的目錄採用 CC BY 4.0。",
+      "scopes": "推薦安裝器預設作用於專案。 -g 作用於使用者目錄。 SeniorMode 管理 CLI 只寫入已有專案。在下列路徑後面加上 seniormode。 ~ 表示主目錄。",
+      "external": "Vercel skills 將專案安裝記錄在 `skills-lock.json` 中，將全域安裝記錄在 `.skill-lock.json` 中。更新專案安裝時使用 `--project`，全域操作使用 `--global`。安裝工具可能修改所選資料夾和鎖定檔案。",
+      "manual": "從可信任的程式碼副本複製完整的 `skills/seniormode` 目錄。保留 `SKILL.md`、引用檔案和許可證。替換或刪除前先檢查本地更改。",
+      "managed": "先在 SeniorMode 原始碼目錄安裝相依套件，再為既有專案逐一執行下列指令。CLI 需要",
+      "ownership": "管理 CLI 以清單驗證檔案，保留未管理或編輯過的副本。 update 和 uninstall 作用於原樣的管理副本。安裝保留既有設定，MCP 單獨配置。",
+      "troubleshoot": "請先確認專案根目錄、安裝路徑和 Node.js 版本。重新啟動工作階段後，如果助理仍找不到技能，可以直接指定 SeniorMode。若管理 CLI 報錯，請參考執行指南。"
+    },
+    "cases": [
+      [
+        "音樂隨機播放",
+        "給我的音樂應用加入隨機播放。",
+        "執行範例即可檢視每種方法產生的完整播放順序和歌名。"
+      ],
+      [
+        "最後一間客房",
+        "為我的小旅館搭建預約系統。",
+        "測試同時發出兩個預訂請求。一個訂到房，另一個收到房間已被訂走的結果。"
+      ],
+      [
+        "支付重試",
+        "建立一個接受支付的購物車。",
+        "測試丟棄第一次支付的回應，重試後確認只記錄了一次扣款。"
+      ],
+      [
+        "資訊流重複",
+        "找出帖子為何出現兩次。",
+        "範例在兩次請求之間插入一篇帖子，並說明怎樣避免訊息流出現重複內容。"
+      ]
+    ],
+    "contribution": [
+      "新增記錄前先在目錄中查詢已有決策。",
+      "編輯英文原文並提供原創場景、來源、別名和驗證。",
+      "重新產生目錄和索引，把生成檔一同提交審查。",
+      "執行檢查，翻譯時比對英文中的連結、指令和限制。"
+    ],
+    "questions": [
+      [
+        "需要 SeniorMode API 金鑰嗎",
+        "技能、CLI 和 MCP 都在本地執行，無需 SeniorMode API 金鑰。助理可能需要自己的帳號或模型存取許可權。透過 Git 或 Vercel skills 安裝可能需要連網。"
+      ],
+      [
+        "技能會自動啟用嗎",
+        "能否自動找到技能取決於助理。安裝後重新啟動會話，如果未自動選取技能，可以直接提到 SeniorMode。"
+      ],
+      [
+        "如何更新或解除安裝",
+        "請使用原來的安裝方式。 Vercel skills 使用自己的鎖檔案。 SeniorMode CLI 會檢查自己的安裝記錄，並保護已修改或透過其他方式安裝的資料夾。"
+      ],
+      [
+        "哪些內容有翻譯",
+        "你可以在頁面上方切換指南、範例和技能目錄摘要的語言。完整工程紀錄和標準採用英文。搜尋支援英文和土耳其文，你也可以請助理用自己的語言說明結果。"
+      ]
+    ]
+  },
+  "experience": {
+    "working": "程式碼能執行只是第一步。",
+    "installLead": "把下面的提示發給你的程式設計助理，也可以在下方選擇工具並複製終端命令。",
+    "prompt": "請從 {source} 安裝 SeniorMode。依照我使用的程式設計助理與目前專案適用的安裝說明操作。寫入前先檢查目標目錄，保留我的設定和現有技能修改，並確認技能可用。覆寫既有副本前請先詢問。只有我另外提出要求時，才設定 MCP。",
+    "newScenario": [
+      "用 SeniorMode 做一個音樂串流應用程式。",
+      "說說你想做什麼。助理會選擇合適的起步方案，做出第一個可用版本，再檢查運作效果。",
+      "能從零開始新專案嗎？",
+      "可以。開啟專案資料夾，告訴助理你想用 SeniorMode 做什麼。"
+    ],
+    "existingScenario": [
+      "用 SeniorMode 為我的音樂應用加上隨機播放。",
+      "描述你想改什麼，或是遇到了什麼問題。助理會先讀取現有程式碼。如果你只要求審查，它會報告發現的問題，不修改檔案。",
+      "能在現有專案使用嗎？",
+      "可以。你可以用 SeniorMode 加入功能、修復問題、重構或審查程式碼。審查以只讀方式開始。"
+    ],
+    "hostSupport": "這五款助理均可安裝 SeniorMode。你也可以透過相容的客戶端使用 MCP。"
+  },
+  "footer": {
+    "starPrompt": "如果 SeniorMode 對你的專案有幫助，歡迎{star}，讓更多人發現它。",
+    "starAction": "在 GitHub 上點個星",
+    "acknowledgments": "SeniorMode 基於以下開放專案。"
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "演演算法與資料結構",
+      "architecture": "架構",
+      "backend": "後端與 API",
+      "concurrency": "並行",
+      "data": "資料與儲存",
+      "frontend": "前端",
+      "geospatial": "地理位置",
+      "networking": "網路",
+      "performance": "效能",
+      "product": "產品行為",
+      "reliability": "可靠性",
+      "security": "安全",
+      "testing": "測試"
+    },
+    "standardLabels": {
+      "greenfield": "新專案規劃",
+      "architecture": "架構",
+      "structure": "專案結構",
+      "modularity": "模組化與複用",
+      "code-principles": "程式碼原則",
+      "dependencies": "依賴管理",
+      "api": "API 契約",
+      "data": "資料與儲存",
+      "security": "安全",
+      "configuration": "配置",
+      "reliability": "可靠性",
+      "observability": "可觀測性",
+      "performance": "效能",
+      "testing": "測試",
+      "documentation": "檔案",
+      "refactoring": "安全重構"
+    },
+    "directory": "你可以在下面找到遇到的問題。每項都連結到英文指南，介紹選用方案、取捨和驗證結果的方法。",
+    "shuffle": "同樣六首歌排成三種順序，展示了隨機播放為什麼聽起來也可能重複。",
+    "shuffleLab": "體驗互動演示（英語）",
+    "shuffleColumns": [
+      "方法",
+      "歌手順序",
+      "連續重複"
+    ],
+    "shuffleMethods": [
+      "隨機排序",
+      "Fisher–Yates",
+      "錯開同一歌手"
+    ],
+    "checkoutSteps": [
+      "**需求。**「付款時連線一斷，有時就會被扣兩次款。”",
+      "**排查。** 即使顧客沒有收到回應，付款也可能已經完成。",
+      "**解決。** 重試時沿用相同購買 ID，系統就能辨識原來的付款。",
+      "**驗證。** 本地範例讓第一次回應遺失。重試回傳 HTTP `{status}`，資料庫只記錄了 **{total} 筆扣款**。"
+    ],
+    "audit": [
+      "審查現有專案",
+      "用 SeniorMode 找出為什麼我的資訊流會重複顯示某些貼文。"
+    ],
+    "usage": "SeniorMode 從你的需求出發，檢視實際專案。它會找出你無須事先指定的技術問題，評估哪些做法適合，並說明驗證結果的過程。",
+    "ownership": "Vercel skills 和 SeniorMode CLI 各自追蹤自己安裝的副本。更新或解除安裝時，請使用原廠的安裝工具。如果是手動安裝，請在取代或刪除資料夾前檢查本機變更。",
+    "contribution": "在 scripts/directory-locales/ 下每個檔案中，為該 ID 新增標題和簡短的問題描述。技能目錄連結到原始記錄，知識目錄則指向技能目錄。技能索引以及 CLI 和 MCP 的搜尋都使用同一批記錄。本指南的英文部分介紹了各個生成器的作用。",
+    "outcomes": [
+      "每首歌都保留在佇列中。列表允許時，會錯開同一歌手的歌曲。",
+      "即使請求同時到達，最後一間房也只能由一位客人預訂。",
+      "支付回應遺失後，顧客可以重試，不會再扣一次款。",
+      "即使有新帖子到達，同一個帖子也不會在資訊流中重複出現。"
+    ]
+  },
+  "sections": {
+    "accessibility": "無障礙",
+    "mission": "用平常的話說出你想實現的結果。 SeniorMode 幫助助理找出適合專案的工程決策，並驗證結果。相關知識儲存在本地，隨時可以查閱。",
+    "architecture": "Agent Skill 依任務引導至 Build、Audit 與相關標準。CLI 和 MCP 使用同一批英文紀錄，並透過記憶體內的 SQLite 支援英文和土耳其文查詢。管理式安裝會將技能複製到指定專案。目錄與 README 產生器會為使用者和助理整理這些資料。",
+    "governance": "維護者會稽核範圍、來源、測試、許可，以及是否與原始記錄一致。新增類別、破壞相容性的變更和釋出政策可透過 issue 討論。維護者決定何時釋出，並在釋出說明中記錄重要限制。",
+    "safety": "本機 CLI 和 MCP 伺服器不會傳送 SeniorMode 遙測資料。你的程式設計助理和第三方安裝工具各有自己的資料設定。請把下載的內容視為技術參考，並檢查技能指示與可執行程式碼的變更。",
+    "reporting": "若發現疑似漏洞，請依安全政策通報，並透過私人管道提供受影響的版本、影響範圍和足以判斷問題的證據。請勿在公開議題中張貼敏感資料。",
+    "roadmap": [
+      "提升從日常需求中識別工程決策的能力。",
+      "補充常見決策的來源、取捨和驗證方法。",
+      "讓受支援代理與語言的安裝流程保持可靠。",
+      "有條件相同的執行結果時，釋出可復現的對比。",
+      "按對實際工作流程的影響安排問題和貢獻的優先順序。"
+    ],
+    "cli": "在原始碼檢出目錄執行 `npm ci`。可用 CLI 搜尋或開啟記錄。執行 `node bin/seniormode.js --help` 檢視全部命令。",
+    "mcp": "讓助理使用 CLI 的絕對路徑和 `mcp` 引數啟動 Node。 Windows 上的 JSON 路徑可使用正斜線。服務透過 stdio 提供七個唯讀工具，與已安裝技能共用記錄、標準和工作流程。",
+    "activate": [
+      "在提示中選擇 `$seniormode`。",
+      "選擇 `/seniormode` 或直接提到 SeniorMode。",
+      "在 Agent 聊天中透過 `/` 選擇技能。 Cursor 也辨識 `.cursor/skills`。",
+      "用 `/skills list` 確認識別結果，再依名稱請求 SeniorMode。",
+      "按名稱請求 `seniormode`。版本支援時可用 `opencode debug skill` 檢查。"
+    ],
+    "mcpNotes": [
+      "重啟 Codex。用 `codex mcp remove seniormode` 移除註冊。",
+      "用 `claude mcp list` 檢查註冊。 Windows 上可直接啟動 Node。",
+      "把此項加入 `.cursor/mcp.json` 或 `.gemini/settings.json` 的 `mcpServers`。",
+      "把本地服務加入 OpenCode 配置的 `mcp`。"
+    ],
+    "toolHeaders": [
+      "工具",
+      "輸入",
+      "結果"
+    ],
+    "tools": [
+      "按相關性排列的記錄",
+      "記錄、方案、驗證與來源",
+      "決策規則與取捨",
+      "驗證清單",
+      "標準 ID 與適用場景",
+      "一份完整的標準指南",
+      "Build、Audit 或工作原則"
+    ],
+    "checksLabel": "程式碼與驗證",
+    "checks": [
+      "範例輸出全部歌曲標題。透過隨機比較排序時，各種順序的機率不同。測試涵蓋三個條目的六種排法、歌曲保留以及無法避免重複的情況。",
+      "兩個資料庫連線競爭同一個房間和日期。一個返回 `201`，另一個返回 `409`，最終只儲存一筆即時確認的預訂。",
+      "測試丟棄第一次回應並從另一個連線重試。僅記錄一筆扣款，金額不同時產生衝突。接入真實服務時，依其介面約定核對不確定的結果。",
+      "兩次請求之間插入新帖子。偏移分頁傳回 `8, 6`，導致 `8` 重複。遊標 `(9, 8)` 後回傳 `6, 99`。測試覆蓋兩種路徑。"
+    ]
+  },
+  "projectSafety": "執行安裝工具前，請確認目標資料夾並檢查現有的本機變更。",
+  "addLanguage": "新增你的語言",
+  "translationForm": "建議新增語言或修正翻譯",
+  "period": "。"
+}

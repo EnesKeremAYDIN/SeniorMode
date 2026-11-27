@@ -3,7 +3,7 @@
 ## Validate the exact candidate
 
 1. Build a fresh checkout and run `npm ci`, `npm run verify`, `npm run docs:check`, `npm run benchmark`, `npm run release:check`, `npm run prelaunch:check` and `npm audit`. Record the package and CLI versions, Git tree and verification results.
-2. Inspect the README and canonical records on GitHub. Check onboarding, examples, the eight language paths, licenses, media, and the record decisions, checks, sources, and related links. Keep model-performance claims scoped to observed evidence.
+2. Inspect the README and canonical records on GitHub. Check onboarding, examples, the language menu and localized paths, licenses, media, and the record decisions, checks, sources, and related links. Keep model-performance claims scoped to observed evidence.
 3. Export the exact candidate with `git archive`. Run `node scripts/check-release-files.js --snapshot <directory>` against the extracted files.
 
 ## Update the existing SeniorMode repository

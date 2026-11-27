@@ -1,4 +1,5 @@
 import { otherLocales } from './document-other-locales.js';
+import { readmeLocaleFiles, readmeLocaleSection } from './document-locale-files.js';
 
 const en = {
   language: 'English',
@@ -52,7 +53,7 @@ const en = {
     ['Do I need a SeniorMode API key?', 'The skill, CLI, and MCP server run locally without a SeniorMode API key. Your agent may need its own account or model access. Installing from Git or with Vercel skills can require network access.'],
     ['Will SeniorMode activate automatically?', 'Automatic discovery depends on your agent. Restart the session after installing and mention SeniorMode if the skill isn’t selected.'],
     ['Which installer should I use to update or uninstall?', 'Use the method that installed the copy. Vercel skills tracks its own copies in lock files. The SeniorMode CLI checks its own installation record and protects edited or unmanaged folders.'],
-    ['What is translated?', 'The guides, examples, and Directory summaries are available in eight languages. Full records and standards are in English. Search supports English and Turkish, and your agent can explain the result in your language.'],
+    ['What is translated?', 'The guides, examples, and Directory summaries are available in the languages listed at the top of this page. Full records and standards are in English. Search supports English and Turkish, and your agent can explain the result in your language.'],
   ],
 };
 
@@ -108,9 +109,29 @@ const tr = {
     ['SeniorMode için API anahtarı gerekir mi?', 'Beceri, CLI ve MCP yerel çalışır. SeniorMode için API anahtarı gerekmez. Asistanın kendi hesabına veya model erişimine ihtiyaç duyabilir. Git ya da Vercel skills ile kurulum için internet bağlantısı gerekebilir.'],
     ['SeniorMode otomatik etkinleşir mi?', 'Otomatik keşif kullandığın asistana bağlı. Kurulumdan sonra oturumu yeniden başlat. Beceri seçilmezse SeniorMode’u adıyla çağır.'],
     ['Güncelleme veya kaldırma için hangi aracı kullanmalıyım?', 'Kopyayı ilk kurduğun yöntemle güncelle veya kaldır. Vercel skills kendi kilit dosyalarını kullanır. SeniorMode CLI kendi kurulum kaydını kontrol eder ve düzenlediğin ya da başka bir yöntemle kurduğun kopyaları korur.'],
-    ['Hangi içerikler çevrildi?', 'Rehberler, örnekler ve Beceri Dizini’ndeki özetler sekiz dilde. Kayıtların ve standartların tam metni İngilizce. İngilizce veya Türkçe arama yapabilir, sonucu kendi dilinde açıklamasını asistanından isteyebilirsin.'],
+    ['Hangi içerikler çevrildi?', 'Rehberleri, örnekleri ve Beceri Dizini’ndeki özetleri sayfanın başındaki menüde yer alan dillerde okuyabilirsin. Kayıtların ve standartların tam metni İngilizce. İngilizce veya Türkçe arama yapabilir, sonucu kendi dilinde açıklamasını asistanından isteyebilirsin.'],
   ],
 };
 
-export const locales = { en, tr, ...otherLocales };
+const builtInLocales = { en, tr, ...otherLocales };
+const translationLinks = {
+  "en": { addLanguage: "Add your language", translationForm: "Propose a language or suggest a translation fix" },
+  "tr": { addLanguage: "Kendi dilini ekle", translationForm: "Yeni bir dil öner veya çeviri düzeltmesi gönder" },
+  "de": { addLanguage: "Eigene Sprache hinzufügen", translationForm: "Eine Sprache vorschlagen oder eine Übersetzung korrigieren" },
+  "es": { addLanguage: "Añade tu idioma", translationForm: "Propón un idioma o una corrección de traducción" },
+  "fr": { addLanguage: "Ajouter votre langue", translationForm: "Proposer une langue ou une correction de traduction" },
+  "ja": { addLanguage: "自分の言語を追加", translationForm: "言語の追加や翻訳の修正を提案する", period: '。' },
+  "pt-BR": { addLanguage: "Adicione seu idioma", translationForm: "Sugira um idioma ou uma correção de tradução" },
+  "zh-CN": { addLanguage: "添加你的语言", translationForm: "建议新增语言或修正翻译", period: '。' },
+};
+
+const fileLocales = readmeLocaleSection('guide');
+for (const locale of Object.keys(fileLocales)) {
+  if (Object.hasOwn(builtInLocales, locale)) throw new Error('Duplicate README locale ' + locale);
+}
+export const locales = { ...builtInLocales, ...fileLocales };
+
+export function localeMetadata(locale) {
+  return readmeLocaleFiles[locale] ?? translationLinks[locale];
+}
 

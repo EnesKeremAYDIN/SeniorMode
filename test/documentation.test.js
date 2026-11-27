@@ -1,14 +1,15 @@
 import assert from 'node:assert/strict';
 import { mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { test } from 'node:test';
 import { shuffleComparison } from '../examples/shuffle.mjs';
 import { generatedDocuments, markdownTree, validateDocumentLinks } from '../scripts/documents.js';
 import { validateDirectoryCopy } from '../scripts/document-directory.js';
-import { locales } from '../scripts/document-locales.js';
+import { localeMetadata, locales } from '../scripts/document-locales.js';
 import { readmeAnchor, readmePath } from '../scripts/document-paths.js';
+import { readmeSectionsByLocale } from '../scripts/document-sections.js';
 import { agents } from '../src/install.js';
 import { categories, readPatterns, skillRoot } from '../src/patterns.js';
 
@@ -36,10 +37,9 @@ test('documentation link validation checks HTML anchors and each responsive imag
   assert.throws(() => validate('<source srcset="light.svg 1x, missing.svg 2x">'), /broken link/);
 });
 
-test('all eight README pages include onboarding, examples, Directory and FAQ', () => {
+test('all README pages include onboarding, examples, Directory and FAQ', () => {
   const slug = 'EnesKeremAYDIN/SeniorMode';
   const source = markdownTree(repository);
-  assert.equal(Object.keys(locales).length, 8);
   const { randomComparator, uniform, varied } = shuffleComparison();
   const expectedOrders = [randomComparator, uniform, varied].map(queue => queue.map(track => track.artist));
   for (const [locale, { headings, nav, cases }] of Object.entries(locales)) {
@@ -63,7 +63,8 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     assert.deepEqual(rows.map(([, , count]) => Number(count)), [3, 1, 0], locale);
     const workflow = usage.slice(usage.indexOf('\n### ' + headings.how + '\n'));
     assert.deepEqual([...workflow.matchAll(/^(\d)\. \*\*/gm)].map(([, index]) => index), ['1', '2', '3', '4'], locale);
-    assert.match(workflow, /`200`.*\*\*1/u, locale);
+    const verification = workflow.match(/^4\. .+/m)?.[0];
+    assert(verification?.includes('`200`') && /\*\*[^*]*\b1\b[^*]*\*\*/u.test(verification), locale);
     assert.match(workflow, /\]\(#example-payment-idempotency\)/, locale);
     assert.match(readme, /\*\*103\*\* .+ · \*\*13\*\* .+ · \*\*16\*\* .+ · \*\*5\*\* .+/, locale);
     for (const metric of ['stars', 'forks', 'v/release']) {
@@ -80,7 +81,7 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     }
     assert.match(install, /cursor-on-dark\.svg[^\n]+cursor-on-light\.svg/, locale);
     assert.match(install, /opencode-on-dark\.svg[^\n]+opencode-on-light\.svg/, locale);
-    assert.match(install, /<summary>Codex<\/summary>\n\n```sh\nnpx skills@/, locale);
+    assert.match(install, /<summary>Codex<\/summary>\n\n(?:<div dir="ltr">\n\n)?```sh\nnpx skills@/, locale);
     assert.match(install, /npx skills@1\.9\.0 update seniormode --project/, locale);
     assert.match(install, /node bin\/seniormode\.js uninstall --agent codex/, locale);
     for (const name of ['search_patterns','get_pattern','compare_approaches','get_checklist','list_standards','get_standard','get_workflow']) {
@@ -106,13 +107,11 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
   assert(![...source.keys()].some(path => path.startsWith('docs/patterns/')));
 });
 
-test('all eight READMEs link to the shared contribution and accessibility guides', () => {
+test('all READMEs link to the shared contribution and accessibility guides', () => {
   const source = markdownTree(repository);
   const contribution = source.get('.github/CONTRIBUTING.md').replaceAll('\r\n', '\n');
   const accessibility = source.get('.github/ACCESSIBILITY.md');
-  const labels = ['Accessibility', 'Erişilebilirlik', 'Barrierefreiheit', 'Accesibilidad', 'Accessibilité',
-    'アクセシビリティ', 'Acessibilidade', '无障碍'];
-  const languageSections = [...contribution.matchAll(/^<a id="([^"]+)"><\/a>\n\n## ([^\n]+)\n([\s\S]*?)(?=^<a id=|(?![\s\S]))/gm)];
+  const languageSections = [...contribution.matchAll(/^<a id="([^"]+)"><\/a>\n\n## ([^\n]+)\n([\s\S]*?)(?=^<a id="[^"]+"><\/a>\n\n## |(?![\s\S]))/gm)];
   assert.deepEqual(languageSections.map(([, id, language]) => [id, language]),
     Object.entries(locales).map(([locale, { language }]) => [locale.toLowerCase(), language]));
   assert.match(languageSections[0][3], /\]\(\.\.\/schema\/pattern\.schema\.json\)/);
@@ -128,13 +127,55 @@ test('all eight READMEs link to the shared contribution and accessibility guides
     assert.match(contributionLink, /fork_right\.svg/, locale);
     assert.doesNotMatch(readme, /scripts\/directory-locales\/|id="contributing"/, locale);
     const docs = readme.split('\n## ' + headings.docs + '\n')[1].split('\n## ')[0];
-    assert(docs.includes(`<a href="${prefix}.github/ACCESSIBILITY.md">${labels[index]}</a>`), locale);
+    assert(docs.includes(`<a href="${prefix}.github/ACCESSIBILITY.md">${readmeSectionsByLocale[locale].accessibility}</a>`), locale);
     assert(contribution.includes(`[${language}](#${id})`), locale);
     assert.match(section, /scripts\/directory-locales\//, locale);
     assert.match(section, /npm run docs:generate/, locale);
     assert.match(section, /npm run verify/, locale);
     assert.match(section, /\]\(ACCESSIBILITY\.md\)/, locale);
     if (locale !== 'en') assert.match(section, /\]\(#en\)/, locale);
+  }
+});
+
+test('the inline language menu links to every other README and a localized translation contribution section', () => {
+  const docs = generatedDocuments();
+  const languages = Object.keys(locales);
+  const guide = docs.get('.github/CONTRIBUTING.md');
+  for (const locale of languages) {
+    const path = readmePath(locale);
+    const readme = docs.get(path);
+    const [, menu] = readme.match(/<p dir="ltr">(.+)<\/p>/);
+    const items = [...menu.matchAll(/<(a|strong)(?: href="([^"]+)")? lang="([^"]+)" dir="(ltr|rtl)">([^<>]+)<\/\1>/g)]
+      .map(([, type, href, tag, direction, label]) => [type, href, tag, direction, label.replaceAll('&nbsp;', ' ')]);
+    const add = items.pop();
+    assert.deepEqual(items.map(([, , tag]) => tag), languages, path);
+    for (const [type, href, tag, direction, label] of items) {
+      const current = tag === locale;
+      const expectedHref = current ? undefined : posix.relative(posix.dirname(path), readmePath(tag));
+      assert.deepEqual([type, href, direction, label], [current ? 'strong' : 'a', expectedHref,
+        localeMetadata(tag).direction ?? 'ltr', locales[tag].language], path);
+    }
+    const fragment = 'add-a-language' + (locale === 'en' ? '' : '-' + locale.toLowerCase());
+    const contribution = posix.relative(posix.dirname(path), '.github/CONTRIBUTING.md');
+    assert.deepEqual(add, ['a', contribution + '#' + fragment, locale,
+      localeMetadata(locale).direction ?? 'ltr', '+ ' + localeMetadata(locale).addLanguage], path);
+    if (locale !== 'en') assert(guide.includes('<a id="' + fragment + '"></a>'), path);
+  }
+  assert.match(guide, /### Add your language\n\n/);
+  assert.match(guide, /issues\/new\?template=translation\.yml/);
+});
+
+test('right-to-left READMEs keep shell commands and JSON in left-to-right blocks', () => {
+  const docs = generatedDocuments();
+  for (const locale of ['ar', 'fa', 'ug']) {
+    const readme = docs.get(readmePath(locale));
+    assert(readme.includes('<div lang="' + locale + '" dir="rtl">'), locale);
+    const fences = [...readme.matchAll(/^```(?:sh|json)\n[\s\S]*?^```$/gm)];
+    assert(fences.length > 0, locale);
+    for (const block of fences) {
+      assert(readme.slice(0, block.index).endsWith('<div dir="ltr">\n\n'), locale);
+      assert(readme.slice(block.index + block[0].length).startsWith('\n\n</div>'), locale);
+    }
   }
 });
 
@@ -183,7 +224,7 @@ test('a new Directory record cannot silently fall back to another language or ov
   assert.throws(() => validateDirectoryCopy('tr', records, [one, ['two', 'İki', ' ']]), /title and problem/);
 });
 
-test('all eight README pages share dynamic social assets and a single contributor link', () => {
+test('all README pages share dynamic social assets and a single contributor link', () => {
   const files = new Map([...generatedDocuments()].filter(([path]) => path.endsWith('README.md')));
   assert.deepEqual([...files.keys()], Object.keys(locales).map(readmePath));
   for (const [path, content] of files) {

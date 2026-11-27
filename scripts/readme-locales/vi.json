@@ -1,0 +1,262 @@
+{
+  "guide": {
+    "language": "Tiếng Việt",
+    "installAnchor": "install",
+    "nav": {
+      "install": "Cài đặt",
+      "usage": "Cách sử dụng",
+      "directory": "Thư mục kỹ năng",
+      "examples": "Ví dụ",
+      "faq": "Câu hỏi thường gặp",
+      "contribute": "Đóng góp"
+    },
+    "headings": {
+      "install": "cài đặt",
+      "ai": "Cài đặt bằng AI",
+      "support": "Đại lý được hỗ trợ",
+      "use": "Cách sử dụng",
+      "newProject": "Dự án mới",
+      "existing": "Dự án hiện tại",
+      "standards": "Tiêu chuẩn kỹ thuật",
+      "library": "Danh mục kiến thức",
+      "directory": "Thư mục kỹ năng",
+      "real": "Ví dụ thực tế",
+      "how": "Nó hoạt động như thế nào",
+      "limitations": "Hạn chế",
+      "roadmap": "Lộ trình",
+      "docs": "Tài liệu",
+      "contributors": "Người đóng góp",
+      "thanks": "Lời cảm ơn",
+      "license": "Giấy phép",
+      "stars": "Lịch sử sao",
+      "releases": "phát hành",
+      "shuffle": "Tại sao shuffle cảm thấy bị hỏng?",
+      "what": "SeniorMode là gì?",
+      "why": "Tại sao SeniorMode?",
+      "compare": "Trước và sau",
+      "scopes": "Dự án và phạm vi toàn cầu",
+      "manual": "Cài đặt thủ công",
+      "managed": "cài đặt được quản lý bởi CLI",
+      "troubleshoot": "Khắc phục sự cố",
+      "security": "Chính sách bảo mật",
+      "conduct": "Quy tắc ứng xử"
+    },
+    "columns": {
+      "host": "đại lý",
+      "records": "Quyết định kỹ thuật",
+      "categories": "Danh mục",
+      "native": "Đường dẫn dự án thủ công/SeniorMode",
+      "project": "đường dẫn dự án Vercel skills",
+      "global": "đường dẫn toàn cầu Vercel skills",
+      "task": "Yêu cầu của người dùng",
+      "decision": "Quyết định kỹ thuật"
+    },
+    "text": {
+      "tagline": "AI viết mã. SeniorMode giúp AI đưa ra quyết định kỹ thuật phù hợp.",
+      "subtitle": "Kiến thức kỹ thuật thực tiễn cho các tác nhân AI viết mã.",
+      "made": "Được phát triển tại Thổ Nhĩ Kỳ 🇹🇷",
+      "what": "SeniorMode cung cấp cho tác nhân viết mã của bạn một thư viện quyết định kỹ thuật và quy trình áp dụng. Nhờ đó, tác nhân có thể phát hiện rủi ro, chọn giải pháp phù hợp với dự án và kiểm tra kết quả.",
+      "quickStart": "Trong thư mục gốc của dự án, chạy lệnh tương ứng với tác nhân bạn dùng. Trình cài đặt của Vercel yêu cầu",
+      "firstRun": "Khởi động lại phiên đại lý và yêu cầu thay đổi bằng lời nói của bạn. Đề cập đến SeniorMode nếu người chủ trì không chọn kỹ năng. Trong Codex, `$seniormode` là tài liệu tham khảo kỹ năng rõ ràng. Các bản ghi đi kèm hoạt động mà không cần máy chủ MCP.",
+      "cliMcp": "Tùy chọn CLI tìm kiếm các bản ghi cục bộ. MCP cũng cung cấp cho đại lý của bạn quyền truy cập vào các tiêu chuẩn và quy trình công việc. SeniorMode chạy cục bộ mà không cần khóa API. Đại lý của bạn có thể yêu cầu tài khoản riêng của mình.",
+      "contribute": "Thêm một quyết định kỹ thuật, cải thiện một ví dụ hoặc bản dịch hoặc cho chúng tôi biết điều gì có thể hoạt động tốt hơn.",
+      "license": "Quy trình làm việc về mã và kỹ năng sử dụng MIT. Thư viện quyết định kỹ thuật và các trang danh mục được tạo ra của nó sử dụng CC BY 4.0.",
+      "scopes": "Trình cài đặt được đề xuất sử dụng phạm vi dự án theo mặc định. Cờ toàn cầu tùy chọn của nó thay đổi vị trí cấp nhà. SeniorMode CLI được quản lý chỉ ghi vào một dự án hiện có. Nối seniormode vào từng lộ trình kỹ năng bên dưới. Tilde có nghĩa là thư mục chính của bạn.",
+      "external": "Vercel skills ghi lại các cài đặt dự án trong `skills-lock.json` và cài đặt chung trong `.skill-lock.json`. Sử dụng `--project` để cập nhật dự án và `--global` cho các hoạt động toàn cầu. Trình cài đặt có thể thay đổi thư mục kỹ năng đã chọn và tệp khóa.",
+      "manual": "Sao chép toàn bộ thư mục `skills/seniormode` từ thanh toán đáng tin cậy vào thư mục kỹ năng của máy chủ. Giữ lại `SKILL.md`, tài liệu tham khảo và giấy phép cùng nhau. Để làm mới hoặc xóa bản sao thủ công của bạn, chỉ thay thế hoặc xóa thư mục đó sau khi xem xét mọi chỉnh sửa cục bộ.",
+      "managed": "Sau khi cài các gói phụ thuộc trong thư mục mã nguồn SeniorMode, chạy lần lượt từng lệnh dưới đây cho một dự án hiện có. Để chạy CLI, bạn cần",
+      "ownership": "CLI được quản lý kiểm tra xem nó có sở hữu các tệp đã cài đặt không và chúng chưa được sửa đổi trước khi cập nhật hoặc xóa chúng. Nó giới hạn những thay đổi đối với kỹ năng được quản lý và hồ sơ cài đặt của nó. Định cấu hình MCP trong tác nhân của bạn nếu bạn cần.",
+      "troubleshoot": "Kiểm tra gốc dự án, đường dẫn cài đặt và phiên bản Node.js. Khởi động lại phiên, sau đó gọi SeniorMode theo tên nếu tác nhân vẫn chưa khám phá ra nó. Đối với các lỗi CLI được quản lý, hãy xem hướng dẫn thời gian chạy."
+    },
+    "cases": [
+      [
+        "Trộn nhạc",
+        "Thêm ngẫu nhiên vào ứng dụng âm nhạc của tôi.",
+        "Chạy ví dụ này để xem tên bài hát và thứ tự hoàn chỉnh cho từng phương pháp."
+      ],
+      [
+        "Đặt phòng cuối cùng",
+        "Xây dựng hệ thống đặt phòng cho khách sạn nhỏ của tôi.",
+        "Bài kiểm tra sẽ gửi hai yêu cầu cùng một lúc. Một người đặt phòng. Người kia tìm thấy nó được lấy."
+      ],
+      [
+        "Thử lại thanh toán",
+        "Xây dựng một thanh toán với các khoản thanh toán.",
+        "Quá trình kiểm tra sẽ loại bỏ phản hồi đầu tiên, thử lại yêu cầu và xác nhận rằng chỉ có một khoản phí được ghi lại."
+      ],
+      [
+        "Các bài đăng lặp lại trong một nguồn cấp dữ liệu",
+        "Một số bài đăng trong nguồn cấp dữ liệu này hiển thị hai lần. Tìm hiểu lý do tại sao.",
+        "Ví dụ này chèn một bài đăng giữa các yêu cầu và hiển thị hai cách để tiếp tục nguồn cấp dữ liệu, bao gồm một cách tránh lặp lại một bài đăng."
+      ]
+    ],
+    "contribution": [
+      "Tìm kiếm danh mục để tìm quyết định trước khi thêm bản ghi.",
+      "Chỉnh sửa Markdown tiếng Anh chuẩn với các kịch bản, nguồn, bí danh và kiểm tra gốc.",
+      "Tạo lại danh mục và bao gồm các tài liệu và chỉ mục kết quả trong yêu cầu kéo của bạn.",
+      "Chạy kiểm tra. Để có bản dịch, hãy xem lại văn bản tiếng Anh, liên kết, lệnh và cảnh báo tương ứng."
+    ],
+    "questions": [
+      [
+        "Tôi có cần khóa SeniorMode API không?",
+        "Máy chủ kỹ năng, CLI và MCP chạy cục bộ mà không cần khóa SeniorMode API. Đại lý của bạn có thể cần quyền truy cập vào tài khoản hoặc mô hình của riêng mình. Cài đặt từ Git hoặc với Vercel skills có thể yêu cầu truy cập mạng."
+      ],
+      [
+        "SeniorMode có tự động kích hoạt không?",
+        "Tự động phát hiện phụ thuộc vào đại lý của bạn. Khởi động lại phiên sau khi cài đặt và đề cập đến SeniorMode nếu kỹ năng không được chọn."
+      ],
+      [
+        "Tôi nên sử dụng trình cài đặt nào để cập nhật hoặc gỡ cài đặt?",
+        "Sử dụng phương pháp đã cài đặt bản sao. Vercel skills theo dõi các bản sao của chính nó trong các tệp khóa. SeniorMode CLI kiểm tra bản ghi cài đặt của chính nó và bảo vệ các thư mục đã chỉnh sửa hoặc không được quản lý."
+      ],
+      [
+        "được dịch là gì?",
+        "Bạn có thể chọn ngôn ngữ cho hướng dẫn, ví dụ và phần tóm tắt trong danh mục kỹ năng ở đầu trang. Các mục đầy đủ và tiêu chuẩn được viết bằng tiếng Anh. Tìm kiếm hỗ trợ tiếng Anh và tiếng Thổ Nhĩ Kỳ. Bạn có thể nhờ tác nhân giải thích kết quả bằng ngôn ngữ của mình."
+      ]
+    ]
+  },
+  "experience": {
+    "working": "Mã chạy được mới là bước đầu.",
+    "installLead": "Đưa ra lời nhắc này cho tác nhân mã hóa của bạn hoặc chọn tác nhân bên dưới cho lệnh đầu cuối.",
+    "prompt": "Hãy cài SeniorMode từ {source}. Làm theo hướng dẫn dành cho tác nhân viết mã tôi đang dùng và dự án hiện tại. Trước khi ghi tệp, hãy kiểm tra thư mục đích, giữ nguyên các cài đặt của tôi và mọi chỉnh sửa đã có đối với kỹ năng. Kiểm tra xem kỹ năng đã sẵn sàng chưa. Hãy hỏi tôi trước khi ghi đè bản đã cài. Chỉ cấu hình MCP khi tôi có yêu cầu riêng.",
+    "newScenario": [
+      "Sử dụng SeniorMode để xây dựng ứng dụng phát nhạc trực tuyến.",
+      "Mô tả những gì bạn muốn xây dựng. Đại lý của bạn chọn một thiết kế ban đầu, xây dựng phiên bản hữu ích đầu tiên và kiểm tra cách thức hoạt động của nó.",
+      "Tôi có thể bắt đầu một dự án mới không?",
+      "Đúng. Mở thư mục dự án và cho đại lý của bạn biết bạn muốn xây dựng gì với SeniorMode."
+    ],
+    "existingScenario": [
+      "Sử dụng SeniorMode để thêm tính năng phát ngẫu nhiên vào ứng dụng âm nhạc của tôi.",
+      "Mô tả sự thay đổi hoặc vấn đề trong dự án của bạn. Đại lý của bạn đọc mã hiện có trước tiên. Khi bạn yêu cầu kiểm tra, nó sẽ báo cáo các phát hiện mà không cần chỉnh sửa tệp.",
+      "Tôi có thể sử dụng điều này trên một dự án hiện có không?",
+      "Đúng. Sử dụng SeniorMode cho một tính năng, sửa lỗi, tái cấu trúc hoặc kiểm tra. Quá trình kiểm tra bắt đầu ở chế độ chỉ đọc."
+    ],
+    "hostSupport": "Cài đặt SeniorMode trong bất kỳ tác nhân nào trong số năm tác nhân này. Bạn cũng có thể sử dụng MCP từ một máy khách tương thích."
+  },
+  "footer": {
+    "starPrompt": "Nếu SeniorMode giúp ích cho dự án tiếp theo của bạn, hãy {star} để những người khác có thể tìm thấy nó.",
+    "starAction": "cho nó một ngôi sao trên GitHub",
+    "acknowledgments": "SeniorMode được xây dựng dựa trên các dự án mở này."
+  },
+  "product": {
+    "categoryLabels": {
+      "algorithms": "Thuật toán và cấu trúc dữ liệu",
+      "architecture": "Kiến trúc",
+      "backend": "Phần cuối và API",
+      "concurrency": "Đồng thời",
+      "data": "Dữ liệu và lưu trữ",
+      "frontend": "Giao diện người dùng",
+      "geospatial": "Không gian địa lý",
+      "networking": "Mạng",
+      "performance": "Hiệu suất",
+      "product": "Hành vi sản phẩm",
+      "reliability": "Độ tin cậy",
+      "security": "Bảo mật",
+      "testing": "Kiểm tra"
+    },
+    "standardLabels": {
+      "greenfield": "Quy hoạch sân cỏ",
+      "architecture": "Kiến trúc",
+      "structure": "Cấu trúc dự án",
+      "modularity": "Tính mô đun và tái sử dụng",
+      "code-principles": "Nguyên tắc mã",
+      "dependencies": "phụ thuộc",
+      "api": "hợp đồng API",
+      "data": "Dữ liệu và lưu trữ",
+      "security": "Bảo mật",
+      "configuration": "Cấu hình",
+      "reliability": "Độ tin cậy",
+      "observability": "Khả năng quan sát",
+      "performance": "Hiệu suất",
+      "testing": "Kiểm tra",
+      "documentation": "Tài liệu",
+      "refactoring": "Tái cấu trúc an toàn"
+    },
+    "directory": "Tìm vấn đề bạn đang gặp phải bên dưới. Mỗi mục liên kết đến một hướng dẫn bằng tiếng Anh với các tùy chọn, sự đánh đổi và cách kiểm tra kết quả.",
+    "shuffle": "Ba lần xáo trộn của sáu bài hát giống nhau cho thấy lý do tại sao việc phát lại ngẫu nhiên vẫn có thể mang lại cảm giác lặp đi lặp lại.",
+    "shuffleLab": "Hãy thử bản demo trực tiếp",
+    "shuffleColumns": [
+      "phương pháp",
+      "Thứ tự nghệ sĩ",
+      "Lặp lại liền kề"
+    ],
+    "shuffleMethods": [
+      "Sắp xếp ngẫu nhiên",
+      "Fisher-Yates",
+      "Nhận thức về nghệ sĩ"
+    ],
+    "checkoutSteps": [
+      "**Yêu cầu.** “Thanh toán đôi khi tính phí cho tôi hai lần khi kết nối của tôi bị rớt.”",
+      "**Khảo sát.** Việc thanh toán có thể thành công trước khi phản hồi đến tay khách hàng.",
+      "**Chọn một sửa chữa.** Việc thử lại với cùng một ID mua hàng sẽ cho phép hệ thống nhận ra khoản thanh toán ban đầu.",
+      "**Xác minh.** Ví dụ cục bộ loại bỏ câu trả lời đầu tiên. Việc thử lại trả về HTTP `{status}` và cơ sở dữ liệu chứa **{total} charge**."
+    ],
+    "audit": [
+      "Kiểm toán một dự án hiện có",
+      "Sử dụng SeniorMode để tìm hiểu lý do tại sao bài đăng xuất hiện hai lần trong nguồn cấp dữ liệu của tôi."
+    ],
+    "usage": "SeniorMode bắt đầu với yêu cầu của bạn và kiểm tra dự án. Nó đưa ra các quyết định mà bạn có thể chưa biết để hỏi, kiểm tra xem hướng dẫn nào phù hợp và giải thích cách xác minh kết quả.",
+    "ownership": "Vercel skills và SeniorMode CLI đều theo dõi các bản sao chúng cài đặt. Cập nhật hoặc xóa bản sao bằng công cụ đã cài đặt nó. Đối với các bản sao thủ công, hãy xem lại các chỉnh sửa cục bộ trước khi thay thế hoặc xóa thư mục.",
+    "contribution": "Thêm tiêu đề và tuyên bố vấn đề ngắn cho ID bản ghi vào mỗi tệp trong scripts/directory-locales/. Thư mục liên kết đến các bản ghi chuẩn và Danh mục kiến thức trỏ đến Thư mục. Chỉ số kỹ năng và tìm kiếm CLI/MCP sử dụng cùng một bản ghi. Phần tiếng Anh của hướng dẫn này giải thích về máy phát điện.",
+    "outcomes": [
+      "Mọi bài hát vẫn ở trong hàng đợi và các bản nhạc của cùng một nghệ sĩ sẽ được đặt cách nhau khi danh sách phát cho phép.",
+      "Chỉ một khách có thể đặt phòng cuối cùng, ngay cả khi có yêu cầu cùng nhau.",
+      "Khách hàng có thể thử lại sau khi mất phản hồi mà không bị tính phí hai lần.",
+      "Các bài đăng mới có thể xuất hiện mà không làm cho các bài đăng trước đó hiển thị hai lần trong nguồn cấp dữ liệu."
+    ]
+  },
+  "sections": {
+    "accessibility": "Khả năng tiếp cận",
+    "mission": "Bắt đầu với kết quả bạn muốn. SeniorMode giúp đại lý của bạn biến một yêu cầu thông thường thành các quyết định phù hợp với dự án của bạn, bảo vệ những gì quan trọng và có thể được xác minh. Kiến thức luôn có sẵn tại địa phương để bạn và đại lý của bạn kiểm tra.",
+    "architecture": "Các tuyến Agent Skill hoạt động theo Xây dựng, Kiểm tra và các tiêu chuẩn liên quan. CLI và MCP sử dụng cùng một bản ghi tiếng Anh và tìm kiếm SQLite trong bộ nhớ cho các truy vấn bằng tiếng Anh và tiếng Thổ Nhĩ Kỳ. Các cài đặt được quản lý sẽ sao chép Kỹ năng vào một dự án đã chọn. Danh mục và trình tạo README sắp xếp tài liệu này cho các đại lý và độc giả.",
+    "governance": "Người bảo trì xem xét các thay đổi về phạm vi, nguồn, kiểm tra, cấp phép và tính nhất quán với tài liệu chuẩn. Sử dụng một vấn đề để thảo luận về một danh mục mới, một thay đổi quan trọng hoặc thay đổi đối với chính sách phát hành. Người bảo trì quyết định khi nào bản phát hành sẵn sàng và ghi lại những hạn chế quan trọng trong ghi chú của mình.",
+    "safety": "Máy chủ CLI và MCP cục bộ không gửi phép đo từ xa SeniorMode. Tác nhân mã hóa và trình cài đặt bên thứ ba của bạn có cài đặt dữ liệu riêng. Hãy coi các tài liệu tham khảo đã tải xuống dưới dạng tài liệu kỹ thuật và xem xét các thay đổi đối với hướng dẫn kỹ năng và mã thực thi.",
+    "reporting": "Báo cáo các lỗ hổng bị nghi ngờ thông qua chính sách bảo mật. Chia sẻ phiên bản bị ảnh hưởng, tác động và bằng chứng tối thiểu trên kênh riêng tư. Giữ bằng chứng nhạy cảm ra khỏi các vấn đề công cộng.",
+    "roadmap": [
+      "Cải thiện khả năng khám phá từ các yêu cầu thông thường đối với các dự án mới và hiện có.",
+      "Thêm hồ sơ có nguồn gốc trong đó quyết định định kỳ cần có sự đánh đổi hoặc kiểm tra rõ ràng hơn.",
+      "Duy trì cài đặt đáng tin cậy trên các tác nhân và ngôn ngữ được hỗ trợ.",
+      "Xuất bản các so sánh triển khai và khám phá có thể lặp lại khi có sẵn các lần chạy phù hợp.",
+      "Ưu tiên các vấn đề và đóng góp theo tác động của chúng đối với quy trình làm việc thực tế."
+    ],
+    "cli": "Trong quá trình kiểm tra nguồn, hãy cài đặt các phần phụ thuộc bằng `npm ci`. CLI có thể tìm kiếm hoặc mở một bản ghi. Chạy `node bin/seniormode.js --help` để có danh sách lệnh đầy đủ.",
+    "mcp": "Định cấu hình tác nhân của bạn để chạy Node với đường dẫn tuyệt đối đến đối số CLI và `mcp`. Đường dẫn JSON trên Windows có thể sử dụng dấu gạch chéo về phía trước. Máy chủ cung cấp bảy công cụ chỉ đọc qua stdio. Nó chia sẻ hồ sơ, tiêu chuẩn và quy trình làm việc với Kỹ năng đã cài đặt.",
+    "activate": [
+      "Chọn `$seniormode` trong lời nhắc.",
+      "Chọn `/seniormode` hoặc tên SeniorMode trong yêu cầu.",
+      "Chọn kỹ năng với `/` trong trò chuyện Đại lý. Cursor cũng tìm thấy các kỹ năng dự án trong `.cursor/skills`.",
+      "Sử dụng `/skills list` để kiểm tra khám phá, sau đó yêu cầu SeniorMode theo tên.",
+      "Yêu cầu `seniormode` theo tên. Sử dụng `opencode debug skill` khi phiên bản OpenCode của bạn cung cấp nó."
+    ],
+    "mcpNotes": [
+      "Khởi động lại Codex. Xóa đăng ký với `codex mcp remove seniormode`.",
+      "Kiểm tra đăng ký với `claude mcp list`. Chạy Node trực tiếp hoạt động với thiết lập Windows này.",
+      "Hợp nhất mục này vào `mcpServers`. Cursor sử dụng `.cursor/mcp.json` và Gemini CLI sử dụng `.gemini/settings.json` ở phạm vi dự án.",
+      "Hợp nhất máy chủ cục bộ vào `mcp` trong cấu hình OpenCode của bạn."
+    ],
+    "toolHeaders": [
+      "Công cụ",
+      "đầu vào",
+      "kết quả"
+    ],
+    "tools": [
+      "Bản ghi phù hợp được xếp hạng",
+      "Ghi lại, tùy chọn, kiểm tra và nguồn",
+      "Quy tắc quyết định và sự đánh đổi",
+      "Danh sách kiểm tra xác minh",
+      "ID tiêu chuẩn và thời điểm sử dụng chúng",
+      "Một tiêu chuẩn hoàn chỉnh",
+      "Nguyên tắc xây dựng, kiểm toán hoặc vận hành"
+    ],
+    "checksLabel": "Mã và xác minh",
+    "checks": [
+      "Ví dụ có thể chạy được hiển thị tất cả tên bài hát. Sắp xếp với các so sánh ngẫu nhiên không mang lại tỷ lệ cược bằng nhau cho mỗi đơn hàng. Các bài kiểm tra sẽ kiểm tra tất cả sáu hoán vị của danh sách ba mục, cách bảo quản bản nhạc và danh sách phát trong đó nghệ sĩ thống trị khiến một số lần lặp lại là điều không thể tránh khỏi.",
+      "Hai kết nối cơ sở dữ liệu cạnh tranh cho cùng một phòng và cùng một đêm. Một yêu cầu trả về `201`, yêu cầu còn lại là `409` và một yêu cầu đặt chỗ được lưu trữ. Ví dụ này bao gồm xác nhận ngay lập tức trong một đêm.",
+      "Quá trình kiểm tra sẽ loại bỏ phản hồi đầu tiên và thử lại từ một kết nối riêng. Nó kiểm tra một khoản phí được lưu trữ và xung đột khi sử dụng lại cùng một ID mua hàng với số tiền khác. Với một nhà cung cấp thực sự, hãy đối chiếu một kết quả chưa biết theo hợp đồng của mình.",
+      "Một bài viết mới đến giữa các yêu cầu trang. Offset trả về ID `8, 6` và lặp lại mục `8`. cursor tiếp tục từ `(9, 8)` với `6, 99`. Thử nghiệm bao gồm phần chèn này và bảo toàn tuyến bù hiện có."
+    ]
+  },
+  "projectSafety": "Kiểm tra thư mục đích và xem lại mọi chỉnh sửa cục bộ trước khi chạy trình cài đặt.",
+  "addLanguage": "Thêm ngôn ngữ của bạn",
+  "translationForm": "Đề xuất ngôn ngữ mới hoặc sửa bản dịch"
+}

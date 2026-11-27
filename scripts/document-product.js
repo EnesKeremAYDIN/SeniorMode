@@ -1,4 +1,7 @@
+import { readmeLocaleSection } from './document-locale-files.js';
+
 export const productByLocale = {
+  ...readmeLocaleSection('product'),
   "en": {
     categoryLabels: {
       "algorithms": "Algorithms and data structures",
