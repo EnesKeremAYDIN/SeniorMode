@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b111b">
+  <meta name="description" content="Compare three ways to shuffle the same songs and see how SeniorMode makes the engineering choice explicit.">
+  <title>Shuffle Lab | SeniorMode</title>
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./lab.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to the demo</a>
+  <header class="topbar">
+    <nav class="shell nav" aria-label="Site">
+      <a class="brand" href="https://github.com/EnesKeremAYDIN/SeniorMode">
+        <img src="./logo.svg" width="36" height="36" alt="">
+        <span>SeniorMode</span>
+      </a>
+      <span class="lab-name">Shuffle Lab</span>
+      <a class="nav-link" href="https://github.com/EnesKeremAYDIN/SeniorMode">View on GitHub</a>
+    </nav>
+  </header>
+
+  <main id="content" class="shell">
+    <section class="intro" aria-labelledby="title">
+      <div>
+        <h1 id="title">Why does shuffle keep playing <em>the same artist?</em></h1>
+        <p class="intro-copy">See the same six songs in three different orders. Watch how often one artist comes up twice in a row.</p>
+      </div>
+      <section class="playlist" aria-labelledby="playlist-heading">
+        <div class="playlist-top">
+          <h2 id="playlist-heading">Your playlist</h2>
+          <span class="playlist-size">6 tracks</span>
+        </div>
+        <div class="preset" role="group" aria-label="Playlist preset">
+          <button type="button" data-preset="balanced" aria-pressed="true">Balanced</button>
+          <button type="button" data-preset="artistHeavy" aria-pressed="false">Artist-heavy</button>
+        </div>
+        <ul class="mix" id="mix" aria-label="Tracks by artist"></ul>
+        <p class="minimum" id="minimum"></p>
+      </section>
+    </section>
+
+    <section class="results" aria-labelledby="results-heading">
+      <div class="results-top">
+        <div>
+          <h2 id="results-heading">Compare the queues</h2>
+          <p id="run-label">Sample run</p>
+        </div>
+        <div class="controls">
+          <button type="button" class="button primary" id="reshuffle">Shuffle again</button>
+          <button type="button" class="button secondary" id="reset">Reset</button>
+        </div>
+      </div>
+      <p class="sr-only" id="announcement" role="status"></p>
+      <div class="queues" id="queues"></div>
+      <noscript>Enable JavaScript to compare the queues, or <a href="https://github.com/EnesKeremAYDIN/SeniorMode#example-music-shuffle">read the example on GitHub</a>.</noscript>
+    </section>
+
+    <section class="takeaway" aria-labelledby="takeaway-title">
+      <div>
+        <h2 id="takeaway-title">The request was “Add shuffle.”</h2>
+        <p>Every track should play once. The next choice is what listeners expect. Fisher–Yates gives every order an equal chance. The artist-aware version spreads artists apart when the playlist allows it.</p>
+        <p>SeniorMode gives a coding agent guidance for spotting that choice and checking the result while you describe the feature in your own words.</p>
+      </div>
+      <div class="takeaway-links">
+        <a class="button primary" href="https://github.com/EnesKeremAYDIN/SeniorMode#example-music-shuffle">Read the code and tests</a>
+        <a class="button secondary" href="https://github.com/EnesKeremAYDIN/SeniorMode">Star on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <template id="queue-template">
+    <article class="queue">
+      <div class="queue-heading">
+        <div>
+          <h3></h3>
+          <p class="method-detail"></p>
+        </div>
+        <div class="metric">
+          <strong class="repeat-count"></strong>
+          <span>adjacent repeats</span>
+        </div>
+      </div>
+      <ol class="tracks"></ol>
+    </article>
+  </template>
+</body>
+</html>

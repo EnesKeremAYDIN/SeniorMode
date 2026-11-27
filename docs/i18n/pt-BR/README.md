@@ -28,6 +28,8 @@ Descreva o resultado que você quer. O SeniorMode ajuda seu agente a tomar decis
 
 Três ordens para as mesmas seis músicas mostram por que a reprodução aleatória pode soar repetitiva. Todas as faixas ficam na fila, com músicas do mesmo artista separadas quando a lista permite. [Modo aleatório](#example-music-shuffle)
 
+[Experimente a demonstração interativa (em inglês)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Instalação
 
 ### Instalar com IA

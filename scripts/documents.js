@@ -23,6 +23,7 @@ const records = readPatterns();
 const standards = listStandards();
 const slug = 'EnesKeremAYDIN/SeniorMode';
 const github = 'https://github.com/' + slug;
+const shuffleLabUrl = 'https://eneskeremaydin.github.io/SeniorMode/shuffle/';
 const shields = 'https://img.shields.io/github/';
 const contributors = github + '/graphs/contributors';
 const starHistory = 'https://www.star-history.com/#' + slug + '&Date';
@@ -160,7 +161,7 @@ function hero(locale, from) {
 
 function shuffleDemo(locale, from, queues) {
   const { headings, cases } = locales[locale];
-  const { outcomes, shuffle, shuffleColumns, shuffleMethods } = productByLocale[locale];
+  const { outcomes, shuffle, shuffleColumns, shuffleMethods, shuffleLab } = productByLocale[locale];
   const rows = queues.map((queue, index) => {
     const artists = queue.map(({ artist }, i) =>
       queue[i - 1]?.artist === artist || queue[i + 1]?.artist === artist ? '**' + artist + '**' : artist);
@@ -171,6 +172,7 @@ function shuffleDemo(locale, from, queues) {
     '> ' + cases[0][1],
     ['| ' + shuffleColumns.join(' | ') + ' |', '|---|---|---:|', ...rows].join('\n'),
     shuffle + ' ' + outcomes[0] + ' ' + link(cases[0][0], from, '#example-' + examples[0].id),
+    link(shuffleLab, from, shuffleLabUrl),
   ];
 }
 

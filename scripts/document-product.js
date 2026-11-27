@@ -35,6 +35,7 @@ export const productByLocale = {
     },
     directory: "Find the problem you’re facing below. Each entry links to an English guide with options, trade-offs, and ways to check the result.",
     shuffle: "Three shuffles of the same six songs show why random playback can still feel repetitive.",
+    shuffleLab: "Try the live demo",
     shuffleColumns: ["Method","Artist order","Adjacent repeats"],
     shuffleMethods: ["Random sort","Fisher–Yates","Artist-aware"],
     checkoutSteps: [
@@ -90,6 +91,7 @@ export const productByLocale = {
     },
     directory: "Karşılaştığın sorunu aşağıda bulabilirsin. Her kayıt seçenekleri, bunların artı ve eksilerini ve sonucu nasıl doğrulayabileceğini anlatan İngilizce bir rehbere açılır.",
     shuffle: "Aynı altı şarkının üç farklı sırası, karışık çalmanın neden bazen tekrarlı hissettirdiğini gösteriyor.",
+    shuffleLab: "Canlı demoyu dene (İngilizce)",
     shuffleColumns: ["Yöntem","Sanatçı sırası","Art arda tekrar"],
     shuffleMethods: ["Rastgele sıralama","Fisher–Yates","Sanatçıya göre"],
     checkoutSteps: [
@@ -145,6 +147,7 @@ export const productByLocale = {
     },
     directory: "Suche unten nach dem Problem, das du lösen möchtest. Jeder Eintrag führt zu einer englischen Anleitung mit Lösungswegen, Vor- und Nachteilen und Möglichkeiten zur Prüfung.",
     shuffle: "Drei Abspielreihenfolgen für dieselben sechs Titel zeigen, warum Zufallswiedergabe trotzdem eintönig wirken kann.",
+    shuffleLab: "Live-Demo ausprobieren (Englisch)",
     shuffleColumns: ["Methode","Reihenfolge der Künstler","Gleicher Künstler in Folge"],
     shuffleMethods: ["Zufällige Sortierung","Fisher–Yates","Nach Künstlern verteilt"],
     checkoutSteps: [
@@ -200,6 +203,7 @@ export const productByLocale = {
     },
     directory: "Encuentra abajo el problema que te interesa. Cada entrada lleva a una guía en inglés con opciones, sus ventajas e inconvenientes y formas de comprobar el resultado.",
     shuffle: "Tres órdenes para las mismas seis canciones muestran por qué la reproducción aleatoria puede sonar repetitiva.",
+    shuffleLab: "Prueba la demo interactiva (en inglés)",
     shuffleColumns: ["Método","Orden de artistas","Repeticiones seguidas"],
     shuffleMethods: ["Ordenación aleatoria","Fisher–Yates","Variedad de artistas"],
     checkoutSteps: [
@@ -255,6 +259,7 @@ export const productByLocale = {
     },
     directory: "Retrouvez ci-dessous le problème qui vous concerne. Chaque entrée mène à un guide en anglais qui présente les solutions, leurs compromis et les moyens de vérifier le résultat.",
     shuffle: "Trois ordres de lecture des six mêmes titres montrent pourquoi le mode aléatoire peut sembler répétitif.",
+    shuffleLab: "Essayer la démo interactive (en anglais)",
     shuffleColumns: ["Méthode","Ordre des artistes","Répétitions de suite"],
     shuffleMethods: ["Tri aléatoire","Fisher–Yates","Artistes espacés"],
     checkoutSteps: [
@@ -310,6 +315,7 @@ export const productByLocale = {
     },
     directory: "直面している課題を以下から探せます。各項目は、解決方法、それぞれの利点と制約、結果の確認方法をまとめた英語のガイドにつながります。",
     shuffle: "同じ6曲を3通りに並べると、シャッフル再生でも同じアーティストが続く理由が見えてきます。",
+    shuffleLab: "ライブデモを試す（英語）",
     shuffleColumns: ["方式","アーティストの順番","連続回数"],
     shuffleMethods: ["ランダムな並べ替え","Fisher–Yates","アーティストを分散"],
     checkoutSteps: [
@@ -365,6 +371,7 @@ export const productByLocale = {
     },
     directory: "Encontre abaixo o problema que você quer resolver. Cada entrada leva a um guia em inglês com opções, vantagens, limites e formas de conferir o resultado.",
     shuffle: "Três ordens para as mesmas seis músicas mostram por que a reprodução aleatória pode soar repetitiva.",
+    shuffleLab: "Experimente a demonstração interativa (em inglês)",
     shuffleColumns: ["Método","Ordem dos artistas","Repetições seguidas"],
     shuffleMethods: ["Ordenação aleatória","Fisher–Yates","Artistas intercalados"],
     checkoutSteps: [
@@ -420,6 +427,7 @@ export const productByLocale = {
     },
     directory: "你可以在下面查找遇到的问题。每项都链接到英文指南，介绍可选方案、取舍和验证结果的方法。",
     shuffle: "同样六首歌排成三种顺序，展示了随机播放为什么听起来也可能很重复。",
+    shuffleLab: "体验交互演示（英语）",
     shuffleColumns: ["方法","歌手顺序","连续重复"],
     shuffleMethods: ["随机排序","Fisher–Yates","错开同一歌手"],
     checkoutSteps: [

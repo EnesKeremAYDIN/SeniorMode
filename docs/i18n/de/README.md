@@ -28,6 +28,8 @@ Beschreibe das gewünschte Ergebnis in eigenen Worten. SeniorMode hilft deinem A
 
 Drei Abspielreihenfolgen für dieselben sechs Titel zeigen, warum Zufallswiedergabe trotzdem eintönig wirken kann. Alle Titel bleiben in der Warteschlange. Wenn die Liste es erlaubt, liegen Titel desselben Künstlers auseinander. [Musik-Shuffle](#example-music-shuffle)
 
+[Live-Demo ausprobieren (Englisch)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Installation
 
 ### Mit KI installieren

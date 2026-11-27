@@ -28,6 +28,8 @@ Explica el resultado que buscas con tus palabras. SeniorMode ayuda a tu agente a
 
 Tres órdenes para las mismas seis canciones muestran por qué la reproducción aleatoria puede sonar repetitiva. Todas las canciones siguen en la cola y, si la lista lo permite, se separan las de un mismo artista. [Reproducción aleatoria](#example-music-shuffle)
 
+[Prueba la demo interactiva (en inglés)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Instalación
 
 ### Instalar con IA

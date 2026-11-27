@@ -1,31 +1,16 @@
 import { randomInt } from 'node:crypto';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { adjacentArtistRepeats, uniformShuffle as shuffle, variedShuffle as shuffleForVariety } from './shuffle-algorithms.mjs';
+
+export { adjacentArtistRepeats };
 
 export function uniformShuffle(values, pick = randomInt) {
-  const result = values.slice();
-  for (let i = result.length - 1; i > 0; i -= 1) {
-    const j = pick(i + 1);
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-  return result;
+  return shuffle(values, pick);
 }
 
 export function variedShuffle(tracks, pick = randomInt) {
-  const groups = Map.groupBy(tracks, track => track.artist);
-  for (const [artist, queue] of groups) groups.set(artist, uniformShuffle(queue, pick));
-  const result = [];
-  let previous;
-  while (groups.size) {
-    const candidates = [...groups].filter(([artist]) => artist !== previous || groups.size === 1);
-    const largest = Math.max(...candidates.map(([, queue]) => queue.length));
-    const tied = candidates.filter(([, queue]) => queue.length === largest);
-    const [artist, queue] = tied[pick(tied.length)];
-    result.push(queue.pop());
-    if (!queue.length) groups.delete(artist);
-    previous = artist;
-  }
-  return result;
+  return shuffleForVariety(tracks, pick);
 }
 
 const sampleTracks = [
@@ -53,10 +38,6 @@ export function shuffleComparison() {
     uniform: uniformShuffle(tracks, limit => Math.floor(uniformDraw() * limit)),
     varied: variedShuffle(tracks, limit => Math.floor(varietyDraw() * limit)),
   };
-}
-
-export function adjacentArtistRepeats(queue) {
-  return queue.slice(1).filter((track, index) => track.artist === queue[index].artist).length;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

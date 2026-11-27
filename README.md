@@ -28,6 +28,8 @@ Start with the result you want. SeniorMode helps your agent turn an ordinary req
 
 Three shuffles of the same six songs show why random playback can still feel repetitive. Every song stays in the queue, and tracks by the same artist are spaced out when the playlist allows. [Music shuffle](#example-music-shuffle)
 
+[Try the live demo](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Install
 
 ### Install with AI

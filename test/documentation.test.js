@@ -57,6 +57,7 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     assert.match(readme, new RegExp('https://github.com/' + slug), locale);
     assert.doesNotMatch(readme, /(?:shuffle|workflow)-demo[^\s)]*\.gif/, locale);
     const shuffle = readme.slice(readme.indexOf('\n## ' + headings.shuffle + '\n'), offsets[0]);
+    assert.match(shuffle, /\]\(https:\/\/eneskeremaydin\.github\.io\/SeniorMode\/shuffle\/\)/, locale);
     const rows = [...shuffle.matchAll(/^\| [^|]+\| ([^|]+) \| (\d+) \|$/gm)];
     assert.deepEqual(rows.map(([, order]) => order.replaceAll('**', '').split(' → ')), expectedOrders, locale);
     assert.deepEqual(rows.map(([, , count]) => Number(count)), [3, 1, 0], locale);

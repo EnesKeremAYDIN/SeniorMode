@@ -28,6 +28,8 @@
 
 同样六首歌排成三种顺序，展示了随机播放为什么听起来也可能很重复。 每首歌都保留在队列中。列表允许时，会错开同一歌手的歌曲。 [音乐随机播放](#example-music-shuffle)
 
+[体验交互演示（英语）](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## 安装
 
 ### 让 AI 安装

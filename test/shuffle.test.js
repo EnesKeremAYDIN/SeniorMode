@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { shuffleComparison, uniformShuffle, variedShuffle } from '../examples/shuffle.mjs';
+import { minimumArtistRepeats } from '../examples/shuffle-algorithms.mjs';
 
 const fixtures = artists => artists.map((artist, id) => ({ artist, id }));
 const ids = tracks => tracks.map(track => track.id).sort((a, b) => a - b);
@@ -10,6 +11,8 @@ test('the named playlist preserves every song and illustrates the product trade-
   const { tracks, randomComparator, uniform, varied } = shuffleComparison();
   for (const queue of [randomComparator, uniform, varied]) assert.deepEqual(ids(queue), ids(tracks));
   assert.deepEqual(tracks.map(track => track.id), [0, 1, 2, 3, 4, 5]);
+  assert.equal(minimumArtistRepeats(tracks), 0);
+  assert.equal(repeats(randomComparator), 3);
   assert.equal(repeats(uniform), 1);
   assert.equal(repeats(varied), 0);
 });
@@ -38,6 +41,8 @@ test('variety covers dominant groups, singleton inputs, and empty playlists', ()
   const actual = variedShuffle(tracks, limit => limit - 1);
   assert.deepEqual(ids(actual), ids(tracks));
   assert.equal(repeats(actual), 1);
+  assert.equal(minimumArtistRepeats(tracks), 1);
+  assert.equal(minimumArtistRepeats([]), 0);
   assert.deepEqual(variedShuffle(tracks.slice(0, 1)), tracks.slice(0, 1));
   assert.deepEqual(variedShuffle([]), []);
 });

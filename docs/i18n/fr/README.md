@@ -28,6 +28,8 @@ Décrivez le résultat souhaité. SeniorMode aide votre agent à prendre des dé
 
 Trois ordres de lecture des six mêmes titres montrent pourquoi le mode aléatoire peut sembler répétitif. Tous les titres restent dans la file et ceux du même artiste sont espacés lorsque la liste le permet. [Lecture aléatoire](#example-music-shuffle)
 
+[Essayer la démo interactive (en anglais)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Installation
 
 ### Installer avec une IA

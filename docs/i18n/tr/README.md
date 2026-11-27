@@ -28,6 +28,8 @@ Ne yapmak istediğini anlatman yeterli. SeniorMode, asistanının isteğini proj
 
 Aynı altı şarkının üç farklı sırası, karışık çalmanın neden bazen tekrarlı hissettirdiğini gösteriyor. Bütün parçalar sırada kalır. Liste elverdiğinde aynı sanatçının parçaları art arda gelmez. [Karışık müzik çalma](#example-music-shuffle)
 
+[Canlı demoyu dene (İngilizce)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+
 ## Kurulum
 
 ### Yapay zekâyla kur
