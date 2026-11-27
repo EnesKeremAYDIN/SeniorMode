@@ -6,7 +6,7 @@
 <p><a href="../../../README.md">English</a> · <a href="../tr/README.md">Türkçe</a> · <a href="../de/README.md">Deutsch</a> · <a href="../es/README.md">Español</a> · <a href="../fr/README.md">Français</a> · <a href="../ja/README.md">日本語</a> · <a href="../pt-BR/README.md">Português (Brasil)</a> · <strong>简体中文</strong></p>
 <p><strong>AI 会写代码，也该学会作出工程判断。</strong><br>为编程智能体提供实用的工程知识。</p>
 <p><a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/EnesKeremAYDIN/SeniorMode?style=flat&amp;logo=github"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml"><img alt="GitHub Actions CI status" src="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml/badge.svg?branch=main"></a><br><a href="../../../LICENSE"><img alt="MIT" src="https://img.shields.io/badge/MIT-26734d?style=flat"></a> <a href="../../../LICENSE-CONTENT.md"><img alt="CC BY 4.0" src="https://img.shields.io/badge/CC%20BY%204.0-26734d?style=flat"></a> <a href="../../../skills/seniormode/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/Agent%20Skill-38577a?style=flat"></a> <a href="#cli-mcp"><img alt="MCP" src="https://img.shields.io/badge/MCP-38577a?style=flat"></a> <a href="#faq"><img alt="Local first" src="https://img.shields.io/badge/Local%20first-26734d?style=flat"></a></p>
-<p><a href="#安装">安装</a> · <a href="#usage">使用</a> · <a href="#examples">示例</a> · <a href="#skill-directory">技能目录</a> · <a href="#faq">常见问题</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">发布版本</a> · <a href="../../../.github/CONTRIBUTING.md#zh-cn">贡献</a></p>
+<p><a href="#安装"><img src="../../../assets/docs-icons/material/download.svg" width="16" height="16" alt="">&nbsp;安装</a> · <a href="#usage"><img src="../../../assets/docs-icons/material/route.svg" width="16" height="16" alt="">&nbsp;使用</a> · <a href="#examples"><img src="../../../assets/docs-icons/material/code.svg" width="16" height="16" alt="">&nbsp;示例</a> · <a href="#skill-directory"><img src="../../../assets/docs-icons/material/menu_book.svg" width="16" height="16" alt="">&nbsp;技能目录</a> · <a href="#faq"><img src="../../../assets/docs-icons/material/help.svg" width="16" height="16" alt="">&nbsp;常见问题</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">发布版本</a> · <a href="../../../.github/CONTRIBUTING.md#zh-cn"><img src="../../../assets/docs-icons/material/fork_right.svg" width="16" height="16" alt="">&nbsp;贡献</a></p>
 <p>在土耳其开发 🇹🇷</p>
 </div>
 
@@ -28,7 +28,7 @@
 
 同样六首歌排成三种顺序，展示了随机播放为什么听起来也可能很重复。 每首歌都保留在队列中。列表允许时，会错开同一歌手的歌曲。 [音乐随机播放](#example-music-shuffle)
 
-[体验交互演示（英语）](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+<a href="https://eneskeremaydin.github.io/SeniorMode/shuffle/"><img src="../../../assets/docs-icons/material/play_circle.svg" width="16" height="16" alt="">&nbsp;体验交互演示（英语）</a>
 
 ## 安装
 
@@ -50,6 +50,10 @@
 
 Vercel skills 和 SeniorMode CLI 各自追踪自己安装的副本。更新或卸载时，请使用原来的安装工具。如果是手动安装，请在替换或删除文件夹前检查本地改动。
 
+<a href="#install-codex"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Codex</a> · <a href="#install-claude-code"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Claude Code</a> · <a href="#install-cursor"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/cursor-on-dark.svg"><img src="../../../assets/docs-icons/brands/cursor-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;Cursor</a> · <a href="#install-gemini-cli"><img src="../../../assets/docs-icons/brands/gemini-cli.svg" width="18" height="18" alt="">&nbsp;Gemini CLI</a> · <a href="#install-opencode"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/opencode-on-dark.svg"><img src="../../../assets/docs-icons/brands/opencode-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;OpenCode</a>
+
+<a id="install-codex"></a>
+
 <details>
 <summary>Codex</summary>
 
@@ -58,6 +62,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent codex 
 ```
 
 </details>
+
+<a id="install-claude-code"></a>
 
 <details>
 <summary>Claude Code</summary>
@@ -68,6 +74,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent claude
 
 </details>
 
+<a id="install-cursor"></a>
+
 <details>
 <summary>Cursor</summary>
 
@@ -77,6 +85,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent cursor
 
 </details>
 
+<a id="install-gemini-cli"></a>
+
 <details>
 <summary>Gemini CLI</summary>
 
@@ -85,6 +95,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent gemini
 ```
 
 </details>
+
+<a id="install-opencode"></a>
 
 <details>
 <summary>OpenCode</summary>
@@ -300,6 +312,8 @@ Agent Skill 会根据任务引导到 Build、Audit 和相关标准。CLI 与 MCP
 
 ## 示例
 
+<a href="#example-music-shuffle"><img src="../../../assets/docs-icons/material/shuffle.svg" width="16" height="16" alt="">&nbsp;音乐随机播放</a> · <a href="#example-reservation-concurrency"><img src="../../../assets/docs-icons/material/event_available.svg" width="16" height="16" alt="">&nbsp;最后一间客房</a> · <a href="#example-payment-idempotency"><img src="../../../assets/docs-icons/material/credit_card.svg" width="16" height="16" alt="">&nbsp;支付重试</a> · <a href="#example-cursor-pagination"><img src="../../../assets/docs-icons/material/view_list.svg" width="16" height="16" alt="">&nbsp;信息流重复</a>
+
 <a id="example-music-shuffle"></a>
 
 ### 音乐随机播放
@@ -401,7 +415,7 @@ node --test test/pagination.test.js
 
 **103** 条工程记录 · **13** 个类别 · **16** 工程标准
 
-[算法与数据结构 (8)](#category-algorithms) · [架构 (8)](#category-architecture) · [后端与 API (8)](#category-backend) · [并发 (9)](#category-concurrency) · [数据与存储 (12)](#category-data) · [前端 (7)](#category-frontend) · [地理位置 (5)](#category-geospatial) · [网络 (7)](#category-networking) · [性能 (6)](#category-performance) · [产品行为 (6)](#category-product) · [可靠性 (12)](#category-reliability) · [安全 (8)](#category-security) · [测试 (7)](#category-testing) · [工程标准 (16)](#engineering-standards)
+<a href="#category-algorithms"><img src="../../../assets/docs-icons/material/account_tree.svg" width="16" height="16" alt="">&nbsp;算法与数据结构 (8)</a> · <a href="#category-architecture"><img src="../../../assets/docs-icons/material/architecture.svg" width="16" height="16" alt="">&nbsp;架构 (8)</a> · <a href="#category-backend"><img src="../../../assets/docs-icons/material/dns.svg" width="16" height="16" alt="">&nbsp;后端与 API (8)</a> · <a href="#category-concurrency"><img src="../../../assets/docs-icons/material/sync_alt.svg" width="16" height="16" alt="">&nbsp;并发 (9)</a> · <a href="#category-data"><img src="../../../assets/docs-icons/material/database.svg" width="16" height="16" alt="">&nbsp;数据与存储 (12)</a> · <a href="#category-frontend"><img src="../../../assets/docs-icons/material/web.svg" width="16" height="16" alt="">&nbsp;前端 (7)</a> · <a href="#category-geospatial"><img src="../../../assets/docs-icons/material/map.svg" width="16" height="16" alt="">&nbsp;地理位置 (5)</a> · <a href="#category-networking"><img src="../../../assets/docs-icons/material/lan.svg" width="16" height="16" alt="">&nbsp;网络 (7)</a> · <a href="#category-performance"><img src="../../../assets/docs-icons/material/speed.svg" width="16" height="16" alt="">&nbsp;性能 (6)</a> · <a href="#category-product"><img src="../../../assets/docs-icons/material/tune.svg" width="16" height="16" alt="">&nbsp;产品行为 (6)</a> · <a href="#category-reliability"><img src="../../../assets/docs-icons/material/verified.svg" width="16" height="16" alt="">&nbsp;可靠性 (12)</a> · <a href="#category-security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;安全 (8)</a> · <a href="#category-testing"><img src="../../../assets/docs-icons/material/science.svg" width="16" height="16" alt="">&nbsp;测试 (7)</a> · <a href="#engineering-standards"><img src="../../../assets/docs-icons/material/fact_check.svg" width="16" height="16" alt="">&nbsp;工程标准 (16)</a>
 
 <a id="category-algorithms"></a>
 
@@ -663,7 +677,7 @@ node --test test/pagination.test.js
 
 ## 文档
 
-[知识库](#skill-directory) · [工程标准](../../../skills/seniormode/references/standards.md) · [CLI & MCP](#cli-mcp) · [路线图](#roadmap) · [安全策略](#security) · [无障碍](../../../.github/ACCESSIBILITY.md)
+<a href="#skill-directory">知识库</a> · <a href="../../../skills/seniormode/references/standards.md">工程标准</a> · <a href="#cli-mcp"><img src="../../../assets/docs-icons/material/hub.svg" width="16" height="16" alt="">&nbsp;CLI &amp; MCP</a> · <a href="#roadmap">路线图</a> · <a href="#security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;安全策略</a> · <a href="../../../.github/ACCESSIBILITY.md">无障碍</a>
 
 <a id="roadmap"></a>
 

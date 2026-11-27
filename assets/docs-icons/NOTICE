@@ -1,0 +1,17 @@
+Material Symbols
+
+Source: https://github.com/google/material-design-icons
+Revision: 10ecc14790612ca8fd164e3f4ffe9c16fc50d5b7
+The files in material/ are the 24px Material Symbols Outlined SVGs from the
+symbols/web directory. SeniorMode added a common fill for contrast in light
+and dark themes. The Apache License 2.0 is in material/LICENSE.
+
+Product marks
+
+The files in brands/ are the original product marks from the sources below.
+The names of the local files indicate the intended background. The marks
+identify supported installation targets and belong to their respective owners.
+
+- Cursor 2D cube: https://cursor.com/en-US/brand
+- Gemini CLI full-color icon: https://geminicli.com/brand-kit/
+- OpenCode standalone mark: https://opencode.ai/brand

@@ -6,7 +6,7 @@
 <p><strong>English</strong> · <a href="docs/i18n/tr/README.md">Türkçe</a> · <a href="docs/i18n/de/README.md">Deutsch</a> · <a href="docs/i18n/es/README.md">Español</a> · <a href="docs/i18n/fr/README.md">Français</a> · <a href="docs/i18n/ja/README.md">日本語</a> · <a href="docs/i18n/pt-BR/README.md">Português (Brasil)</a> · <a href="docs/i18n/zh-CN/README.md">简体中文</a></p>
 <p><strong>Your AI can code. Now make it engineer.</strong><br>Real-world engineering knowledge for AI coding agents.</p>
 <p><a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/EnesKeremAYDIN/SeniorMode?style=flat&amp;logo=github"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml"><img alt="GitHub Actions CI status" src="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml/badge.svg?branch=main"></a><br><a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/MIT-26734d?style=flat"></a> <a href="LICENSE-CONTENT.md"><img alt="CC BY 4.0" src="https://img.shields.io/badge/CC%20BY%204.0-26734d?style=flat"></a> <a href="skills/seniormode/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/Agent%20Skill-38577a?style=flat"></a> <a href="#cli-mcp"><img alt="MCP" src="https://img.shields.io/badge/MCP-38577a?style=flat"></a> <a href="#faq"><img alt="Local first" src="https://img.shields.io/badge/Local%20first-26734d?style=flat"></a></p>
-<p><a href="#install">Install</a> · <a href="#usage">Usage</a> · <a href="#examples">Examples</a> · <a href="#skill-directory">Skill Directory</a> · <a href="#faq">FAQ</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">Releases</a> · <a href=".github/CONTRIBUTING.md#en">Contributing</a></p>
+<p><a href="#install"><img src="assets/docs-icons/material/download.svg" width="16" height="16" alt="">&nbsp;Install</a> · <a href="#usage"><img src="assets/docs-icons/material/route.svg" width="16" height="16" alt="">&nbsp;Usage</a> · <a href="#examples"><img src="assets/docs-icons/material/code.svg" width="16" height="16" alt="">&nbsp;Examples</a> · <a href="#skill-directory"><img src="assets/docs-icons/material/menu_book.svg" width="16" height="16" alt="">&nbsp;Skill Directory</a> · <a href="#faq"><img src="assets/docs-icons/material/help.svg" width="16" height="16" alt="">&nbsp;FAQ</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">Releases</a> · <a href=".github/CONTRIBUTING.md#en"><img src="assets/docs-icons/material/fork_right.svg" width="16" height="16" alt="">&nbsp;Contributing</a></p>
 <p>Made in Türkiye 🇹🇷</p>
 </div>
 
@@ -28,7 +28,7 @@ Start with the result you want. SeniorMode helps your agent turn an ordinary req
 
 Three shuffles of the same six songs show why random playback can still feel repetitive. Every song stays in the queue, and tracks by the same artist are spaced out when the playlist allows. [Music shuffle](#example-music-shuffle)
 
-[Try the live demo](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+<a href="https://eneskeremaydin.github.io/SeniorMode/shuffle/"><img src="assets/docs-icons/material/play_circle.svg" width="16" height="16" alt="">&nbsp;Try the live demo</a>
 
 ## Install
 
@@ -50,6 +50,10 @@ Check the target folder and review any local edits before running an installer.
 
 Vercel skills and the SeniorMode CLI each track the copies they install. Update or remove a copy with the tool that installed it. For manual copies, review local edits before replacing or removing the folder.
 
+<a href="#install-codex"><img src="assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Codex</a> · <a href="#install-claude-code"><img src="assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Claude Code</a> · <a href="#install-cursor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/docs-icons/brands/cursor-on-dark.svg"><img src="assets/docs-icons/brands/cursor-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;Cursor</a> · <a href="#install-gemini-cli"><img src="assets/docs-icons/brands/gemini-cli.svg" width="18" height="18" alt="">&nbsp;Gemini CLI</a> · <a href="#install-opencode"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/docs-icons/brands/opencode-on-dark.svg"><img src="assets/docs-icons/brands/opencode-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;OpenCode</a>
+
+<a id="install-codex"></a>
+
 <details>
 <summary>Codex</summary>
 
@@ -58,6 +62,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent codex 
 ```
 
 </details>
+
+<a id="install-claude-code"></a>
 
 <details>
 <summary>Claude Code</summary>
@@ -68,6 +74,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent claude
 
 </details>
 
+<a id="install-cursor"></a>
+
 <details>
 <summary>Cursor</summary>
 
@@ -77,6 +85,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent cursor
 
 </details>
 
+<a id="install-gemini-cli"></a>
+
 <details>
 <summary>Gemini CLI</summary>
 
@@ -85,6 +95,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent gemini
 ```
 
 </details>
+
+<a id="install-opencode"></a>
 
 <details>
 <summary>OpenCode</summary>
@@ -298,6 +310,8 @@ The Agent Skill routes work to Build, Audit and the relevant standards. The CLI 
 
 ## Examples
 
+<a href="#example-music-shuffle"><img src="assets/docs-icons/material/shuffle.svg" width="16" height="16" alt="">&nbsp;Music shuffle</a> · <a href="#example-reservation-concurrency"><img src="assets/docs-icons/material/event_available.svg" width="16" height="16" alt="">&nbsp;Last-room reservations</a> · <a href="#example-payment-idempotency"><img src="assets/docs-icons/material/credit_card.svg" width="16" height="16" alt="">&nbsp;Payment retry</a> · <a href="#example-cursor-pagination"><img src="assets/docs-icons/material/view_list.svg" width="16" height="16" alt="">&nbsp;Repeated posts in a feed</a>
+
 <a id="example-music-shuffle"></a>
 
 ### Music shuffle
@@ -397,7 +411,7 @@ Find the problem you’re facing below. Each entry links to an English guide wit
 
 **103** Engineering Decisions · **13** Categories · **16** Engineering standards
 
-[Algorithms and data structures (8)](#category-algorithms) · [Architecture (8)](#category-architecture) · [Backend and APIs (8)](#category-backend) · [Concurrency (9)](#category-concurrency) · [Data and storage (12)](#category-data) · [Frontend (7)](#category-frontend) · [Geospatial (5)](#category-geospatial) · [Networking (7)](#category-networking) · [Performance (6)](#category-performance) · [Product behavior (6)](#category-product) · [Reliability (12)](#category-reliability) · [Security (8)](#category-security) · [Testing (7)](#category-testing) · [Engineering standards (16)](#engineering-standards)
+<a href="#category-algorithms"><img src="assets/docs-icons/material/account_tree.svg" width="16" height="16" alt="">&nbsp;Algorithms and data structures (8)</a> · <a href="#category-architecture"><img src="assets/docs-icons/material/architecture.svg" width="16" height="16" alt="">&nbsp;Architecture (8)</a> · <a href="#category-backend"><img src="assets/docs-icons/material/dns.svg" width="16" height="16" alt="">&nbsp;Backend and APIs (8)</a> · <a href="#category-concurrency"><img src="assets/docs-icons/material/sync_alt.svg" width="16" height="16" alt="">&nbsp;Concurrency (9)</a> · <a href="#category-data"><img src="assets/docs-icons/material/database.svg" width="16" height="16" alt="">&nbsp;Data and storage (12)</a> · <a href="#category-frontend"><img src="assets/docs-icons/material/web.svg" width="16" height="16" alt="">&nbsp;Frontend (7)</a> · <a href="#category-geospatial"><img src="assets/docs-icons/material/map.svg" width="16" height="16" alt="">&nbsp;Geospatial (5)</a> · <a href="#category-networking"><img src="assets/docs-icons/material/lan.svg" width="16" height="16" alt="">&nbsp;Networking (7)</a> · <a href="#category-performance"><img src="assets/docs-icons/material/speed.svg" width="16" height="16" alt="">&nbsp;Performance (6)</a> · <a href="#category-product"><img src="assets/docs-icons/material/tune.svg" width="16" height="16" alt="">&nbsp;Product behavior (6)</a> · <a href="#category-reliability"><img src="assets/docs-icons/material/verified.svg" width="16" height="16" alt="">&nbsp;Reliability (12)</a> · <a href="#category-security"><img src="assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;Security (8)</a> · <a href="#category-testing"><img src="assets/docs-icons/material/science.svg" width="16" height="16" alt="">&nbsp;Testing (7)</a> · <a href="#engineering-standards"><img src="assets/docs-icons/material/fact_check.svg" width="16" height="16" alt="">&nbsp;Engineering standards (16)</a>
 
 <a id="category-algorithms"></a>
 
@@ -657,7 +671,7 @@ The guides, examples, and Directory summaries are available in eight languages. 
 
 ## Documentation
 
-[Knowledge Catalog](#skill-directory) · [Engineering standards](skills/seniormode/references/standards.md) · [CLI & MCP](#cli-mcp) · [Roadmap](#roadmap) · [Security policy](#security) · [Accessibility](.github/ACCESSIBILITY.md)
+<a href="#skill-directory">Knowledge Catalog</a> · <a href="skills/seniormode/references/standards.md">Engineering standards</a> · <a href="#cli-mcp"><img src="assets/docs-icons/material/hub.svg" width="16" height="16" alt="">&nbsp;CLI &amp; MCP</a> · <a href="#roadmap">Roadmap</a> · <a href="#security"><img src="assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;Security policy</a> · <a href=".github/ACCESSIBILITY.md">Accessibility</a>
 
 ## Roadmap
 

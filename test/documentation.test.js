@@ -57,7 +57,7 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     assert.match(readme, new RegExp('https://github.com/' + slug), locale);
     assert.doesNotMatch(readme, /(?:shuffle|workflow)-demo[^\s)]*\.gif/, locale);
     const shuffle = readme.slice(readme.indexOf('\n## ' + headings.shuffle + '\n'), offsets[0]);
-    assert.match(shuffle, /\]\(https:\/\/eneskeremaydin\.github\.io\/SeniorMode\/shuffle\/\)/, locale);
+    assert.match(shuffle, /href="https:\/\/eneskeremaydin\.github\.io\/SeniorMode\/shuffle\/"[^\n]+play_circle\.svg/, locale);
     const rows = [...shuffle.matchAll(/^\| [^|]+\| ([^|]+) \| (\d+) \|$/gm)];
     assert.deepEqual(rows.map(([, order]) => order.replaceAll('**', '').split(' → ')), expectedOrders, locale);
     assert.deepEqual(rows.map(([, , count]) => Number(count)), [3, 1, 0], locale);
@@ -72,6 +72,14 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     assert.match(readme, /actions\/workflows\/ci\.yml\/badge\.svg/, locale);
     const commands = [...install.matchAll(/^npx skills@1\.9\.0 add EnesKeremAYDIN\/SeniorMode --skill seniormode --agent ([\w-]+) --copy -y\r?$/gm)];
     assert.deepEqual(commands.map(command => command[1]), Object.keys(agents), locale);
+    const installLinks = [...install.matchAll(/<a href="#install-([\w-]+)">(.*?)<\/a>/g)];
+    assert.deepEqual(installLinks.map(([, agent]) => agent), Object.keys(agents), locale);
+    for (const [, agent, link] of installLinks) {
+      assert.match(link, /assets\/docs-icons\/[^"]+\.svg"[^>]* alt=""/, locale + ' ' + agent);
+      assert(install.includes('<a id="install-' + agent + '"></a>'), locale + ' ' + agent);
+    }
+    assert.match(install, /cursor-on-dark\.svg[^\n]+cursor-on-light\.svg/, locale);
+    assert.match(install, /opencode-on-dark\.svg[^\n]+opencode-on-light\.svg/, locale);
     assert.match(install, /<summary>Codex<\/summary>\n\n```sh\nnpx skills@/, locale);
     assert.match(install, /npx skills@1\.9\.0 update seniormode --project/, locale);
     assert.match(install, /node bin\/seniormode\.js uninstall --agent codex/, locale);
@@ -84,6 +92,8 @@ test('all eight README pages include onboarding, examples, Directory and FAQ', (
     assert.match(install, /\| Cursor \| `.agents\/skills` \| `.agents\/skills` \|/, locale);
     const exampleIds = [...examples.matchAll(/<a id="example-([\w-]+)"><\/a>/g)].map(([, id]) => id);
     assert.deepEqual(exampleIds, ['music-shuffle', 'reservation-concurrency', 'payment-idempotency', 'cursor-pagination'], locale);
+    const exampleLinks = [...examples.matchAll(/<a href="#example-([\w-]+)"><img [^>]+ alt="">&nbsp;[^<]+<\/a>/g)];
+    assert.deepEqual(exampleLinks.map(([, id]) => id), exampleIds, locale);
     for (const file of ['shuffle','reservation','payment-retry','pagination']) {
       assert(examples.includes('node --test test/' + file + '.test.js'), locale + ' ' + file);
     }
@@ -113,10 +123,12 @@ test('all eight READMEs link to the shared contribution and accessibility guides
     const [, id, language, section] = languageSections[index];
     const readme = source.get(readmePath(locale)).replaceAll('\r\n', '\n');
     const prefix = locale === 'en' ? '' : '../../../';
-    assert(readme.includes(`<a href="${prefix}.github/CONTRIBUTING.md#${id}">${nav.contribute}</a>`), locale);
+    const contributionLink = readme.split(`<a href="${prefix}.github/CONTRIBUTING.md#${id}">`)[1]?.split('</a>')[0];
+    assert(contributionLink?.endsWith('&nbsp;' + nav.contribute), locale);
+    assert.match(contributionLink, /fork_right\.svg/, locale);
     assert.doesNotMatch(readme, /scripts\/directory-locales\/|id="contributing"/, locale);
     const docs = readme.split('\n## ' + headings.docs + '\n')[1].split('\n## ')[0];
-    assert(docs.includes(`[${labels[index]}](${prefix}.github/ACCESSIBILITY.md)`), locale);
+    assert(docs.includes(`<a href="${prefix}.github/ACCESSIBILITY.md">${labels[index]}</a>`), locale);
     assert(contribution.includes(`[${language}](#${id})`), locale);
     assert.match(section, /scripts\/directory-locales\//, locale);
     assert.match(section, /npm run docs:generate/, locale);
@@ -147,11 +159,14 @@ test('all embedded Skill Directories match canonical record IDs, category counts
       const actual = [...content.matchAll(patternLink)].map(([, , path]) => path);
       assert.deepEqual(actual, expected, `${path} ${category}`);
       assert.equal(Number(count), actual.length, path);
-      assert(directory.includes(`[${label} (${count})](#category-${category})`), path);
     }
+    const categoryLinks = [...directory.matchAll(/<a href="#category-([\w-]+)"><img src="[^"]+\/material\/([^"]+)"[^>]+ alt="">&nbsp;([^<]+)<\/a>/g)];
+    assert.deepEqual(categoryLinks.map(([, category, , label]) => [category, label]),
+      groups.map(([, category, label, count]) => [category, label.replaceAll('&', '&amp;') + ' (' + count + ')']), path);
+    assert.equal(new Set(categoryLinks.map(([, , icon]) => icon)).size, categories.length, path);
     const links = [...directory.matchAll(patternLink)].map(([, , path]) => path);
     assert.deepEqual(links.sort(), records.map(({ path }) => path).sort(), path);
-    assert.match(directory, /\(16\)\]\(#engineering-standards\)/, path);
+    assert.match(directory, /href="#engineering-standards"><img [^>]*fact_check\.svg[^>]*>[^<]+\(16\)<\/a>/, path);
     const [, guides] = directory.split('<a id="engineering-standards"></a>');
     assert.deepEqual([...guides.matchAll(/standards\/([\w-]+\.md)\)/g)].map(([, name]) => name).sort(), standards, path);
   }

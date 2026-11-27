@@ -6,7 +6,7 @@
 <p><a href="../../../README.md">English</a> · <strong>Türkçe</strong> · <a href="../de/README.md">Deutsch</a> · <a href="../es/README.md">Español</a> · <a href="../fr/README.md">Français</a> · <a href="../ja/README.md">日本語</a> · <a href="../pt-BR/README.md">Português (Brasil)</a> · <a href="../zh-CN/README.md">简体中文</a></p>
 <p><strong>Yapay zekân kod yazabiliyor. Şimdi mühendislik yapsın.</strong><br>Yapay zekâ asistanın için gerçek dünyadan mühendislik bilgisi.</p>
 <p><a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/EnesKeremAYDIN/SeniorMode?style=flat&amp;logo=github"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml"><img alt="GitHub Actions CI status" src="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml/badge.svg?branch=main"></a><br><a href="../../../LICENSE"><img alt="MIT" src="https://img.shields.io/badge/MIT-26734d?style=flat"></a> <a href="../../../LICENSE-CONTENT.md"><img alt="CC BY 4.0" src="https://img.shields.io/badge/CC%20BY%204.0-26734d?style=flat"></a> <a href="../../../skills/seniormode/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/Agent%20Skill-38577a?style=flat"></a> <a href="#cli-mcp"><img alt="MCP" src="https://img.shields.io/badge/MCP-38577a?style=flat"></a> <a href="#faq"><img alt="Local first" src="https://img.shields.io/badge/Local%20first-26734d?style=flat"></a></p>
-<p><a href="#kurulum">Kurulum</a> · <a href="#usage">Kullanım</a> · <a href="#examples">Örnekler</a> · <a href="#skill-directory">Beceri Dizini</a> · <a href="#faq">SSS</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">Sürümler</a> · <a href="../../../.github/CONTRIBUTING.md#tr">Katkı rehberi</a></p>
+<p><a href="#kurulum"><img src="../../../assets/docs-icons/material/download.svg" width="16" height="16" alt="">&nbsp;Kurulum</a> · <a href="#usage"><img src="../../../assets/docs-icons/material/route.svg" width="16" height="16" alt="">&nbsp;Kullanım</a> · <a href="#examples"><img src="../../../assets/docs-icons/material/code.svg" width="16" height="16" alt="">&nbsp;Örnekler</a> · <a href="#skill-directory"><img src="../../../assets/docs-icons/material/menu_book.svg" width="16" height="16" alt="">&nbsp;Beceri Dizini</a> · <a href="#faq"><img src="../../../assets/docs-icons/material/help.svg" width="16" height="16" alt="">&nbsp;SSS</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">Sürümler</a> · <a href="../../../.github/CONTRIBUTING.md#tr"><img src="../../../assets/docs-icons/material/fork_right.svg" width="16" height="16" alt="">&nbsp;Katkı rehberi</a></p>
 <p>Türkiye’de geliştirildi 🇹🇷</p>
 </div>
 
@@ -28,7 +28,7 @@ Ne yapmak istediğini anlatman yeterli. SeniorMode, asistanının isteğini proj
 
 Aynı altı şarkının üç farklı sırası, karışık çalmanın neden bazen tekrarlı hissettirdiğini gösteriyor. Bütün parçalar sırada kalır. Liste elverdiğinde aynı sanatçının parçaları art arda gelmez. [Karışık müzik çalma](#example-music-shuffle)
 
-[Canlı demoyu dene (İngilizce)](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+<a href="https://eneskeremaydin.github.io/SeniorMode/shuffle/"><img src="../../../assets/docs-icons/material/play_circle.svg" width="16" height="16" alt="">&nbsp;Canlı demoyu dene (İngilizce)</a>
 
 ## Kurulum
 
@@ -50,6 +50,10 @@ Yükleyiciyi çalıştırmadan önce hedef klasörü ve varsa yerel düzenlemele
 
 Vercel skills ve SeniorMode CLI kendi kurdukları kopyaları ayrı ayrı takip eder. Güncelleme ve kaldırma için kopyayı kuran aracı kullan. Elle kurduysan klasörü değiştirmeden veya silmeden önce yerel düzenlemelere bak.
 
+<a href="#install-codex"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Codex</a> · <a href="#install-claude-code"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Claude Code</a> · <a href="#install-cursor"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/cursor-on-dark.svg"><img src="../../../assets/docs-icons/brands/cursor-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;Cursor</a> · <a href="#install-gemini-cli"><img src="../../../assets/docs-icons/brands/gemini-cli.svg" width="18" height="18" alt="">&nbsp;Gemini CLI</a> · <a href="#install-opencode"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/opencode-on-dark.svg"><img src="../../../assets/docs-icons/brands/opencode-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;OpenCode</a>
+
+<a id="install-codex"></a>
+
 <details>
 <summary>Codex</summary>
 
@@ -58,6 +62,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent codex 
 ```
 
 </details>
+
+<a id="install-claude-code"></a>
 
 <details>
 <summary>Claude Code</summary>
@@ -68,6 +74,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent claude
 
 </details>
 
+<a id="install-cursor"></a>
+
 <details>
 <summary>Cursor</summary>
 
@@ -77,6 +85,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent cursor
 
 </details>
 
+<a id="install-gemini-cli"></a>
+
 <details>
 <summary>Gemini CLI</summary>
 
@@ -85,6 +95,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent gemini
 ```
 
 </details>
+
+<a id="install-opencode"></a>
 
 <details>
 <summary>OpenCode</summary>
@@ -300,6 +312,8 @@ Agent Skill işin türüne göre geliştirme, denetim ve ilgili standartlara yö
 
 ## Örnekler
 
+<a href="#example-music-shuffle"><img src="../../../assets/docs-icons/material/shuffle.svg" width="16" height="16" alt="">&nbsp;Karışık müzik çalma</a> · <a href="#example-reservation-concurrency"><img src="../../../assets/docs-icons/material/event_available.svg" width="16" height="16" alt="">&nbsp;Son oda rezervasyonu</a> · <a href="#example-payment-idempotency"><img src="../../../assets/docs-icons/material/credit_card.svg" width="16" height="16" alt="">&nbsp;Ödeme tekrarı</a> · <a href="#example-cursor-pagination"><img src="../../../assets/docs-icons/material/view_list.svg" width="16" height="16" alt="">&nbsp;Akışta tekrarlanan öğeler</a>
+
 <a id="example-music-shuffle"></a>
 
 ### Karışık müzik çalma
@@ -401,7 +415,7 @@ Karşılaştığın sorunu aşağıda bulabilirsin. Her kayıt seçenekleri, bun
 
 **103** mühendislik kaydı · **13** kategori · **16** Mühendislik standartları
 
-[Algoritmalar ve veri yapıları (8)](#category-algorithms) · [Yazılım mimarisi (8)](#category-architecture) · [Backend ve API’ler (8)](#category-backend) · [Eşzamanlılık (9)](#category-concurrency) · [Veri ve depolama (12)](#category-data) · [Frontend (7)](#category-frontend) · [Konum ve harita (5)](#category-geospatial) · [Ağ (7)](#category-networking) · [Performans (6)](#category-performance) · [Ürün davranışı (6)](#category-product) · [Güvenilirlik (12)](#category-reliability) · [Güvenlik (8)](#category-security) · [Test ve doğrulama (7)](#category-testing) · [Mühendislik standartları (16)](#engineering-standards)
+<a href="#category-algorithms"><img src="../../../assets/docs-icons/material/account_tree.svg" width="16" height="16" alt="">&nbsp;Algoritmalar ve veri yapıları (8)</a> · <a href="#category-architecture"><img src="../../../assets/docs-icons/material/architecture.svg" width="16" height="16" alt="">&nbsp;Yazılım mimarisi (8)</a> · <a href="#category-backend"><img src="../../../assets/docs-icons/material/dns.svg" width="16" height="16" alt="">&nbsp;Backend ve API’ler (8)</a> · <a href="#category-concurrency"><img src="../../../assets/docs-icons/material/sync_alt.svg" width="16" height="16" alt="">&nbsp;Eşzamanlılık (9)</a> · <a href="#category-data"><img src="../../../assets/docs-icons/material/database.svg" width="16" height="16" alt="">&nbsp;Veri ve depolama (12)</a> · <a href="#category-frontend"><img src="../../../assets/docs-icons/material/web.svg" width="16" height="16" alt="">&nbsp;Frontend (7)</a> · <a href="#category-geospatial"><img src="../../../assets/docs-icons/material/map.svg" width="16" height="16" alt="">&nbsp;Konum ve harita (5)</a> · <a href="#category-networking"><img src="../../../assets/docs-icons/material/lan.svg" width="16" height="16" alt="">&nbsp;Ağ (7)</a> · <a href="#category-performance"><img src="../../../assets/docs-icons/material/speed.svg" width="16" height="16" alt="">&nbsp;Performans (6)</a> · <a href="#category-product"><img src="../../../assets/docs-icons/material/tune.svg" width="16" height="16" alt="">&nbsp;Ürün davranışı (6)</a> · <a href="#category-reliability"><img src="../../../assets/docs-icons/material/verified.svg" width="16" height="16" alt="">&nbsp;Güvenilirlik (12)</a> · <a href="#category-security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;Güvenlik (8)</a> · <a href="#category-testing"><img src="../../../assets/docs-icons/material/science.svg" width="16" height="16" alt="">&nbsp;Test ve doğrulama (7)</a> · <a href="#engineering-standards"><img src="../../../assets/docs-icons/material/fact_check.svg" width="16" height="16" alt="">&nbsp;Mühendislik standartları (16)</a>
 
 <a id="category-algorithms"></a>
 
@@ -663,7 +677,7 @@ Rehberler, örnekler ve Beceri Dizini’ndeki özetler sekiz dilde. Kayıtların
 
 ## Dokümantasyon
 
-[Bilgi Kataloğu](#skill-directory) · [Mühendislik standartları](../../../skills/seniormode/references/standards.md) · [CLI & MCP](#cli-mcp) · [Yol haritası](#roadmap) · [Güvenlik politikası](#security) · [Erişilebilirlik](../../../.github/ACCESSIBILITY.md)
+<a href="#skill-directory">Bilgi Kataloğu</a> · <a href="../../../skills/seniormode/references/standards.md">Mühendislik standartları</a> · <a href="#cli-mcp"><img src="../../../assets/docs-icons/material/hub.svg" width="16" height="16" alt="">&nbsp;CLI &amp; MCP</a> · <a href="#roadmap">Yol haritası</a> · <a href="#security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;Güvenlik politikası</a> · <a href="../../../.github/ACCESSIBILITY.md">Erişilebilirlik</a>
 
 <a id="roadmap"></a>
 

@@ -6,7 +6,7 @@
 <p><a href="../../../README.md">English</a> · <a href="../tr/README.md">Türkçe</a> · <a href="../de/README.md">Deutsch</a> · <a href="../es/README.md">Español</a> · <a href="../fr/README.md">Français</a> · <strong>日本語</strong> · <a href="../pt-BR/README.md">Português (Brasil)</a> · <a href="../zh-CN/README.md">简体中文</a></p>
 <p><strong>AIはコードを書ける。次は、設計を判断できるように。</strong><br>コーディングエージェントに、実務で使えるエンジニアリング知識を。</p>
 <p><a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/EnesKeremAYDIN/SeniorMode?style=flat&amp;logo=github"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/EnesKeremAYDIN/SeniorMode?style=flat"></a> <a href="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml"><img alt="GitHub Actions CI status" src="https://github.com/EnesKeremAYDIN/SeniorMode/actions/workflows/ci.yml/badge.svg?branch=main"></a><br><a href="../../../LICENSE"><img alt="MIT" src="https://img.shields.io/badge/MIT-26734d?style=flat"></a> <a href="../../../LICENSE-CONTENT.md"><img alt="CC BY 4.0" src="https://img.shields.io/badge/CC%20BY%204.0-26734d?style=flat"></a> <a href="../../../skills/seniormode/SKILL.md"><img alt="Agent Skill" src="https://img.shields.io/badge/Agent%20Skill-38577a?style=flat"></a> <a href="#cli-mcp"><img alt="MCP" src="https://img.shields.io/badge/MCP-38577a?style=flat"></a> <a href="#faq"><img alt="Local first" src="https://img.shields.io/badge/Local%20first-26734d?style=flat"></a></p>
-<p><a href="#インストール">インストール</a> · <a href="#usage">使い方</a> · <a href="#examples">実行例</a> · <a href="#skill-directory">スキルディレクトリ</a> · <a href="#faq">よくある質問</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">リリース</a> · <a href="../../../.github/CONTRIBUTING.md#ja">コントリビュート</a></p>
+<p><a href="#インストール"><img src="../../../assets/docs-icons/material/download.svg" width="16" height="16" alt="">&nbsp;インストール</a> · <a href="#usage"><img src="../../../assets/docs-icons/material/route.svg" width="16" height="16" alt="">&nbsp;使い方</a> · <a href="#examples"><img src="../../../assets/docs-icons/material/code.svg" width="16" height="16" alt="">&nbsp;実行例</a> · <a href="#skill-directory"><img src="../../../assets/docs-icons/material/menu_book.svg" width="16" height="16" alt="">&nbsp;スキルディレクトリ</a> · <a href="#faq"><img src="../../../assets/docs-icons/material/help.svg" width="16" height="16" alt="">&nbsp;よくある質問</a> · <a href="https://github.com/EnesKeremAYDIN/SeniorMode/releases">リリース</a> · <a href="../../../.github/CONTRIBUTING.md#ja"><img src="../../../assets/docs-icons/material/fork_right.svg" width="16" height="16" alt="">&nbsp;コントリビュート</a></p>
 <p>トルコで開発 🇹🇷</p>
 </div>
 
@@ -28,7 +28,7 @@
 
 同じ6曲を3通りに並べると、シャッフル再生でも同じアーティストが続く理由が見えてきます。 全曲を再生キューに残し、プレイリストが許す範囲で同じアーティストの曲が続かないようにします。 [音楽シャッフル](#example-music-shuffle)
 
-[ライブデモを試す（英語）](https://eneskeremaydin.github.io/SeniorMode/shuffle/)
+<a href="https://eneskeremaydin.github.io/SeniorMode/shuffle/"><img src="../../../assets/docs-icons/material/play_circle.svg" width="16" height="16" alt="">&nbsp;ライブデモを試す（英語）</a>
 
 ## インストール
 
@@ -50,6 +50,10 @@ SeniorMode は次の 5 つのエージェントに導入できます。MCP は�
 
 Vercel skills と SeniorMode CLI は、それぞれ自分が導入したコピーを管理します。更新や削除には元のツールを使います。手動で導入した場合は、フォルダーを置き換えたり削除したりする前にローカルでの編集を確認してください。
 
+<a href="#install-codex"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Codex</a> · <a href="#install-claude-code"><img src="../../../assets/docs-icons/material/terminal.svg" width="16" height="16" alt="">&nbsp;Claude Code</a> · <a href="#install-cursor"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/cursor-on-dark.svg"><img src="../../../assets/docs-icons/brands/cursor-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;Cursor</a> · <a href="#install-gemini-cli"><img src="../../../assets/docs-icons/brands/gemini-cli.svg" width="18" height="18" alt="">&nbsp;Gemini CLI</a> · <a href="#install-opencode"><picture><source media="(prefers-color-scheme: dark)" srcset="../../../assets/docs-icons/brands/opencode-on-dark.svg"><img src="../../../assets/docs-icons/brands/opencode-on-light.svg" width="18" height="18" alt=""></picture>&nbsp;OpenCode</a>
+
+<a id="install-codex"></a>
+
 <details>
 <summary>Codex</summary>
 
@@ -58,6 +62,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent codex 
 ```
 
 </details>
+
+<a id="install-claude-code"></a>
 
 <details>
 <summary>Claude Code</summary>
@@ -68,6 +74,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent claude
 
 </details>
 
+<a id="install-cursor"></a>
+
 <details>
 <summary>Cursor</summary>
 
@@ -77,6 +85,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent cursor
 
 </details>
 
+<a id="install-gemini-cli"></a>
+
 <details>
 <summary>Gemini CLI</summary>
 
@@ -85,6 +95,8 @@ npx skills@1.9.0 add EnesKeremAYDIN/SeniorMode --skill seniormode --agent gemini
 ```
 
 </details>
+
+<a id="install-opencode"></a>
 
 <details>
 <summary>OpenCode</summary>
@@ -300,6 +312,8 @@ Agent Skill は作業内容に応じて Build、Audit、関連する標準を案
 
 ## 実行例
 
+<a href="#example-music-shuffle"><img src="../../../assets/docs-icons/material/shuffle.svg" width="16" height="16" alt="">&nbsp;音楽シャッフル</a> · <a href="#example-reservation-concurrency"><img src="../../../assets/docs-icons/material/event_available.svg" width="16" height="16" alt="">&nbsp;最後の空室</a> · <a href="#example-payment-idempotency"><img src="../../../assets/docs-icons/material/credit_card.svg" width="16" height="16" alt="">&nbsp;支払いの再試行</a> · <a href="#example-cursor-pagination"><img src="../../../assets/docs-icons/material/view_list.svg" width="16" height="16" alt="">&nbsp;フィードの重複</a>
+
 <a id="example-music-shuffle"></a>
 
 ### 音楽シャッフル
@@ -401,7 +415,7 @@ node --test test/pagination.test.js
 
 **103** 件の設計記録 · **13** カテゴリ · **16** エンジニアリング基準
 
-[アルゴリズムとデータ構造 (8)](#category-algorithms) · [アーキテクチャ (8)](#category-architecture) · [バックエンドとAPI (8)](#category-backend) · [並行処理 (9)](#category-concurrency) · [データとストレージ (12)](#category-data) · [フロントエンド (7)](#category-frontend) · [地理情報 (5)](#category-geospatial) · [ネットワーク (7)](#category-networking) · [性能 (6)](#category-performance) · [製品の振る舞い (6)](#category-product) · [信頼性 (12)](#category-reliability) · [セキュリティ (8)](#category-security) · [テスト (7)](#category-testing) · [エンジニアリング基準 (16)](#engineering-standards)
+<a href="#category-algorithms"><img src="../../../assets/docs-icons/material/account_tree.svg" width="16" height="16" alt="">&nbsp;アルゴリズムとデータ構造 (8)</a> · <a href="#category-architecture"><img src="../../../assets/docs-icons/material/architecture.svg" width="16" height="16" alt="">&nbsp;アーキテクチャ (8)</a> · <a href="#category-backend"><img src="../../../assets/docs-icons/material/dns.svg" width="16" height="16" alt="">&nbsp;バックエンドとAPI (8)</a> · <a href="#category-concurrency"><img src="../../../assets/docs-icons/material/sync_alt.svg" width="16" height="16" alt="">&nbsp;並行処理 (9)</a> · <a href="#category-data"><img src="../../../assets/docs-icons/material/database.svg" width="16" height="16" alt="">&nbsp;データとストレージ (12)</a> · <a href="#category-frontend"><img src="../../../assets/docs-icons/material/web.svg" width="16" height="16" alt="">&nbsp;フロントエンド (7)</a> · <a href="#category-geospatial"><img src="../../../assets/docs-icons/material/map.svg" width="16" height="16" alt="">&nbsp;地理情報 (5)</a> · <a href="#category-networking"><img src="../../../assets/docs-icons/material/lan.svg" width="16" height="16" alt="">&nbsp;ネットワーク (7)</a> · <a href="#category-performance"><img src="../../../assets/docs-icons/material/speed.svg" width="16" height="16" alt="">&nbsp;性能 (6)</a> · <a href="#category-product"><img src="../../../assets/docs-icons/material/tune.svg" width="16" height="16" alt="">&nbsp;製品の振る舞い (6)</a> · <a href="#category-reliability"><img src="../../../assets/docs-icons/material/verified.svg" width="16" height="16" alt="">&nbsp;信頼性 (12)</a> · <a href="#category-security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;セキュリティ (8)</a> · <a href="#category-testing"><img src="../../../assets/docs-icons/material/science.svg" width="16" height="16" alt="">&nbsp;テスト (7)</a> · <a href="#engineering-standards"><img src="../../../assets/docs-icons/material/fact_check.svg" width="16" height="16" alt="">&nbsp;エンジニアリング基準 (16)</a>
 
 <a id="category-algorithms"></a>
 
@@ -663,7 +677,7 @@ node --test test/pagination.test.js
 
 ## ドキュメント
 
-[知識ライブラリ](#skill-directory) · [エンジニアリング基準](../../../skills/seniormode/references/standards.md) · [CLI & MCP](#cli-mcp) · [ロードマップ](#roadmap) · [セキュリティ](#security) · [アクセシビリティ](../../../.github/ACCESSIBILITY.md)
+<a href="#skill-directory">知識ライブラリ</a> · <a href="../../../skills/seniormode/references/standards.md">エンジニアリング基準</a> · <a href="#cli-mcp"><img src="../../../assets/docs-icons/material/hub.svg" width="16" height="16" alt="">&nbsp;CLI &amp; MCP</a> · <a href="#roadmap">ロードマップ</a> · <a href="#security"><img src="../../../assets/docs-icons/material/shield.svg" width="16" height="16" alt="">&nbsp;セキュリティ</a> · <a href="../../../.github/ACCESSIBILITY.md">アクセシビリティ</a>
 
 <a id="roadmap"></a>
 
