@@ -707,7 +707,7 @@ SeniorMode가 다음 프로젝트에 도움이 된다면 다른 사람들이 찾
 
 ## 감사의 말
 
-SeniorMode는 이러한 공개 프로젝트를 기반으로 구축됩니다. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode는 이러한 공개 프로젝트를 기반으로 구축됩니다. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## 라이센스
 

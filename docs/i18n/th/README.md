@@ -709,7 +709,7 @@ CLI และเซิร์ฟเวอร์ MCP ที่รันในเ�
 
 ## รับทราบ
 
-SeniorMode สร้างบนโปรเจ็กต์ที่เปิดอยู่เหล่านี้ [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode สร้างบนโปรเจ็กต์ที่เปิดอยู่เหล่านี้ [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## ใบอนุญาต
 

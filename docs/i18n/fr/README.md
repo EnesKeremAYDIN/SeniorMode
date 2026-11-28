@@ -705,7 +705,7 @@ Si SeniorMode vous aide dans un projet, [donnez-lui une étoile sur GitHub](http
 
 ## Remerciements
 
-SeniorMode s’appuie sur ces projets ouverts. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode s’appuie sur ces projets ouverts. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## Licence
 

@@ -777,7 +777,7 @@ node --test test/pagination.test.js
 
 ## قدردانی
 
-SeniorMode بر روی این پروژه های باز ساخته می شود. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode بر روی این پروژه های باز ساخته می شود. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## مجوز
 

@@ -709,7 +709,7 @@ Nếu SeniorMode giúp ích cho dự án tiếp theo của bạn, hãy [cho nó 
 
 ## Lời cảm ơn
 
-SeniorMode được xây dựng dựa trên các dự án mở này. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode được xây dựng dựa trên các dự án mở này. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## Giấy phép
 

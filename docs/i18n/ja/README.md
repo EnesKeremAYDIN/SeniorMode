@@ -707,7 +707,7 @@ SeniorMode が役に立ったら、[GitHub でスターを付ける](https://git
 
 ## 謝辞
 
-SeniorMode は次のオープンなプロジェクトを活用しています。 [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode は次のオープンなプロジェクトを活用しています。 [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## ライセンス
 

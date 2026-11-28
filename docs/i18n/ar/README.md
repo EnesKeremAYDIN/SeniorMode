@@ -777,7 +777,7 @@ node --test test/pagination.test.js
 
 ## شكر وتقدير
 
-يعتمد SeniorMode على هذه المشاريع المفتوحة. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+يعتمد SeniorMode على هذه المشاريع المفتوحة. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## الترخيص
 

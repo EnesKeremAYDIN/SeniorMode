@@ -709,7 +709,7 @@ Eger SeniorMode indiki taslamaňyza kömek etse, beýlekiler tapyp biler ýaly, 
 
 ## Minnetdarlyk
 
-SeniorMode bu açyk taslamalarda gurulýar. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode bu açyk taslamalarda gurulýar. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## Ygtyýarnama
 

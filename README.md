@@ -699,7 +699,7 @@ If SeniorMode helps on your next project, [give it a star on GitHub](https://git
 
 ## Acknowledgments
 
-SeniorMode builds on these open projects. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode builds on these open projects. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## License
 

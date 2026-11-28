@@ -709,7 +709,7 @@ Agar SeniorMode keyingi loyihangizga yordam bersa, boshqalar uni topishi uchun [
 
 ## Minnatdorchilik
 
-SeniorMode ushbu ochiq loyihalarga asoslanadi. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html)
+SeniorMode ushbu ochiq loyihalarga asoslanadi. [Agent Skills](https://agentskills.io/) · [MCP](https://modelcontextprotocol.io/) · [SQLite FTS5](https://www.sqlite.org/fts5.html) · [Glama](https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode)
 
 ## Litsenziya
 

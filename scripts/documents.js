@@ -265,7 +265,8 @@ function readmeFooter(locale, from) {
     linkedImage(from, headings.contributors, 'https://contrib.rocks/image?repo=' + slug, contributors),
     '## ' + headings.thanks,
     acknowledgments + ' ' + inlineNav(from, [['Agent Skills', 'https://agentskills.io/'],
-      ['MCP', 'https://modelcontextprotocol.io/'], ['SQLite FTS5', 'https://www.sqlite.org/fts5.html']]),
+      ['MCP', 'https://modelcontextprotocol.io/'], ['SQLite FTS5', 'https://www.sqlite.org/fts5.html'],
+      ['Glama', 'https://glama.ai/mcp/servers/EnesKeremAYDIN/SeniorMode']]),
     '## ' + headings.license,
     text.license.replace('MIT', link('MIT', from, 'LICENSE'))
       .replace('CC BY 4.0', link('CC BY 4.0', from, 'LICENSE-CONTENT.md')),
